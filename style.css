@@ -339,9 +339,7 @@ nav a {
     display: inline-block;
     text-decoration: none;
 }
-nav a:hover {
-  color: var(--featured-text);
-}
+
 
 /* ------------ Footer Styles -------------- */
 
@@ -416,14 +414,69 @@ footer nav a {
   position: fixed; 
   z-index: 20;
   top: 0;
+  height: 100vh;
   right: -100%;
   left: 100vw;
-  bottom: 0;
   color: white;
   text-align: left;
   transition: 0.5s;
   max-height: 100vh;
+  user-select: none;
+  counter-reset: menucounter;
   /* overflow: scroll; */
+}
+
+.menu-item {
+  position: relative;
+}
+
+
+
+.menu-item::before {
+  counter-increment: menucounter;
+  content: counters(menucounter, '.', decimal-leading);
+  position: absolute;
+  left: -15px;
+  top: 0;
+  font-size: 14px;
+}
+
+.menu-item-text {
+  pointer-events: none;
+  display: block;
+  line-height: 1;
+  position: relative;
+  
+}
+
+.menu-item > div:nth-child(1) span {
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition-delay: calc(0.05s * var(--index));
+  transform-origin: bottom;
+  display: inline-block;
+}
+
+.menu-item > div:nth-child(2) span {
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition-delay: calc(0.05s * var(--index));
+  transform-origin: top;
+  display: inline-block;
+  transform: translate3d(0, 100%, 0) rotateX(-90deg);
+}
+
+.menu-item:hover > div:nth-child(1) span {
+  transform: translate3d(0, -100%, 0) rotateX(-90deg);
+}
+
+.menu-item:hover > div:nth-child(2) span {
+  transform: translate3d(0, 0%, 0) rotateX(0deg);
+}
+span {
+  font-size: 3rem;
 }
 
 .menu.active {
@@ -454,7 +507,7 @@ footer nav a {
 }
 
 .web-cs {
-  margin-top: -4rem;
+  margin-top: -2.5rem;
 }
 
 .blog-cs {
