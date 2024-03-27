@@ -22,6 +22,7 @@ section { position: relative; }
 html { 
   scroll-behavior: smooth ;
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+  overflow-x: hidden;
 }
 
 
@@ -51,6 +52,7 @@ html {
 .padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem; }
 .padded-2  { padding: 2rem; }
+.padded-2-important  { padding: 2rem !important; }
 
 .padded-t  { padding-top: 5%; }
 .padded-b  { padding-bottom: 5%; }
@@ -107,8 +109,18 @@ html {
 
 
 .relative { position: relative;}
-.block { position: block;}
+.block { display: block;}
+.block a {
+  display: block;
+}
 .inline-block { position: inline-block;}
+
+/* ------------ Swiper  ----------------------- */
+.swiper {
+  width: 100%;
+  height: auto;
+  margin-left: -9rem;
+}
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
@@ -125,6 +137,8 @@ html {
     background-position: center; 
     background-repeat: no-repeat;
 }
+
+.bg-menu-banner { background-image: url('/images/menu/menu-banner.jpg'); }
 
 .bg-overlay::after {
   z-index: 1;
@@ -158,6 +172,7 @@ html {
 a.bg-image { display: block;}
 
 .landscape     { padding-bottom: 66% ; }
+.landscape-menu     { padding-bottom: 9% !important; }
 .portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
 .square        { padding-bottom: 100%; }
@@ -180,11 +195,15 @@ a.bg-image { display: block;}
 body {
   font-family: 'Mulish', serif;  /* Add your font here */ 
   color: var(--dark-text);
+  background-color: var(--v-light);
+  overflow-x: hidden;
 }
 
 h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin-bottom: 1.2rem;
+  font-family: ivypresto-display, serif;
+  font-weight: 100;
 }
 
 h2 { font-size: 2rem; }
@@ -272,6 +291,49 @@ header {
     padding: 1rem 5%;
 }
 
+
+.header-logo {
+  width: 15rem;
+}
+
+.header-blub {
+  position: absolute;
+  top: -7rem;
+  right: -7rem;
+  width: 20rem;
+  z-index: 10;
+}
+
+header div {
+  display: inline;
+}
+
+header div h2 {
+  font-size: 5rem;
+  letter-spacing: 25px;
+  z-index: 11;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.schliessen {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  z-index: 11;
+  cursor: pointer;
+}
+
+.menu a, .menu p {
+  color: var(--dark-text);
+}
+
+/* header div h2:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+} */
+
+
 nav a {
     padding: 0.25rem 0.5rem;
     display: inline-block;
@@ -346,129 +408,13 @@ footer nav a {
   display: block;
   padding: 0.2rem;
 }
-
-/* ------------ Burger Button / Mobile Menu Styles -------------- */
-
-.burger-button {
-  position:fixed;
-  top: 2vh;
-  right: 4vh;
-  z-index: 9;
-  padding: 8px;
-  margin-top: 0.8rem;
-  line-height: 1.7;
-  cursor: pointer;
   
-}
 
-.burger-button-index {
-  position:fixed;
-  top: 2vh;
-  right: 2vh;
-  z-index: 9;
-  padding: 8px;
-  margin-top: 0.6rem;
-  line-height: 1.7;
-  cursor: pointer;
-  
-}
-/*this is where you can chand the color of the buttons*/
 
-.burger-button-index span{
-  width: 35px;
-  border: 2px solid var(--medium);
-  background-color: white;
-  display: block;
-  transition: 0.5s;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.burger-button-index.active span{
-  border-color: var(--light);
-  background-color:white;
-}
-
-.burger-button span{
-  width: 35px;
-  border: 2px solid var(--medium);
-  background-color: white;
-  display: block;
-  transition: 0.5s;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.burger-button.active span{
-  border-color: var(--light);
-  background-color:white;
-}
-
-.burger-top, .burger-bottom{
-  position: absolute;
-}
-
-.burger-top{
-  top: -02px;
-}
-
-.burger-bottom{
-  bottom: -02px;
-}
-/* make sure this has the same top as the burger button has padding*/
-.burger-button.active .burger-top{
-  position: absolute;
-  top: 8px;
-  transform: rotateZ(45deg);
-}
-
-.burger-button.active .burger-middle{
-/*   transform: rotateZ(270deg); */
-  border-color: rgba(0,0,0,0);
-  background-color:rgba(0,0,0,0);
-}
-
-/* make sure this has the same bottom as the burger button has padding*/
-
-.burger-button.active .burger-bottom{
-  position: absolute;
-  bottom: 8px;
-  transform: rotateZ(-45deg);
-}
-
-/* make sure this has the same top as the burger button has padding*/
-.burger-button-index.active .burger-top{
-  position: absolute;
-  top: 8px;
-  transform: rotateZ(45deg);
-}
-
-.burger-button-index.active .burger-middle{
-/*   transform: rotateZ(270deg); */
-  border-color: rgba(0,0,0,0);
-  background-color:rgba(0,0,0,0);
-}
-
-/* make sure this has the same bottom as the burger button has padding*/
-
-.burger-button-index.active .burger-bottom{
-  position: absolute;
-  bottom: 8px;
-  transform: rotateZ(-45deg);
-}
-  
-  
-.menu-button:hover {
-  font-style: italic;
-}
-
-.menu-button.active:hover {
-  color: var(--dark-text)
-}
-
-.mobile-menu {
-  background-color: var(--featured);
-  padding: 0 5% 5% 5%;
+.menu {
+  background-color: var(--v-light);
   position: fixed; 
-  z-index: 1;
+  z-index: 20;
   top: 0;
   right: -100%;
   left: 100vw;
@@ -477,13 +423,89 @@ footer nav a {
   text-align: left;
   transition: 0.5s;
   max-height: 100vh;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
-.mobile-menu.active {
+.menu.active {
   right: 0;
-  left: 20vw;
+  left: 0;
 }
+
+.main-link {
+  font-size: 3rem;
+  letter-spacing: 8px;
+  z-index: 11;
+  cursor: pointer;
+  font-family: ivypresto-display, serif;
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.sub-link {
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  z-index: 11;
+  cursor: pointer;
+  font-family: ivypresto-display, serif;
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.web-cs {
+  margin-top: -4rem;
+}
+
+.blog-cs {
+  margin-top: -2rem;
+}
+
+.menu-right {
+  position: absolute;
+  z-index: 8;
+  bottom: -5px;
+  right: -5px;
+  width: 19%;
+}
+
+.menu-left {
+  position: relative;
+  z-index: 8;
+  margin-left: -10px;
+  margin-bottom: -14px;
+}
+
+.lines {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 0;
+}
+
+.menu-number {
+  font-size: 1.2rem;
+  position: absolute;
+  left: -17px;
+  top: -7px;
+  font-family: ivypresto-display, serif;
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.sub-link-title {
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 5px;
+  z-index: 11;
+  cursor: pointer;
+  font-family: ivypresto-display, serif;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
 
 .logo-mobile-menu {
   text-align: left;
