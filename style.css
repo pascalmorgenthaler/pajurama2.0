@@ -426,10 +426,10 @@ footer nav a {
   background-color: var(--v-light);
   position: fixed; 
   z-index: 20;
-  top: 0;
-  height: 100vh;
-  right: -100%;
-  left: 100vw;
+  right: 0;
+  top: -110%;
+  bottom: 110vh;
+  height: 100%;
   color: white;
   text-align: left;
   transition: 0.5s;
@@ -437,6 +437,11 @@ footer nav a {
   user-select: none;
   counter-reset: menucounter;
   /* overflow: scroll; */
+}
+
+.menu.active {
+  top: 0;
+  bottom: 0;
 }
 
 /* ------------------- ROTATING EFFECT menu links ----------------*/
@@ -494,10 +499,7 @@ span {
 
 /* ------------------- END ROTATING EFFECT ----------------*/
 
-.menu.active {
-  right: 0;
-  left: 0;
-}
+
 
 .main-link {
   font-size: 3rem;
