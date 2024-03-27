@@ -130,6 +130,10 @@ html {
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 
+.swiper-slide img {
+  border: 1px solid var(--dark-text);
+}
+
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
     background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
@@ -317,6 +321,15 @@ header div h2 {
   cursor: pointer;
 }
 
+.menu-text {
+  font-size: 5rem;
+  letter-spacing: 25px;
+  z-index: 11;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
 .schliessen {
   font-size: 3rem;
   letter-spacing: 10px;
@@ -426,11 +439,11 @@ footer nav a {
   /* overflow: scroll; */
 }
 
+/* ------------------- ROTATING EFFECT menu links ----------------*/
+
 .menu-item {
   position: relative;
 }
-
-
 
 .menu-item::before {
   counter-increment: menucounter;
@@ -479,6 +492,8 @@ span {
   font-size: 3rem;
 }
 
+/* ------------------- END ROTATING EFFECT ----------------*/
+
 .menu.active {
   right: 0;
   left: 0;
@@ -525,8 +540,8 @@ span {
 .menu-left {
   position: relative;
   z-index: 8;
-  margin-left: -10px;
-  margin-bottom: -14px;
+  margin-left: -15px;
+  margin-bottom: -15px;
 }
 
 .lines {
