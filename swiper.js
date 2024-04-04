@@ -4,6 +4,7 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 60,
+    allowTouchMove: false,
     autoplay: {
       delay: 4500,
       reverseDirection: true,
