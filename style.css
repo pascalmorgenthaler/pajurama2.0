@@ -48,6 +48,7 @@ html {
 .padded-sm { padding: 2.5%; }
 .padded    { padding: 5%;   }
 .padded-lg { padding: 10%;  }
+.padded-xl { padding: 0 15% 20% 15%;}
 
 .padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem; }
@@ -99,6 +100,8 @@ html {
 .margin-l-2 { margin-left: 2rem; }
 .margin-r-2 { margin-right: 2rem; }
 
+.margin-b-c1 { margin-bottom: 250px; }
+
 .margin-t-0 { margin-top: 0; }
 .margin-b-0 { margin-bottom: 0; }
 .margin-l-0 { margin-left: 0; }
@@ -134,7 +137,7 @@ html {
   border: 1px solid var(--dark-text);
 }
 
-img {
+.border {
   border: 1px solid var(--dark-text);
 }
 
@@ -201,7 +204,8 @@ a.bg-image { display: block;}
 .uppercase    { text-transform: uppercase; }
 
 body {
-  font-family: 'Mulish', serif;  /* Add your font here */ 
+  font-family: ivypresto-display, serif;
+  font-weight: 100;
   color: var(--dark-text);
   background-color: var(--v-light);
   overflow-x: hidden;
@@ -230,8 +234,8 @@ h6 { font-size: 1.2rem; }
 p, li {
   line-height: 1.4; 
   margin-bottom: 1rem;
-  font-family: 'Martel', serif; 
-  font-weight: 200;
+  font-family: ivypresto-display, serif;
+  font-weight: 100;
   font-size: 1rem;
 }
 
@@ -262,9 +266,22 @@ p:last-child {
 .no-deco { text-decoration: none; }
 
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
 /* ------------ Buttons & Links ------------ */
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 a:hover {
@@ -295,6 +312,44 @@ p a:hover {
 .subtle-button {
   text-decoration: none;
   border-bottom: 1px solid;
+}
+
+.webdesign-links {
+  position: absolute;
+  bottom: -28px;
+}
+
+.webdesign-blub {
+  position: absolute;
+  bottom: -61%;
+  right: -40%;
+  z-index: -2;
+  max-width: 482px;
+}
+
+.webdesign-lines {
+  min-width: 100vw;
+  position: absolute;
+  bottom: -170px;
+  left: 0;
+  z-index: -3;
+}
+
+.webdesign-links a {
+  font-size: 1.6rem;
+  letter-spacing: 10px;
+}
+
+.webdesign-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.webdesign-text p {
+  font-size: 1.7rem;
 }
 
 /* suggested additional styles 
