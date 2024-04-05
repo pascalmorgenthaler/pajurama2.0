@@ -3,10 +3,11 @@ const swiper3 = new Swiper('.swiper-storytelling-index', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 20,
-    allowTouchMove: false,
+    spaceBetween: 200,
+    allowTouchMove: true,
+    pauseOnMouseEnter: true,
     autoplay: {
-      delay: 3500,
+      delay: 6500,
       reverseDirection: true,
     },
     breakpoints: {
@@ -27,5 +28,10 @@ const swiper3 = new Swiper('.swiper-storytelling-index', {
       }
     },
 
+      // Navigation arrows
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
   
   });

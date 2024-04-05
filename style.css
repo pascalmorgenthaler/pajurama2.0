@@ -162,6 +162,20 @@ html {
   color: var(--dark-text);
 }
 
+.blub-3 {
+  position: absolute;
+  top: -5rem;
+  right: -7rem;
+  z-index: -5;
+  width: 20rem;
+}
+
+.lines-2 {
+    position: absolute;
+    bottom: 6rem;
+    width: 100%;
+}
+
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
@@ -170,10 +184,6 @@ html {
 .bg-medium   { background-color: var(--medium); }
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
-
-.swiper-slide img {
-  border: 1px solid var(--dark-text);
-}
 
 .border {
   border: 1px solid var(--dark-text);
@@ -188,7 +198,13 @@ html {
 }
 
 .storytelling-index-image {
-  border: 8px solid var(--light);
+  border: 14px solid var(--light) !important;
+}
+
+.storytelling-video {
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 50rem 50rem 0 0;
 }
 
 .bg-image {
@@ -275,7 +291,10 @@ h1 {
   letter-spacing: 15px;
 }
 
-h2 { font-size: 2rem; }
+h2 { 
+  font-size: 2.2rem;
+  letter-spacing: 10px;
+}
 h3 { 
   font-size: 2.4rem;
   letter-spacing: 15px;
