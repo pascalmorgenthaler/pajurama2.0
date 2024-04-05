@@ -9,6 +9,12 @@ seo:
   twitter_card:
   keywords:
   hide-from-google: false
+shootings:
+  - title: Personal Branding Fotoshoot
+    description_html: Cafe Brand Photoshoot in Schwyz, wir lieben es gemütliche und inspirierend Cafe Brand Photoshoot in Schwyz, wir lieben es gemütliche und inspirierend. 
+    video:
+    image: /images/index/landing-page-swiper/homepage-swiper-1.jpg
+    link: 
 ---
 
 
@@ -69,7 +75,7 @@ seo:
 <section class="padded" id="webdesign"> 
   <div class="capped-width grid-middle-spaceAround">
     <div class="col-12 padded-1 center">
-      <h1> WEB DESIGN </h1>
+      <h1> WEBDESIGN </h1>
     </div>
     <div class="col-4 padded-1 relative">
       <img src="/images/index/Web-design-1.jpg" class="border">
@@ -98,7 +104,7 @@ seo:
 
 
 
-<section class="padded-t-c1">
+<section class="padded-t-c1 padded-b-10">
   <div class="padded-1 margin-l-2">
     <h3> MOUNTAINS X MEDITERRANEAN</h3>
   </div>
@@ -131,3 +137,70 @@ seo:
     <!-- <div class="swiper-scrollbar"></div> -->
   </div>
   </section>
+
+
+  <section class="bg-dark text-white">
+    <div class="padded-c1 capped-width grid-middle-spaceAround">
+      <div class="po2">
+        <h1> STORYTELLING </h1>
+      </div>
+      <div class="col-5 relative">
+        <img src="/images/index/storytelling-index-1.jpg" class="border-white img-storytelling-index">
+        <div class="po1">
+          <p> BTS </p>
+        </div>
+      </div>
+      <div class="col-7 padded editable">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takim.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="padded">
+    <!-- Slider main container -->
+    <div class="swiper-storytelling-index">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for shooting in page.shootings %}
+        <div class="swiper-slide-storytelling-index">
+          <div class="grid">
+            <div class="col-7 grid">
+              <div class="col-12">
+                <h2> {{ shooting.title }} </h2>
+              </div>
+              <div class="col-6">
+                <p> video </p>
+              </div>
+              <div class="col-6-top">
+                <p> {{ shooting.description_html }} </p>
+              </div>
+            </div>
+            <div class="col-5 grid">
+              <div class="col-12">
+                <img src="{{ shooting.image }}" class="storytelling-index-image">
+              </div>
+              <div class="col-12">
+                {{ shooting.link }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+    
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+    
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    </section>
