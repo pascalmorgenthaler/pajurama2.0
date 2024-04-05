@@ -17,12 +17,12 @@ const swiper2 = new Swiper('.swiper-free-small-images', {
       // when window width is >= 480px
       550: {
         slidesPerView: 9,
-        spaceBetween: 30
+        spaceBetween: 20
       },
       // when window width is >= 640px
       830: {
         slidesPerView: 9,
-        spaceBetween: 40
+        spaceBetween: 20
       }
     },
 
