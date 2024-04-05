@@ -1,10 +1,9 @@
-const swiper1 = new Swiper('.swiper', {
+const swiper2 = new Swiper('.swiper-free-small-images', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 4,
-    spaceBetween: 60,
-    allowTouchMove: false,
+    slidesPerView: 9,
+    spaceBetween: 20,
     autoplay: {
       delay: 4500,
       reverseDirection: true,
@@ -12,17 +11,17 @@ const swiper1 = new Swiper('.swiper', {
     breakpoints: {
       // when window width is >= 320px
       400: {
-        slidesPerView: 4,
+        slidesPerView: 9,
         spaceBetween: 20
       },
       // when window width is >= 480px
       550: {
-        slidesPerView: 4,
+        slidesPerView: 9,
         spaceBetween: 30
       },
       // when window width is >= 640px
       830: {
-        slidesPerView: 4,
+        slidesPerView: 9,
         spaceBetween: 40
       }
     },
