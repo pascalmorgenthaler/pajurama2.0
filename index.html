@@ -496,33 +496,7 @@ shootings:
       <!-- Slides -->
       {% for testimonial in page.testimonials %}
       <div class="swiper-slide padded">
-        <div class="grid capped-width">
-          <div class="col-7 grid">
-            <div class="col-12 padded-1 center">
-              <h2 class="uppercase" style="line-height: 1.5;"> {{ shooting.title }} </h2>
-            </div>
-            <div class="col-6 padded-1 relative">
-              <div class="blub-3">
-                <img src="/icons/forms/blub-3.svg">
-              </div>
-              <video autoplay loop muted playsinline poster="/images/index/{{ shooting.cover }}" class="storytelling-video">
-                <source src="/images/index/videos/{{ shooting.video-webm }}" type="video/webm">
-                <source src="/images/index/videos/{{ shooting.video-mp4 }}" type="video/mp4">
-              </video>
-            </div>
-            <div class="col-6-top padded-1">
-              <p style="font-size: 1.3rem;"> {{ shooting.description_html }} </p>
-            </div>
-          </div>
-          <div class="col-5 grid-spaceAround">
-            <div class="col-10 padded-1">
-              <img src="{{ shooting.image }}" class="storytelling-index-image">
-            </div>
-            <div class="col-12 padded-1 center">
-              <a href="{{ shooting.link }}"> Link </a>
-            </div>
-          </div>
-        </div>
+       
       </div>
       {% endfor %}
     </div>
