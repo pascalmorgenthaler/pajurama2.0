@@ -11,17 +11,75 @@ seo:
   hide-from-google: false
 shootings:
   - title: Personal Branding Fotoshoot
-    description_html: Cafe Brand Photoshoot in Schwyz, wir lieben es gemütliche und inspirierend Cafe Brand Photoshoot in Schwyz, wir lieben es gemütliche und inspirierend. 
-    video-webm: personal-branding.webm
-    video-mp4: personal-branding.mp4
-    image: /images/index/landing-page-swiper/homepage-swiper-1.jpg
+    description_html: Dich und dein Wirken. 
+    video-webm: personal-branding-fotoshoot.webm
+    video-mp4: personal-branding-fotoshoot.mp4
+    image: /images/index/personal-branding-fotoshoot-img.jpg
+    cover: /intention-session-img-cover.jpg
     link: /personal-branding.html
-  - title: Personal Branding Fotoshoot
+  - title: Hotel Fotografie Produktion
+    description_html: Storytelling wird bei uns GROSS geschrieben.
+    video-webm: /hotel-fotografie-produktion.webm
+    video-mp4: /hotel-fotografie-produktion.mp4
+    cover: /intention-session-img-cover.jpg
+    image: /images/index/Hotel-fotografie-produktion-img.jpg
+    link: /hotel-fotografie-produktion.html
+  - title: Elopement
+    description_html: Storytelling wird bei uns GROSS geschrieben.
+    video-webm: /elopement-fotoshoot.webm
+    video-mp4: /elopement-fotoshoot.mp4
+    cover: /intention-session-img-cover.jpg
+    image: /images/index/elopement-img.jpg
+    link: /elopement.html
+  - title: Brand Fotoshoot
+    description_html: Storytelling wird bei uns GROSS geschrieben.
+    video-webm: /brand-fotoshoot.webm
+    video-mp4: /brand-fotoshoot.mp4
+    cover: /intention-session-img-cover.jpg
+    image: /images/index/brand-fotoshoot-img.jpg
+    link: /elopement.html
+  - title: Intention Session
     description_html: Cafe Brand Photoshoot in Schwyz, wir lieben es gemütliche und inspirierend Cafe Brand Photoshoot in Schwyz, wir lieben es gemütliche und inspirierend. 
-    video-webm: personal-branding.webm
-    video-mp4: personal-branding.mp4
-    image: /images/index/landing-page-swiper/homepage-swiper-1.jpg
-    link: 
+    video-webm: 
+    video-mp4: 
+    cover: /intention-session-img-cover.jpg
+    image: /images/index/intention-session-img.jpg
+    link: /intention-session.html
+  - title: Couple Fotoshoot
+    description_html: Storytelling wird bei uns GROSS geschrieben.
+    video-webm: /couple-fotoshoot.webm
+    video-mp4: /couple-fotoshoot.mp4
+    cover: /intention-session-img-cover.jpg
+    image: /images/index/couple-fotoshoot-img.jpg
+    link: /couple-fotoshoot.html
+  - title: Fashion Fotoshoot
+    description_html: Storytelling wird bei uns GROSS geschrieben.
+    video-webm: /fashion-fotoshoot.webm
+    video-mp4: /fashion-fotoshoot.mp4
+    cover: /intention-session-img-cover.jpg
+    image: /images/index/fashion-fotoshoot-img.jpg
+    link: /fashion-fotoshoot.html
+  - title: Cafe Fotoshoot
+    description_html: Storytelling wird bei uns GROSS geschrieben.
+    video-webm: /cafe-fotoshoot.webm
+    video-mp4: /cafe-fotoshoot.mp4
+    cover: /intention-session-img-cover.jpg
+    image: /images/index/cafe-fotoshoot-img.jpg
+    link: /cafe-fotoshoot.html
+  - title: Tourismus
+    description_html: Storytelling wird bei uns GROSS geschrieben.
+    video-webm: /tourism.webm
+    video-mp4: /tourism.mp4
+    cover: /intention-session-img-cover.jpg
+    image: /images/index/tourism-fotoshoot-img.jpg
+    link: /tourismus-fotoshoot.html
+  - title: Mountain Wedding
+    description_html: Storytelling wird bei uns GROSS geschrieben.
+    video-webm: 
+    video-mp4: 
+    cover: /mountain-wedding-img-cover.jpg
+    image: /images/index/tourism-fotoshoot-img.jpg
+    link: /tourismus-fotoshoot.html
 ---
 
 
@@ -105,7 +163,7 @@ shootings:
     </div>
   </div>
   <div class="webdesign-lines">
-    <img src="/icons/forms/Lines-1.svg">
+    <img src="/icons/forms/Lines-1.svg" style="width: 100vw;">
   </div>
 </section>
 
@@ -147,7 +205,7 @@ shootings:
 
 
   <section class="bg-dark text-white">
-    <div class="padded-c1 capped-width grid-middle-spaceAround">
+    <div class="padded-c1 relative capped-width grid-middle-spaceAround">
       <div class="po2">
         <h1> STORYTELLING </h1>
       </div>
@@ -170,7 +228,7 @@ shootings:
 
   <section class="relative">
     <div class="lines-2">
-      <img src="/icons/forms/Lines-1.svg">
+      <img src="/icons/forms/Lines-1.svg" style="width: 100vw;">
     </div>
     <!-- Slider main container -->
     <div class="swiper-storytelling-index">
@@ -179,7 +237,7 @@ shootings:
         <!-- Slides -->
         {% for shooting in page.shootings %}
         <div class="swiper-slide padded">
-          <div class="grid">
+          <div class="grid capped-width">
             <div class="col-7 grid">
               <div class="col-12 padded-1 center">
                 <h2 class="uppercase" style="line-height: 1.5;"> {{ shooting.title }} </h2>
@@ -188,7 +246,7 @@ shootings:
                 <div class="blub-3">
                   <img src="/icons/forms/blub-3.svg">
                 </div>
-                <video autoplay loop muted playsinline poster="/images/index/landing-page-swiper/homepage-swiper-1.jpg" class="storytelling-video">
+                <video autoplay loop muted playsinline poster="/images/index/{{ shooting.cover }}" class="storytelling-video">
                   <source src="/images/index/videos/{{ shooting.video-webm }}" type="video/webm">
                   <source src="/images/index/videos/{{ shooting.video-mp4 }}" type="video/mp4">
                 </video>
@@ -198,7 +256,7 @@ shootings:
               </div>
             </div>
             <div class="col-5 grid-spaceAround">
-              <div class="col-8 padded-1">
+              <div class="col-10 padded-1">
                 <img src="{{ shooting.image }}" class="storytelling-index-image">
               </div>
               <div class="col-12 padded-1 center">
@@ -220,3 +278,166 @@ shootings:
       <!-- <div class="swiper-scrollbar"></div> -->
     </div>
     </section>
+
+
+
+
+
+
+    <section class="padded padded-t-0 padded-b-c1">
+      <div class="capped-width center padded">
+        <h2> BANGERS </h2>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper-bangers">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-content-bangers">
+              <img src="/images/index/bangers/banger-1.jpg" class="border-brown"  style="height: 500px;">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content-bangers">
+              <img src="/images/index/bangers/banger-2.jpg" class="border-brown"  style="height: 500px;">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content-bangers">
+              <img src="/images/index/bangers/banger-1.jpg" class="border-brown"  style="height: 500px;">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content-bangers">
+              <img src="/images/index/bangers/banger-2.jpg" class="border-brown"  style="height: 500px;">
+            </div>
+          </div>          
+          <div class="swiper-slide">
+            <div class="swiper-content-bangers">
+              <img src="/images/index/bangers/banger-1.jpg" class="border-brown"  style="height: 500px;">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content-bangers">
+              <img src="/images/index/bangers/banger-2.jpg" class="border-brown"  style="height: 500px;">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content-bangers">
+              <img src="/images/index/bangers/banger-1.jpg" class="border-brown"  style="height: 500px;">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content-bangers">
+              <img src="/images/index/bangers/banger-2.jpg" class="border-brown"  style="height: 500px;">
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+      
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"> </div>
+        <div class="swiper-button-next"> </div> -->
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </section>
+
+
+
+
+    <section class="capped-width">
+      <div class="padded relative capped-width grid-middle-spaceAround">
+        <div class="po5">
+          <h1> BRANDING </h1>
+        </div>
+        <div class="col-5-left left relative grid-middle-spaceAround">
+          <div class="col-5 padded-lg margin-l-c1">
+            <img src="/icons/logos/blume-weiss.svg">
+          </div>
+          <div class="col-5 padded-lg margin-l-c2">
+            <img src="/icons/logos/feuer-weiss.svg">
+          </div>
+          <img src="/icons/forms/Index-logo-design-s1-1.svg" class="po4">
+        </div>
+        <div class="col-7 padded editable center relative">
+          <h3> ILLUSTRATION </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takim.
+          </p>
+          <img src="/icons/forms/Index-logo-design-s1-3.svg" class="po3">
+          <img src="/icons/forms/Index-logo-design-s1-2.svg" class="po6">
+        </div>
+      </div>
+    </section>
+  
+
+
+    <section class="capped-width padded">
+      <div class="padded relative capped-width grid-middle-spaceAround">
+        <img src="/icons/forms/Index-logo-design-s3.png">
+        <div class="po6">
+          <h1> BTS </h1>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="capped-width">
+      <div class="padded relative capped-width grid-middle-spaceAround">
+        <div class="col-7 padded editable center relative">
+          <h3> ILLUSTRATION </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takim.
+          </p>
+          <img src="/icons/forms/Index-logo-design-s1-3.svg" class="po7">
+          <img src="/icons/forms/Index-logo-design-s1-2.svg" class="po8">
+        </div>
+        <div class="col-5-right right relative grid-middle-spaceAround">
+          <div class="col-5 padded margin-r-c1">
+            <img src="/icons/logos/rituale-und-heilpflanzen-1.svg">
+          </div>
+          <div class="col-5 padded margin-r-c2">
+            <img src="/icons/logos/rituale-und-heilpflanzen-2.svg">
+          </div>
+          <img src="/icons/forms/Index-logo-design-s2-1.svg" class="po9">
+        </div>
+
+      </div>
+    </section>
+
+
+<section class="padded-t-c3">
+  <div class="padded padded-b-2 capped-width">
+    <img src="/images/index/index-ueber-uns.png">
+  </div>
+  <div class="marquee po10">
+    <ul class="marquee-content">
+      <li> KREATIV </li>
+      <li> FREIHEIT </li>
+      <li> BEGEISTERUNG </li>
+      <li> GEFÜHL</li>
+      <li> KREATIV </li>
+      <li> BEWEGUNG </li>
+      <li> GEFÜHL </li>
+      <li> UNSCHÄRFE</li>
+      <li> KREATIV </li>
+      <li> FREIHEIT </li>
+      <li> BEGEISTERUNG </li>
+      <li> GEFÜHL</li>
+      <li> KREATIV </li>
+      <li> BEWEGUNG </li>
+      <li> GEFÜHL </li>
+      <li> UNSCHÄRFE</li>
+    </ul>
+  </div>
+  <div class="capped-width margin-l-c3 padded padded-t-0 center">
+    <a href="/ueber-uns.html" class="button-light"> Erfahre mehr über uns und unsere Philosophie </a>
+  </div>
+
+</section>
+

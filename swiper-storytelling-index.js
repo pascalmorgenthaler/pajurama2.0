@@ -6,9 +6,13 @@ const swiper3 = new Swiper('.swiper-storytelling-index', {
     spaceBetween: 200,
     allowTouchMove: true,
     pauseOnMouseEnter: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
     autoplay: {
       delay: 6500,
-      reverseDirection: true,
+      reverseDirection: false,
     },
     breakpoints: {
       // when window width is >= 320px

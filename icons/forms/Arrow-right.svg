@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="27" viewBox="0 0 74 27">
+  <defs>
+    <clipPath id="clip-Arrow-right">
+      <rect width="74" height="27"/>
+    </clipPath>
+  </defs>
+  <g id="Arrow-right" clip-path="url(#clip-Arrow-right)">
+    <g id="Gruppe_6" data-name="Gruppe 6">
+      <line id="Linie_5" data-name="Linie 5" x1="51" transform="translate(51.25 14) rotate(180)" fill="none" stroke="#fff" stroke-width="1"/>
+      <g id="Polygon_3" data-name="Polygon 3" transform="translate(73.75 0.5) rotate(90)" fill="#fff">
+        <path d="M 25.16052436828613 23.5 L 0.8394758105278015 23.5 L 13 1.049801588058472 L 25.16052436828613 23.5 Z" stroke="none"/>
+        <path d="M 13 2.099584579467773 L 1.67894172668457 23 L 24.32105827331543 23 L 13 2.099584579467773 M 13 0 L 26 24 L 0 24 L 13 0 Z" stroke="none" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
