@@ -1,0 +1,76 @@
+---
+layout: default
+title: Blog Page 
+language: deutsch
+slick-slider: false
+pop-up: false
+seo:
+  title: Blogposts
+  description:
+  social_image:
+  twitter_card:
+  keywords:
+  hide-from-google: false
+---
+
+<!------------------------ Split blog loop (part 1) ------------------------>
+
+
+<section class=" xs-padded-t-4">
+    <section class="capped-width grid-spaceAround-middle">
+        <div class="col-12 padded padded-b-0 center">
+            <h1 class="editable lindsey"> Blog </h1>
+        </div>
+    </section>
+</section>
+
+
+<section class="capped-width md-padded-2 padded-t-1 padded-b-0">
+
+    <div class="capped-width padded padded-t-1 grid-center">
+
+        
+
+            {% for post in site.posts limit: 12 %}
+                {% if post.language == 'deutsch' %}
+
+                    <div class="col-4_sm-6_xs-12 post-item-blog-page padded-1">
+                        <a href="{{ post.url }}" class="bg-image lazy square round-edges-1" style="background-image: url({{post.featured_image}});"></a>
+                        <div class="padded-t-1 padded-b-1">
+                            
+                    
+                            <span class="post-info">by {{post.author}} // </span> 
+                            <span class="post-info"> {{post.date | date: "%m.%d.%Y" }} </span>
+                    
+                            <h2 class="margin-t-1 lindsey"> {{ post.title }} </h2>
+                            <p> {{ post.description }} </p>
+                            <a href="{{ post.url }}" class="subtle-button"> Weiterlesen </a>
+                    
+                        </div>
+                    </div>
+
+                {% endif %}
+            {% endfor %}
+
+    </div>
+
+</section>
+
+
+<!------------------------ Split blog loop (part 2) ------------------------>
+<!----->
+<section class="capped-width md-padded-2 padded-b-05 padded-t-0">
+
+    <!-- This checks if there are more than 15 blog posts, and if there are shows a link to the full blog archive -->
+
+    {% assign post_count = site.posts | size %}
+    
+    {% if post_count > 15 %}
+        <div class="center padded-2">
+            <a class="button" href="/blog-archiv"> Archiv </a>
+        </div>
+       
+    {% endif %}
+
+</section>
+
