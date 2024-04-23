@@ -33,9 +33,9 @@ const swiper5 = new Swiper('.swiper-testimonial', {
     },
 
       // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
   
   });

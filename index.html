@@ -80,6 +80,28 @@ shootings:
     cover: /mountain-wedding-img-cover.jpg
     image: /images/index/tourism-fotoshoot-img.jpg
     link: /tourismus-fotoshoot.html
+testimonials:
+  - name: Karin
+    image: /images/testimonials/testimonial-karin.png
+    description_html: Die Gestaltung der Webseite und das Fotografieren mit euch fühlte sich so leicht und einfach an. Ihr habt mich abgeholt, genau wahrgenommen, was ich möchte und seid stets auf meine Vorschläge und Fragen eingegangen. Das ganze Package hat sich sehr stimmig und rund angefühlt und ihr habt alles sehr professionell und kompetent wie schnell gehandhabt. <br> Vielen Dank für das wundervolle Endprodukt.
+  - name: Iglu-Dorf GmbH
+    image: /images/testimonials/testimonial-igludorf.png
+    description_html: Mit dem von Pascal & Juliana produzierten Fotos sind wir sehr zufrieden. Sie sind qualitativ hochwertig und stellen die Vielfalt unseres Iglu-Erlebnisses ausgezeichnet dar. Pascal & Juliana setzten mit viel Liebe zum Detail alle unsere Vorgaben sorgfältig und genau um und gaben uns wertvolle Inputs, wie die Motive am besten in Szene gesetzt werden können. Wir freuen uns die Fotos, welche wir von Pascal & Juliana erhalten haben, auf unserer Website und auf weiteren Kanälen zu präsentieren.
+  - name: Adventurly
+    image: /images/testimonials/testimonial-adventurly.png
+    description_html: Wir haben mit Pascal für unser Startup Adventurly zusammengearbeitet. In der Konzeption hat er tolle Ideen eingebracht und die gesamte Abwicklung war sehr professionell und effizient. Der schlussendliche Output (Bilder & Videos) entsprach genau unseren Vorstellungen und hat unsere Zielgruppe perfekt angesprochen. Wir können Pascal und das ganze Team von Pajurama sehr weiterempfehlen!
+  - name: Kajal
+    image: /images/testimonials/testimonial-kajal.png
+    description_html: We had the pleasure of meeting these two beautiful people during our trip to Switzerland! My fiancé booked them to do our proposal photo shoot and they were absolutely incredible! So polite and professional and just an amazing couple to be around! Pascal and Juliana, thank you for capturing the most beautiful day! We are so grateful for the most perfect pictures we will cherish our whole lives!
+  - name: CafeLaden
+    image: /images/testimonials/testimonial-cafeladen.png
+    description_html: Ein grosses Dankeschön! für euer kreatives, flinkes, superfreundliches und sympathisches Wirken. Sehr professionell und einfühlsam habt ihr es geschafft, den CaféLaden in ganz neuem Glanz erstrahlen zu lassen. <br> Wir fühlten uns gut begleitet im Prozess und werden ganz sicher weiterhin mit euch arbeiten. <br> Viel Erfolg wünschen euch Isabel & Reto
+  - name: Narayan
+    image: /images/testimonials/testimonial-narayan.png
+    description_html: Best experience iv ever had in a photo shoot. I’m a meditation teacher, healer and performing artist, and I regularly need to have new material. Juliana and Pascal are creative, joyful and real professionals behind the camera and behind their screens as the edit and create their magic❤️ thank you guys for an amazing experience. Coming back soon to get another photo😅
+  - name: Schwyz Homoeopathie & Tändlishof
+    image: /images/testimonials/testimonial-taendlishof.png
+    description_html: Best experience iv ever had in a photo shoot. I’m a meditation teacher, healer and performing artist, and I regularly need to have new material. Juliana and Pascal are creative, joyful and real professionals behind the camera and behind their screens as the edit and create their magic❤️ thank you guys for an amazing experience. Coming back soon to get another photo😅
 ---
 
 
@@ -443,6 +465,76 @@ shootings:
 
 
 
+<section class="capped-width padded">
+  <div class="grid-middle-spaceAround">
+    <div class="col-4 padded-2">
+      <img src="/icons/worked-for/adventurly_logo-text.svg">
+    </div>
+    <div class="col-4 padded-2">
+      <img src="/icons/worked-for/iglu-dorf.png">
+    </div>
+    <div class="col-4 padded-2">
+      <img src="/icons/worked-for/GadmerLodge.svg">
+    </div>
+    <div class="col-4 padded-2">
+      <img src="/icons/worked-for/taendlishof.png">
+    </div>
+    <div class="col-4 padded-2">
+      <img src="/icons/worked-for/dementality.webp">
+    </div>
+    <div class="col-4 padded-2">
+      <img src="/icons/worked-for/nikin.webp">
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="relative">
+  <div class="capped-width padded-2">
+    <H2> TESTIMONIALS </H2>
+  </div>
+  <!-- Slider main container -->
+  <div class="swiper-testimonial">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {% for testimonial in page.testimonials %}
+      <div class="swiper-slide">
+        <div class="padded capped-width grid-middle-spaceAround">
+          <div class="col-2"></div>
+          <div class="col-10 padded-2 grid-middle-spaceAround">
+            <div class="col-5">
+              <img src="{{ testimonial.image }}">
+            </div>
+            <div class="col-6">
+              <h3 class="uppercase"> {{ testimonial.name }} </h3>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-8 margin-t-c3">
+                <p> {{testimonial.description_html}} </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+  
+    <!-- If we need navigation buttons-->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>  
+  
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+  </div>
+  </section>
+
+
+
+
 <section class="capped-width padded-2 border">
 
   <div class="editable center">
@@ -460,54 +552,3 @@ shootings:
   </div>
 
 </section>
-
-
-<section class="capped-width padded">
-  <div class="grid-middle-spaceAround">
-    <div class="col-2 padded-1">
-      <img src="/icons/worked-for/adventurly_logo-text.svg">
-    </div>
-    <div class="col-2 padded-1">
-      <img src="/icons/worked-for/iglu-dorf.png">
-    </div>
-    <div class="col-2 padded-1">
-      <img src="/icons/worked-for/GadmerLodge.svg">
-    </div>
-    <div class="col-2 padded-1">
-      <img src="/icons/worked-for/taendlishof.png">
-    </div>
-    <div class="col-2 padded-1">
-      <img src="/icons/worked-for/dementality.webp">
-    </div>
-    <div class="col-2 padded-1">
-      <img src="/icons/worked-for/nikin.webp">
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="relative">
-  <!-- Slider main container -->
-  <div class="swiper-testimonial">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      {% for testimonial in page.testimonials %}
-      <div class="swiper-slide padded">
-       
-      </div>
-      {% endfor %}
-    </div>
-    <!-- If we need pagination -->
-    <!-- <div class="swiper-pagination"></div> -->
-  
-    <!-- If we need navigation buttons -->
-    <!-- <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>  -->
-  
-    <!-- If we need scrollbar -->
-    <!-- <div class="swiper-scrollbar"></div> -->
-  </div>
-  </section>
