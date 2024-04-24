@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="500" viewBox="0 0 512 500">
+  <defs>
+    <clipPath id="clip-Blub-4">
+      <rect width="512" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="Blub-4" clip-path="url(#clip-Blub-4)">
+    <path id="Pfad_28" data-name="Pfad 28" d="M261.5,0C405.922,0,523,117.078,523,261.5S463.339,499.107,318.916,499.107c-77.555,0-173.232-12.213-238.607-77.588S-10.3,275.052,35,169.673,117.078,0,261.5,0Z" transform="translate(-11.526 0.446)" fill="#fff"/>
+  </g>
+</svg>

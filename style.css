@@ -306,6 +306,13 @@ html {
   left: 6%;
 }
 
+.po12 {
+  z-index: 3;
+  position: absolute;
+  bottom: 11%;
+  left: 6%;
+}
+
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
 .bg-dark     { background-color: var(--dark);}
@@ -349,6 +356,13 @@ html {
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
+}
+
+.bg-blub-4 { 
+  background-image: url('/icons/forms/Blub-4.svg');
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 
 .bg-menu-banner { background-image: url('/images/menu/menu-banner.jpg'); }
@@ -438,7 +452,11 @@ h3 {
   letter-spacing: 15px;
  }
 h4 { font-size: 1.6rem; }
-h5 { font-size: 1.4rem; }
+h5 { 
+  font-size: 1.6rem; 
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 h6 { font-size: 1.2rem; }
 
 p, li {
@@ -448,6 +466,8 @@ p, li {
   font-weight: 100;
   font-size: 1.6rem;
 }
+
+.p-small { font-size: 1.4rem ;}
 
 h2:last-child, 
 h3:last-child, 
