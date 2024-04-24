@@ -10,10 +10,10 @@ const swiper5 = new Swiper('.swiper-testimonial', {
       enabled: true,
       onlyInViewport: false,
     },
-    autoplay: {
-      delay: 6500,
-      reverseDirection: false,
-    },
+    // autoplay: {
+    //   delay: 6500,
+    //   reverseDirection: false,
+    // },
     breakpoints: {
       // when window width is >= 320px
       400: {

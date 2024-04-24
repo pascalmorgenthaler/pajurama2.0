@@ -104,6 +104,7 @@ html {
 
 .margin-r-c1 { margin-left: 10rem;}
 .margin-r-c2 { margin-right: -9rem;}
+.margin-r-c3 { margin-right: -10rem;}
 
 .margin-t-05 { margin-top: 0.5rem; }
 .margin-b-05 { margin-bottom: 0.5rem; }
@@ -125,6 +126,7 @@ html {
 .margin-r-2 { margin-right: 2rem; }
 
 .margin-b-c1 { margin-bottom: 250px; }
+.margin-b-c2 { margin-bottom: -7rem; }
 
 .margin-t-0 { margin-top: 0; }
 .margin-b-0 { margin-bottom: 0; }
@@ -297,6 +299,13 @@ html {
   z-index: -20;
 }
 
+.po11 {
+  z-index: 3;
+  position: absolute;
+  top: 11%;
+  left: 6%;
+}
+
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
 .bg-dark     { background-color: var(--dark);}
@@ -417,6 +426,8 @@ h1 {
   font-size: 5rem;
   letter-spacing: 15px;
 }
+
+.fourrem { font-size: 4rem;}
 
 h2 { 
   font-size: 2.2rem;
@@ -1277,8 +1288,12 @@ hr.short.center {
 
 
 
+/* ------------ Personal Branding PAge  ----------------------- */
 
-
+.pb-top-img {
+  border-radius: 20rem;
+  border: 1px solid var(--dark-text);
+}
 
 
 /* ------------ Responsive Styles ----------------------- */
