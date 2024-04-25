@@ -1502,4 +1502,7 @@ hr.short.center {
       .link {
         font-size: 1.5rem;
       }
+      .personal-text-storytelling h2 {
+        letter-spacing: 5px;
+      }
 }
