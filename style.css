@@ -1499,4 +1499,7 @@ hr.short.center {
       h2 {
         font-size: 1.4rem;
       }
+      .link {
+        font-size: 1.5rem;
+      }
 }
