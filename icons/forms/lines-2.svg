@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1594" height="185" viewBox="0 0 1594 185">
+  <defs>
+    <clipPath id="clip-lines-2">
+      <rect width="1594" height="185"/>
+    </clipPath>
+  </defs>
+  <g id="lines-2" clip-path="url(#clip-lines-2)">
+    <path id="Pfad_141" data-name="Pfad 141" d="M2648.72,34.308s-325.124,90.933-687.876,96.1S1567.511,50.58,1197.713,54.975c-373.534,4.439-439.388,98.356-731,93.189S70.44,62.485,31.252,34.308s-90.34-99.176-90.34-99.176" transform="translate(-984.346 -53.044)" fill="none" stroke="#62594f" stroke-width="1"/>
+    <path id="Pfad_140" data-name="Pfad 140" d="M3250.917,87.432s-400.576,112.035-847.511,118.4-484.614-98.353-940.231-92.938c-460.219,5.469-541.356,121.182-900.647,114.816S114.2,97.666,80.355,66.585s-132.3-181.812-129.478-231.9" transform="translate(-1193.096 -24.327)" fill="none" stroke="#62594f" stroke-width="1"/>
+  </g>
+</svg>
