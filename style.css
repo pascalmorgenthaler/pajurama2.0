@@ -346,6 +346,34 @@ html {
   margin-left: -3rem;
 }
 
+.index-landscape {
+  width: 100%;
+  margin-top: -5rem;
+}
+
+.jeep {
+  width: 8rem;
+  transform: translateY(-140px);
+  animation: jeep linear 20s infinite;
+}
+
+
+@keyframes jeep {
+  0% { transform: translateX(0) translateY(-140px) ; }
+  10% { transform: translateX(10vw) translateY(-190px); }
+  20% { transform: translateX(20vw) translateY(-150px); }
+  30% { transform: translateX(30vw) translateY(-200px); }
+  40% { transform: translateX(40vw) translateY(-260px) ; }
+  50% { transform: translateX(50vw) translateY(-240px); }
+  60% { transform: translateX(60vw) translateY(-220px); }
+  70% { transform: translateX(70vw) translateY(-200px); }
+  80% { transform: translateX(80vw) translateY(-260px); }
+  90% { transform: translateX(90vw) translateY(-220px); }
+  100% { transform: translateX(100vw) translateY(-190px);}
+}
+
+
+
 .storytelling-index-image {
   border: 14px solid var(--light) !important;
 }
