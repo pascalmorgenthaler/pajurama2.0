@@ -48,6 +48,8 @@ html {
 .padded-sm { padding: 2.5%; }
 .padded    { padding: 5%;   }
 
+.padded-t { padding-top: 5%;}
+
 .padded-c1 {
   padding: 3% 5% 5% 0;
 }
@@ -352,6 +354,18 @@ html {
   z-index: 3;
   width: 10rem;
   right: 9rem;
+}
+
+.po16 {
+  position: absolute;
+  z-index: 5;
+  color: white;
+}
+
+.po16 p {
+  font-size: 2rem;
+  letter-spacing: 7px;
+  text-indent: 7px;
 }
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
@@ -1429,6 +1443,24 @@ hr.short.center {
 
 
 /* ------------ Personal Branding PAge  ----------------------- */
+
+.pb-quote-banner {
+  padding: 0.5rem;
+  padding-top: 10%;
+}
+
+.bg-black {
+  background-color: black;
+  border: 1px solid var(--dark-text);
+  border-radius: 1rem;
+  opacity: 1;
+}
+
+.pb-quote-banner-img {
+  border: 1px solid var(--dark-text);
+  border-radius: 1rem;
+  opacity: 0.8;
+}
 
 .bg-dark-portfolio img {
   transition: 0.3s;
