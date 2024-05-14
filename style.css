@@ -52,9 +52,14 @@ html {
   padding: 3% 5% 5% 0;
 }
 
+.padded-c2 {
+  padding: 5% 0 5% 5%;
+}
+
 .padded-lg { padding: 10%;  }
 .padded-xl { padding: 0 15% 20% 15%;}
 
+.padded-03 { padding: 0.3rem}
 .padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem; }
 .padded-2  { padding: 2rem; }
@@ -75,6 +80,8 @@ html {
 .padded-b-1 { padding-bottom: 1rem; }
 .padded-l-1 { padding-left: 1rem; }
 .padded-r-1 { padding-right: 1rem; }
+
+.padded-t-lg { padding-top: 8% !important}
 
 .padded-t-c1 { padding-top: 257px}
 .padded-b-c1 { padding-bottom: 10rem;}
@@ -121,6 +128,11 @@ html {
   margin-top: -3rem;
 }
 
+.margin-t-c4 {
+  margin-top: -9rem;
+}
+
+
 .margin-t-2 { margin-top: 2rem; }
 .margin-b-2 { margin-bottom: 2rem; }
 .margin-l-2 { margin-left: 2rem; }
@@ -166,6 +178,7 @@ html {
 
 
 
+
 .swiper-slide{
   width: fit-content;
  }
@@ -205,6 +218,7 @@ html {
 .po1 p {
   font-size: 6rem;
   letter-spacing: 15px;
+  text-indent: 15px;
 }
 
 .po2 {
@@ -316,6 +330,30 @@ html {
   left: 6%;
 }
 
+.po13 {
+  position: absolute;
+  bottom: 2rem;
+  z-index: 3;
+  width: 24rem;
+  right: -2rem;
+}
+
+.po14 {
+  position: absolute;
+  bottom: 2rem;
+  z-index: 3;
+  width: 10rem;
+  right: 9rem;
+}
+
+.po15 {
+  position: absolute;
+  bottom: 2rem;
+  z-index: 3;
+  width: 10rem;
+  right: 9rem;
+}
+
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
 .bg-dark     { background-color: var(--dark);}
@@ -324,13 +362,25 @@ html {
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 
+
+
+
 .border {
   border: 1px solid var(--dark-text);
+}
+
+.border-portfolio {
+  border: 1px solid var(--dark-text);
+  border-radius: 50rem;
 }
 
 .border-2 {
   border: 1px solid var(--dark-text);
   border-radius: 10px;
+}
+.border-3 {
+  border: 1px solid var(--dark-text);
+  border-radius: 25px;
 }
 .border-white {
   border: 1px solid white;
@@ -379,7 +429,7 @@ html {
 .storytelling-index-image {
   border: 14px solid var(--light) !important;
 }
-
+ 
 .storytelling-video {
   object-fit: cover;
   max-width: 100%;
@@ -390,11 +440,13 @@ html {
 
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
-    background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
+    background-image: url('/images/personal-branding-fotografie/experience/pb-exp-img-4.jpg');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
 }
+
+.bg-editing-pb { background-image: url('/images/personal-branding-fotografie/experience/pb-exp-img-4.jpg');}
 
 .bg-blub-4 { 
   background-image: url('/icons/forms/Blub-4.svg');
@@ -477,6 +529,7 @@ h1 {
   font-weight: 100;
   font-size: 5rem;
   letter-spacing: 15px;
+  text-indent: 15px;
 }
 
 .fourrem { font-size: 4rem;}
@@ -484,22 +537,24 @@ h1 {
 h2 { 
   font-size: 2.2rem;
   letter-spacing: 10px;
+  text-indent: 1px;
 }
 h3 { 
   font-size: 2.4rem;
   letter-spacing: 15px;
+  text-indent: 15px;
  }
 h4 { font-size: 1.6rem; }
 h5 { 
   font-size: 1.6rem; 
   text-transform: uppercase;
   letter-spacing: 5px;
+  text-indent: 5px;
 }
 h6 { font-size: 1.2rem; }
 
 p, li {
-  line-height: 1.4; 
-  margin-bottom: 1rem;
+  line-height: 1.6; 
   font-family: ivypresto-display, serif;
   font-weight: 100;
   font-size: 1.2rem;
@@ -564,6 +619,23 @@ p a {
   color: var(--featured-text); 
 } */
 
+.button-light-spacing {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+  padding: 0.2rem 0.2rem;
+  border: 1px solid;
+  font-size: 2.3rem;
+  letter-spacing: 10px;
+  text-indent: 10px;
+}
+
+.button-light-spacing:hover {
+  color: white;
+  background-color: var(--dark-text);
+  border: 1px solid var(--dark-text);
+}
+
 .button-light { 
     display: inline-block;
     text-decoration: none;
@@ -608,6 +680,7 @@ p a {
 .webdesign-links a {
   font-size: 1.6rem;
   letter-spacing: 10px;
+  text-indent: 10px;
 }
 
 .webdesign-text {
@@ -686,6 +759,7 @@ p a {
   margin-top: 1.5rem;
   padding: 0 1.5rem;
   letter-spacing: 10px;
+  text-indent: 10px;
   font-weight: 100;
   font-family: ivypresto-display, serif;
 }
@@ -829,6 +903,7 @@ header div {
 .menu-button-style-1 {
   font-size: 5rem;
   letter-spacing: 25px;
+  text-indent: 25px;
   z-index: 11;
   position: absolute;
   right: 0;
@@ -842,6 +917,7 @@ header div {
 .menu-text {
   font-size: 5rem;
   letter-spacing: 25px;
+  text-indent: 25px;
   z-index: 11;
   position: absolute;
   right: 0;
@@ -851,6 +927,7 @@ header div {
 .schliessen {
   font-size: 3rem;
   letter-spacing: 10px;
+  text-indent: 10px;
   z-index: 11;
   cursor: pointer;
 }
@@ -1024,6 +1101,7 @@ span {
 .main-link {
   font-size: 3rem;
   letter-spacing: 8px;
+  text-indent: 8px;
   z-index: 11;
   cursor: pointer;
   font-family: ivypresto-display, serif;
@@ -1035,6 +1113,7 @@ span {
 .sub-link {
   font-size: 1.2rem;
   letter-spacing: 5px;
+  text-indent: 5px;
   z-index: 11;
   cursor: pointer;
   font-family: ivypresto-display, serif;
@@ -1087,6 +1166,7 @@ span {
   font-size: 1.2rem;
   font-style: italic;
   letter-spacing: 5px;
+  text-indent: 5px;
   z-index: 11;
   cursor: pointer;
   font-family: ivypresto-display, serif;
@@ -1328,6 +1408,7 @@ hr.short.center {
   text-transform: uppercase;
   padding: 0.7rem;
   letter-spacing: 10px;
+  text-indent: 10px;
 }
 .container-item.active .link + .image-left {
   opacity: 1;
@@ -1348,6 +1429,94 @@ hr.short.center {
 
 
 /* ------------ Personal Branding PAge  ----------------------- */
+
+.bg-dark-portfolio img {
+  transition: 0.3s;
+}
+
+.portfolio-link:hover .bg-dark-portfolio img {
+  opacity: 0.6;
+}
+
+.portfolio-link:hover .kerze-overlay {
+  opacity: 1;
+}
+
+.bg-dark-portfolio     { 
+  background-color: var(--dark-text);
+  border-radius: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kerze-overlay {
+  position: absolute;
+  width: 7rem;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.swiper-portfolio {
+  margin-left: -6rem;
+}
+
+/* .swiper-portfolio .swiper-slide-active img {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  z-index: 1;
+  margin-left: 20px;
+}
+.swiper-slide-next{
+  margin-left: 20px;
+} */
+
+
+.buche-jetzt {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 17px;
+  text-indent: 17px;
+  font-weight: 100;
+  transition: 0.3s;
+}
+
+.buche-jetzt-sub {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 17px;
+  text-indent: 17px;
+  font-weight: 100;
+  transition: 0.3s;
+}
+
+.buche-jetzt-rechteck-1 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 55%;
+  background-color: var(--featured);
+  z-index: -1;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.buche-jetzt-link {
+  cursor: pointer;
+}
+
+
+.buche-jetzt-link:hover .buche-jetzt-rechteck-1 {
+  height: 100%;
+}
+
 
 .st-lines {
   /* min-width: 100vw; */
@@ -1378,6 +1547,20 @@ hr.short.center {
   font-size: 2rem;
 }
 
+.pb-exp-n4 {
+  position: absolute;
+  bottom: 3rem;
+  left: 1.6rem;
+  font-size: 2rem;
+}
+
+.pb-exp-n5 {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  font-size: 2rem;
+}
+
 .pb-top-img {
   border-radius: 20rem;
   border: 1px solid var(--dark-text);
@@ -1385,6 +1568,12 @@ hr.short.center {
 
 
 /* ------------ Responsive Styles ----------------------- */
+
+/* ------------ Illustrationen ----------------------- */
+
+.illu-1 {
+  width: 10rem;
+}
 
 /* General CSS Responsive Styles (Apply everywhere unless overriden) */ 
 
@@ -1534,5 +1723,6 @@ hr.short.center {
       }
       .personal-text-storytelling h2 {
         letter-spacing: 5px;
+        text-indent: 5px;
       }
 }
