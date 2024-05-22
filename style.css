@@ -181,6 +181,17 @@ html {
 
 
 
+.swiper-bangers {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-bangers .swiper-slide {
+    width: auto !important;
+}
+
+
+
 
 .swiper-slide{
   width: fit-content;
@@ -498,6 +509,9 @@ html {
     background-position: center; 
     background-repeat: no-repeat;
 }
+
+.bg-banger-1 { background-image: url('/images/index/bangers/banger-1.jpg'); }
+.bg-banger-2 { background-image: url('/images/index/bangers/banger-2.jpg'); }
 
 .bg-editing-pb { background-image: url('/images/personal-branding-fotografie/experience/pb-exp-img-4.jpg');}
 
