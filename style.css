@@ -1875,7 +1875,7 @@ hr.short.center {
         font-size: 1.4rem;
       }
       h1 {
-        font-size: 2.2rem;
+        font-size: 3rem;
         letter-spacing: 8px;
         text-indent: 8px;
       }
@@ -1942,7 +1942,7 @@ hr.short.center {
           }
           .webdesign-blub {
             position: absolute;
-            bottom: -192px;
+            bottom: -208px;
             right: -13%;
             z-index: -2;
             max-width: 340px;
@@ -1977,7 +1977,7 @@ hr.short.center {
       }
 
       p {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
       }
 
       .img-storytelling-index {
