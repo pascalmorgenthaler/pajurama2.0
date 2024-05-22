@@ -262,7 +262,7 @@ testimonials:
       <img src="/icons/forms/Lines-2.svg" style="width: 100vw;">
     </div>
     <!-- Slider main container -->
-    <div class="swiper-storytelling-index">
+    <div class="swiper-storytelling-index relative">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -287,12 +287,18 @@ testimonials:
               </div>
             </div>
             <div class="col-5_xs-6 grid-spaceAround">
-              <div class="col-10_xs-12 padded-1">
+              <div class="col-9_xs-12 padded-1">
                 <img src="{{ shooting.image }}" class="storytelling-index-image">
               </div>
-              <div class="col-12 padded-1 center">
-                <a href="{{ shooting.link }}" class="button-light"> Mehr erfahren </a>
+              <div class="col-3"></div>
+              <div class="col-3-middle padded-1 left relative">
+                <a href="{{ shooting.link }}" class="st-ind-link">
+                  <img src="/images/illustrationen/kamera.svg">
+                  <img src="/images/illustrationen/flash.svg" class="flash">
+                  <p> mehr erfahren... </p>
+                </a>
               </div>
+              <div class="col-4"></div>
             </div>
             <div class="col-12-top padded-1 show-xs">
               <p> {{ shooting.description_html }} </p>
@@ -305,8 +311,9 @@ testimonials:
       <!-- <div class="swiper-pagination"></div> -->
     
       <!-- If we need navigation buttons -->
-      <!-- <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>  -->
+      <!-- <div class="swiper-button-prev"></div> -->
+      <div class="swiper-button-next st-ind-arrow">
+      </div> 
     
       <!-- If we need scrollbar -->
       <!-- <div class="swiper-scrollbar"></div> -->

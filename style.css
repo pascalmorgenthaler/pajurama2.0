@@ -207,6 +207,13 @@ html {
   left: var(--swiper-navigation-sides-offset, 150px);
   right: auto;
 }
+
+.st-ind-arrow {
+  position: absolute;
+  top: 82%;
+  right: 10%;
+}
+
   
 
 
@@ -240,6 +247,28 @@ html {
   right: -7rem;
   z-index: -5;
   width: 20rem;
+}
+
+.st-ind-link:hover .flash{
+  opacity: 1;
+}
+.st-ind-link:hover p {
+  opacity: 1;
+}
+
+.flash {
+  transition: 0.3s;
+  opacity: 0;
+  position: absolute;
+  width: 3rem;
+  top: -70px;
+  right: 3rem;
+}
+
+.st-ind-link p {
+  color: var(--dark);
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .lines-2 {
@@ -580,7 +609,7 @@ p, li {
   line-height: 1.6; 
   font-family: ivypresto-display, serif;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 
