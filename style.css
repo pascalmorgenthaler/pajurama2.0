@@ -109,6 +109,7 @@ html {
 
 .margin-l-c1 { margin-left: -10rem;}
 .margin-l-c2 { margin-right: 9rem;}
+.margin-l-c4 { margin-left: 9rem;}
 
 .margin-l-c3 { margin-right: 5rem;}
 
@@ -375,6 +376,7 @@ html {
 .bg-medium   { background-color: var(--medium); }
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
+.bg-accent   { background-color: var(--accent);}
 
 
 
@@ -414,7 +416,7 @@ html {
   width: 100%;
   margin-left: 0.4rem;
   margin-right: 0.4rem;
-  margin-top: -3rem;
+  margin-top: 2rem;
 }
 
 /* .jeep {
@@ -626,7 +628,12 @@ a {
 
 p a {
     text-decoration: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid inherit;
+}
+
+h2 a {
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
 /* p a:hover { 
@@ -871,7 +878,7 @@ header {
   display: inline-block;
 }
 
-.sub-link {
+/* .sub-link {
   position: relative;
   text-decoration: none;
   padding: 0 !important;
@@ -895,6 +902,10 @@ header {
 .sub-link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+} */
+
+.sub-link:hover {
+  color: var(--dark);
 }
 
 
@@ -1046,7 +1057,7 @@ footer nav a {
   max-height: 100vh;
   user-select: none;
   counter-reset: menucounter;
-  /* overflow: scroll; */
+  overflow: scroll;
   opacity: 0;
 }
 
@@ -1105,7 +1116,7 @@ footer nav a {
   transform: translate3d(0, 0%, 0) rotateX(0deg);
 }
 span {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /* ------------------- END ROTATING EFFECT ----------------*/
@@ -1114,7 +1125,7 @@ span {
 
 .main-link {
   font-size: 3rem;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   text-indent: 8px;
   z-index: 11;
   cursor: pointer;
@@ -1125,7 +1136,7 @@ span {
 }
 
 .sub-link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 5px;
   text-indent: 5px;
   z-index: 11;
@@ -1163,6 +1174,10 @@ span {
   position: absolute;
   bottom: 1rem;
   z-index: 0;
+}
+
+.lines img {
+  width: 100vw;
 }
 
 .menu-number {
@@ -1466,13 +1481,13 @@ hr.short.center {
   transition: 0.3s;
 }
 
-.portfolio-link:hover .bg-dark-portfolio img {
+/* .portfolio-link:hover .bg-dark-portfolio img {
   opacity: 0.6;
 }
 
 .portfolio-link:hover .kerze-overlay {
   opacity: 1;
-}
+} */
 
 .bg-dark-portfolio     { 
   background-color: var(--dark-text);
@@ -1659,6 +1674,17 @@ hr.short.center {
 
     .fourrem { font-size: 3rem;}
     .xs-margin-t-3 { margin-top: 2rem;}
+
+    .menu-button-style-1 {
+      font-size: 4rem;
+    }
+
+    .header-blub {
+      width: 16rem;
+      }
+      .menu-button-style-1 {
+        font-size: 3.8rem;
+      }
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -1689,6 +1715,40 @@ hr.short.center {
   .sm-square        { padding-bottom: 100%; }
 
   .fourrem { font-size: 2.5rem;}
+
+  span {
+    font-size: 1.4rem;
+  }
+  .sub-link-title {
+    font-size: 1rem;
+  }
+
+  .menu-item::before {
+    left: -6px;
+    top: 19px;
+    }
+
+    .schliessen {
+      font-size: 2.2rem;
+      letter-spacing: 6px;
+      text-indent: 6px;
+    }
+
+    .menu-button-style-1 {
+      font-size: 3rem;
+    }
+
+    .swiper {
+      margin-left: -3rem;
+    }
+
+    .header-blub {
+      width: 14rem;
+      }
+      .menu-button-style-1 {
+      right: -12px;
+      top: -26px;
+      }
 
 }
 
@@ -1729,7 +1789,11 @@ hr.short.center {
       margin-right: -9rem;
     }
 
+    .xs-margin-t-15 { margin-top: 1.5rem;}
+    .xs-margin-0 { margin: 0;}
     .xs-margin-t-3 { margin-top: 4rem;}
+    .xs-padded-1 { padding: 1rem;}
+
     .po11 {
       top: 8%;
     }
@@ -1757,4 +1821,39 @@ hr.short.center {
         letter-spacing: 5px;
         text-indent: 5px;
       }
+
+      .main-link {
+        letter-spacing: 3px;
+        text-indent: 3px;
+        }
+
+        .sub-link-title {
+          font-size: 1.1rem;
+        }
+
+        .menu-right {
+          width: 35%;
+        }
+
+        span {
+          font-size: 2rem;
+        }
+
+        .schliessen {
+          font-size: 1.6rem;
+          letter-spacing: 3px;
+          text-indent: 3px;
+        }
+
+        .menu-button-style-1 {
+          font-size: 2.3rem;
+        }
+
+        .menu-button-style-1 {
+          letter-spacing: 14px;
+          text-indent: 14px;
+          right: -6px;
+          top: -14px;
+          }
+
 }

@@ -9,6 +9,16 @@ seo:
   twitter_card:
   keywords:
   hide-from-google: false
+testimonials:
+  - name: Karin
+    image: /images/testimonials/testimonial-karin.png
+    description_html: Die Gestaltung der Webseite und das Fotografieren mit euch fühlte sich so leicht und einfach an. Ihr habt mich abgeholt, genau wahrgenommen, was ich möchte und seid stets auf meine Vorschläge und Fragen eingegangen. Das ganze Package hat sich sehr stimmig und rund angefühlt und ihr habt alles sehr professionell und kompetent wie schnell gehandhabt. <br> Vielen Dank für das wundervolle Endprodukt.
+  - name: Narayan
+    image: /images/testimonials/testimonial-narayan.png
+    description_html: Best experience iv ever had in a photo shoot. I’m a meditation teacher, healer and performing artist, and I regularly need to have new material. Juliana and Pascal are creative, joyful and real professionals behind the camera and behind their screens as the edit and create their magic❤️ thank you guys for an amazing experience. Coming back soon to get another photo😅
+  - name: Schwyz Homoeopathie & Tändlishof
+    image: /images/testimonials/testimonial-taendlishof.png
+    description_html: Juliana und Pascal üben ihren Job mit Herzblut aus. Sie sind so kreativ, so «gspürig», es ist so viel Freude und Leidenschaft zu spüren. Ich fand die Zusammenarbeit mega! Wir haben zwei Webseiten gemacht, eine für unseren Hof und eine für meine Praxis und auch ein Logo. Es war sehr gut, dass die Webseite kombiniert mit dem Fotoshooting war – nur so entsteht eine wunderschöne Webseite. Wir wurden sehr gut durch den Prozess geführt. Man konnte die Wünsche einbringen, erhielt jedoch auch eine ehrliche Meinung der beiden, was ich auch sehr bereichernd fand. Man spürt ihre Professionalität und ihr Wissen. Ich fand mich sehr gut aufgehoben, es wurde alles immer sehr gut erklärt und klar kommuniziert. Auch ihre unkomplizierte Art fand ich sehr bereichernd. Es war einfach schön mit ihnen zusammenzuarbeiten – von A bis Z! Wir sind happy mit den Ergebnissen die Webseiten wurden einfach MEGA! Gut fand ich auch ihre klaren Meinungen und auch Vorschläge, sie wissen am besten wie es schlussendlich wirkt und ich habe darauf vertraut. Und es hat sich gelohnt! Ich kann die beiden nur weiterempfehlen. Und ich möchte mich noch einmal herzlich bedanken für die wundervolle Zusammenarbeit! Macht weiter so!!
 ---
 
 <section>
@@ -35,7 +45,7 @@ seo:
     <div class="capped-width padded"> 
         <h2> Dich und dein Wirken. </h2>    
     </div>
-    <div class="bg-featured padded">
+    <div class="bg-accent padded">
         <div class="capped-width">
             <p> Holistisches Webdsign für Selbstständige und einzigartiges Shopify Shop Design für ganzheitliche MarkenHolistisches Webdsign für Selbstständige und einzigartiges Shopify Shop Design für ganzheitliche Marken Holistisches Webdsign für Selbstständige und einzigartiges Shopify Shop Design für ganzheitliche MarkenHolistisches Webdsign für Selbstständige und einzigartiges Shopify Shop Design für ganzheitliche Marken. </p>
         </div>
@@ -310,7 +320,7 @@ seo:
 
 
 <section>
-    <div class="capped-width right padded">
+    <div class="capped-width center padded">
         <h2> PORTFOLIO </h2>
     </div>
     <!-- Slider main container -->
@@ -389,3 +399,54 @@ seo:
     </div>
 
 </section>
+
+
+<section class="padded">
+    <div class="capped-width center">
+        <h2> Fülle jetzt noch das <a href="/kontakt.html">Kontaktformular</a>   aus. </h2>
+        <br>
+        <img src="/images/illustrationen/happy.svg" class="illu-1">
+    </div>
+</section>
+
+
+<section class="relative">
+    <div class="capped-width padded-2">
+      <H2 class="margin-l-c4"> TESTIMONIALS </H2>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper-testimonial">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for testimonial in page.testimonials %}
+        <div class="swiper-slide">
+          <div class="padded capped-width grid-middle-spaceAround">
+            <div class="col-2"></div>
+            <div class="col-10 padded-2 grid-middle-spaceAround">
+              <div class="col-5">
+                <img src="{{ testimonial.image }}">
+              </div>
+              <div class="col-6">
+                <h3 class="uppercase"> {{ testimonial.name }} </h3>
+              </div>
+              <div class="col-4"></div>
+              <div class="col-8 margin-t-c3">
+                  <p> {{testimonial.description_html}} </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+    
+      <!-- If we need navigation buttons-->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>  
+    
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    </section>
