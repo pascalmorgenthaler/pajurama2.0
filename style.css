@@ -176,7 +176,7 @@ html {
 .swiper-free-small-images {
   width: 100%;
   height: auto;
-  margin-left: -49%;
+  margin-left: -46%;
 }
 
 
@@ -1652,6 +1652,10 @@ hr.short.center {
     }
     h5 {
     font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
     }
 
     .bg-blub-4 {
