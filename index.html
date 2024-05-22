@@ -140,9 +140,9 @@ testimonials:
 </section>
 
 
-<section class="relative">
-  <img src="/images/index/index-landscape/landscape-2.svg" class="index-landscape">
-
+<section class="relative flex-center">
+  <img src="/images/index/index-landscape/landscape-2.svg" class="index-landscape hide-xs">
+  <img src="/images/logo/pajurama-kreativagentur-logo.svg" class="show-xs index-logo">
   <!-- <div class="jeep">
     <img src="/images/index/index-landscape/jeep.svg">
   </div> -->
@@ -259,7 +259,7 @@ testimonials:
 
   <section class="relative">
     <div class="lines-2">
-      <img src="/icons/forms/Lines-1.svg" style="width: 100vw;">
+      <img src="/icons/forms/Lines-2.svg" style="width: 100vw;">
     </div>
     <!-- Slider main container -->
     <div class="swiper-storytelling-index">
@@ -269,11 +269,11 @@ testimonials:
         {% for shooting in page.shootings %}
         <div class="swiper-slide padded">
           <div class="grid capped-width">
-            <div class="col-7 grid">
+            <div class="col-7_xs-6 grid">
               <div class="col-12 padded-1 center">
                 <h2 class="uppercase" style="line-height: 1.5;"> {{ shooting.title }} </h2>
               </div>
-              <div class="col-6 padded-1 relative">
+              <div class="col-6_xs-12 padded-1 relative">
                 <div class="blub-3">
                   <img src="/icons/forms/blub-3.svg">
                 </div>
@@ -282,17 +282,20 @@ testimonials:
                   <source src="/images/index/videos/{{ shooting.video-mp4 }}" type="video/mp4">
                 </video>
               </div>
-              <div class="col-6-top padded-1">
-                <p style="font-size: 1.3rem;"> {{ shooting.description_html }} </p>
+              <div class="col-6_xs-12-top padded-1 hide-xs">
+                <p> {{ shooting.description_html }} </p>
               </div>
             </div>
-            <div class="col-5 grid-spaceAround">
-              <div class="col-10 padded-1">
+            <div class="col-5_xs-6 grid-spaceAround">
+              <div class="col-10_xs-12 padded-1">
                 <img src="{{ shooting.image }}" class="storytelling-index-image">
               </div>
               <div class="col-12 padded-1 center">
-                <a href="{{ shooting.link }}"> Link </a>
+                <a href="{{ shooting.link }}" class="button-light"> Mehr erfahren </a>
               </div>
+            </div>
+            <div class="col-12-top padded-1 show-xs">
+              <p> {{ shooting.description_html }} </p>
             </div>
           </div>
         </div>

@@ -10,10 +10,10 @@ const swiper3 = new Swiper('.swiper-storytelling-index', {
       enabled: true,
       onlyInViewport: false,
     },
-    autoplay: {
-      delay: 6500,
-      reverseDirection: false,
-    },
+    // autoplay: {
+    //   delay: 8500,
+    //   reverseDirection: false,
+    // },
     breakpoints: {
       // when window width is >= 320px
       400: {

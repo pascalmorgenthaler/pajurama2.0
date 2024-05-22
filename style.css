@@ -421,6 +421,11 @@ html {
   margin-top: 2rem;
 }
 
+.index-logo {
+  padding: 10%;
+  width: 80%;
+}
+
 /* .jeep {
   width: 8rem;
   transform: translateY(-140px);
@@ -1749,6 +1754,10 @@ hr.short.center {
   span {
     font-size: 1.4rem;
   }
+
+  h2 {
+    font-size: 1.6rem;
+  }
   .sub-link-title {
     font-size: 1rem;
   }
@@ -1872,7 +1881,9 @@ hr.short.center {
       }
 
       h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        letter-spacing: 8px;
+        text-indent: 8px;
       }
       h1 {
         font-size: 3rem;
@@ -1984,5 +1995,16 @@ hr.short.center {
         margin-left: -3rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
+      }
+
+      .storytelling-index-image {
+        border: 5px solid var(--light) !important;
+        z-index: -3;
+        position: relative
+      }
+
+      .lines-2 {
+        position: absolute;
+        top: 22rem;
       }
 }
