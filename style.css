@@ -1695,7 +1695,7 @@ hr.short.center {
       }
 
       .webdesign-text p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         }
         .webdesign-blub {
         bottom: -244px;
@@ -1779,6 +1779,12 @@ hr.short.center {
       .webdesign-blub {
         bottom: -213px;
       }
+
+      .swiper-free-small-images {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+      }
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -1848,6 +1854,12 @@ hr.short.center {
         letter-spacing: 8px;
         text-indent: 8px;
       }
+
+      h3 {
+        font-size: 1.4rem;
+        letter-spacing: 8px;
+        text-indent: 8px;
+      }
       .link {
         font-size: 1.5rem;
       }
@@ -1911,4 +1923,11 @@ hr.short.center {
             max-width: 340px;
           }
 
+
+          .padded-b-10 {
+            padding-bottom: 17%;
+            }
+            .padded-t-c1 {
+            padding-top: 191px;
+            }
 }
