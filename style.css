@@ -1711,6 +1711,10 @@ hr.short.center {
         top: -2.6rem;
         right: 4rem;
       }
+
+      .po1 p {
+        font-size: 4rem;
+      }
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -1801,6 +1805,10 @@ hr.short.center {
         position: absolute;
         top: -2.6rem;
         right: 4rem;
+      }
+
+      .po1 p {
+        font-size: 4rem;
       }
 }
 
@@ -1964,11 +1972,17 @@ hr.short.center {
 
       .po1 {
         position: absolute;
-        bottom: -3rem;
+        bottom: -1rem;
         right: 0rem;
       }
 
       p {
         font-size: 1.6rem;
+      }
+
+      .img-storytelling-index {
+        margin-left: -3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       }
 }
