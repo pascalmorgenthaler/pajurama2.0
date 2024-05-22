@@ -1700,6 +1700,17 @@ hr.short.center {
         .webdesign-blub {
         bottom: -244px;
         }
+
+        h1 {
+          font-size: 3rem;
+        }
+
+
+      .po2 {
+        position: absolute;
+        top: -2.6rem;
+        right: 4rem;
+      }
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -1784,6 +1795,12 @@ hr.short.center {
         width: 100%;
         height: auto;
         margin-left: 0;
+      }
+
+      .po2 {
+        position: absolute;
+        top: -2.6rem;
+        right: 4rem;
       }
 }
 
@@ -1930,4 +1947,28 @@ hr.short.center {
             .padded-t-c1 {
             padding-top: 191px;
             }
+
+
+
+      .po2 {
+        position: absolute;
+        top: -1.7rem;
+        right: 1.7rem;
+      }
+
+      .po1 p {
+        font-size: 4rem;
+        letter-spacing: 10px;
+        text-indent: 10px;
+      }
+
+      .po1 {
+        position: absolute;
+        bottom: -3rem;
+        right: 0rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
 }
