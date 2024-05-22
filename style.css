@@ -369,6 +369,8 @@ html {
   text-indent: 7px;
 }
 
+
+
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
 .bg-dark     { background-color: var(--dark);}
@@ -678,13 +680,14 @@ h2 a {
 }
 
 .webdesign-links {
-  position: absolute;
-  bottom: -28px;
+    position: absolute;
+    bottom: -59px;
 }
+
 
 .webdesign-blub {
   position: absolute;
-  bottom: -61%;
+  bottom: -292px;
   right: -40%;
   z-index: -2;
   max-width: 482px;
@@ -702,6 +705,7 @@ h2 a {
   font-size: 1.6rem;
   letter-spacing: 10px;
   text-indent: 10px;
+  display: block;
 }
 
 .webdesign-text {
@@ -713,7 +717,7 @@ h2 a {
 }
 
 .webdesign-text p {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 /* suggested additional styles 
@@ -1685,6 +1689,13 @@ hr.short.center {
       .menu-button-style-1 {
         font-size: 3.8rem;
       }
+
+      .webdesign-text p {
+        font-size: 1.3rem;
+        }
+        .webdesign-blub {
+        bottom: -244px;
+        }
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -1750,6 +1761,20 @@ hr.short.center {
       top: -26px;
       }
 
+      .webdesign-links a {
+        font-size: 1.3rem;
+        letter-spacing: 6px;
+        text-indent: 6px;
+        display: block;
+      }
+
+      .webdesign-links {
+        bottom: -50px;
+      }
+
+      .webdesign-blub {
+        bottom: -213px;
+      }
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -1814,6 +1839,11 @@ hr.short.center {
       h2 {
         font-size: 1.4rem;
       }
+      h1 {
+        font-size: 2.2rem;
+        letter-spacing: 8px;
+        text-indent: 8px;
+      }
       .link {
         font-size: 1.5rem;
       }
@@ -1854,6 +1884,27 @@ hr.short.center {
           text-indent: 14px;
           right: -6px;
           top: -14px;
+          }
+
+          .po18 {
+            position: absolute;
+            min-width: 60vw;
+            bottom: 0;
+            right: -51%;
+          }
+          
+          .po17 {
+            position: absolute;
+            min-width: 60vw;
+            bottom: 0;
+            left: -51%;
+          }
+          .webdesign-blub {
+            position: absolute;
+            bottom: -170px;
+            right: -13%;
+            z-index: -2;
+            max-width: 340px;
           }
 
 }
