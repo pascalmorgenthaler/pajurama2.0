@@ -5,14 +5,14 @@ const swiper3 = new Swiper('.swiper-storytelling-index', {
     slidesPerView: 1,
     spaceBetween: 200,
     allowTouchMove: true,
-    pauseOnMouseEnter: true,
     keyboard: {
       enabled: true,
       onlyInViewport: false,
     },
     autoplay: {
-      delay: 8500,
+      delay: 6500,
       reverseDirection: false,
+      pauseOnMouseEnter: true,
     },
     breakpoints: {
       // when window width is >= 320px

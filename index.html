@@ -11,21 +11,21 @@ seo:
   hide-from-google: false
 shootings:
   - title: Personal Branding Fotoshoot
-    description_html: Dich und dein Wirken. 
+    description_html: Dich und dein Wirken. Bist du bereits selbstständig Erwerbend oder möchtest du dich selbstständig machen? Mit dem Personal Branding Fotoshoot werden wir dir die perfekte fotografische Grundlage für einen erfolgreichen Aufbau deiner Träume geben.
     video-webm: personal-branding-fotoshoot.webm
     video-mp4: personal-branding-fotoshoot.mp4
     image: /images/index/personal-branding-fotoshoot-img.jpg
     cover: /intention-session-img-cover.jpg
     link: /personal-branding.html
   - title: Hotel Fotografie Produktion
-    description_html: Storytelling wird bei uns GROSS geschrieben.
+    description_html: Bei unseren Hotel Fotografie Produktionen ist es uns enorm wichtig, das Gefühl der Unterkunft ausdrucksstark in Fotos festzuhalten um dem potentiellen Gast schon im Bild das Gefühl von Frieden, Ruhe und Glück zu vermitteln, das er haben könnte, wenn er einen Aufenthalt bucht.
     video-webm: /hotel-fotografie-produktion.webm
     video-mp4: /hotel-fotografie-produktion.mp4
     cover: /intention-session-img-cover.jpg
     image: /images/index/Hotel-fotografie-produktion-img.jpg
     link: /hotel-fotografie-produktion.html
   - title: Elopement
-    description_html: Storytelling wird bei uns GROSS geschrieben.
+    description_html: Zusammen in der Natur zu heiraten ist etwas wunderschönes. Naturverbunden, echt, authentisch, emotional, frei und abenteuerlich. Wir freuen uns darauf, dein Elopement in den Schweizer Alpen begleiten zu dürfen. 
     video-webm: /elopement-fotoshoot.webm
     video-mp4: /elopement-fotoshoot.mp4
     cover: /intention-session-img-cover.jpg
@@ -269,11 +269,11 @@ testimonials:
         {% for shooting in page.shootings %}
         <div class="swiper-slide padded">
           <div class="grid capped-width">
-            <div class="col-7_xs-6 grid">
+            <div class="col-7_xs-6 grid-spaceAround">
               <div class="col-12 padded-1 center">
                 <h2 class="uppercase" style="line-height: 1.5;"> {{ shooting.title }} </h2>
               </div>
-              <div class="col-6_xs-12 padded-1 relative">
+              <div class="col-6_sm-8_xs-12 padded-1 relative">
                 <div class="blub-3">
                   <img src="/icons/forms/blub-3.svg">
                 </div>
@@ -282,20 +282,20 @@ testimonials:
                   <source src="/images/index/videos/{{ shooting.video-mp4 }}" type="video/mp4">
                 </video>
               </div>
-              <div class="col-6_xs-12-top padded-1 hide-xs">
+              <div class="col-6_sm-12-top padded-1 hide-xs">
                 <p> {{ shooting.description_html }} </p>
               </div>
             </div>
             <div class="col-5_xs-6 grid-spaceAround">
-              <div class="col-9_xs-12 padded-1">
+              <div class="col-9_md-12_xs-12 padded-1">
                 <img src="{{ shooting.image }}" class="storytelling-index-image">
               </div>
               <div class="col-3"></div>
-              <div class="col-3-middle padded-1 left relative">
+              <div class="col-4_md-5_sm-6_xs-8-middle padded-1 center relative ">
                 <a href="{{ shooting.link }}" class="st-ind-link">
                   <img src="/images/illustrationen/kamera.svg">
                   <img src="/images/illustrationen/flash.svg" class="flash">
-                  <p> mehr erfahren... </p>
+                  <p> mehr erfahren </p>
                 </a>
               </div>
               <div class="col-4"></div>
