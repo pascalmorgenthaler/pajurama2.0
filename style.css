@@ -1856,7 +1856,7 @@ hr.short.center {
       }
 
       h3 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         letter-spacing: 8px;
         text-indent: 8px;
       }
@@ -1917,7 +1917,7 @@ hr.short.center {
           }
           .webdesign-blub {
             position: absolute;
-            bottom: -170px;
+            bottom: -192px;
             right: -13%;
             z-index: -2;
             max-width: 340px;
