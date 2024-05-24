@@ -54,6 +54,10 @@ html {
   padding: 3% 5% 5% 0;
 }
 
+.padded-r-c1 {
+  padding-right: 5rem;
+}
+
 .padded-c2 {
   padding: 5% 0 5% 5%;
 }
@@ -107,7 +111,7 @@ html {
 .margin-l { margin-left: 5%; }
 .margin-r { margin-right: 5%; }
 
-.margin-l-c1 { margin-left: -10rem;}
+.margin-l-c1 { margin-left: -4rem;}
 .margin-l-c2 { margin-right: 9rem;}
 .margin-l-c4 { margin-left: 9rem;}
 
@@ -237,11 +241,11 @@ html {
 
 
  .swiper-button-next, .swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset, 150px);
+  right: var(--swiper-navigation-sides-offset, 10%);
   left: auto;
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
-  left: var(--swiper-navigation-sides-offset, 150px);
+  left: var(--swiper-navigation-sides-offset, 10%);
   right: auto;
 }
 
@@ -317,18 +321,19 @@ html {
 
 .po4 {
   position: absolute;
-  top: -3.3rem;
+  top: -4.3rem;
+  left: -15rem;
+  min-width: 55rem;
   bottom: 0;
   right: 0;
-  left: -14rem;
-  min-width: 60rem;
   z-index: -6;
 }
 
 
 .po3 {
   position: absolute;
-  top: 0;
+  top: -39px;
+  min-width: 47rem;
   bottom: 0;
   right: 0;
   left: 0;
@@ -343,30 +348,40 @@ html {
 
 .po6  {
   position: absolute;
-  left: -4rem;
-  top: 27px;
+  left: -1rem;
+  top: -39px;
+  min-width: 47rem;
   bottom: 0;
   right: 0;
+  z-index: -5;
+}
 
+.po66  {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
 }
 
 .po7 {
   position: absolute;
-  top: 0;
+  top: -39px;
+  min-width: 47rem;
   bottom: 0;
-  left: 0;
   right: 0;
-  z-index: -10;
+  z-index: -6;
 }
 
 
 .po8 {
   position: absolute;
-  top: 27px;
+  top: -39px;
+  min-width: 47rem;
   bottom: 0;
-  left: 3rem;
-  right: 0;
-  z-index: -6;
+  right: -1rem;
+  z-index: -5;
 }
 
 .po9  {
@@ -382,7 +397,7 @@ html {
 
 .po10 {
   position: absolute !important;
-  bottom: 12rem;
+  bottom: 17%;
   z-index: -20;
 }
 
@@ -398,6 +413,16 @@ html {
   position: absolute;
   bottom: 11%;
   left: 6%;
+}
+
+.cafe-laden {
+  width: 75%;
+}
+.nycha {
+  width: 85%;
+}
+.gadmerlodge {
+  width: 90%;
 }
 
 .po13 {
@@ -1755,7 +1780,9 @@ hr.short.center {
     }
 
     h3 {
-      font-size: 1.4rem;
+      font-size: 2rem;
+      letter-spacing: 10px;
+      text-indent: 10px;
     }
 
     .bg-blub-4 {
@@ -1802,7 +1829,7 @@ hr.short.center {
         }
 
         h1 {
-          font-size: 3rem;
+          font-size: 3.5rem;
         }
 
 
@@ -1815,6 +1842,14 @@ hr.short.center {
       .po1 p {
         font-size: 4rem;
       }
+
+      .po4 {
+        top: -6rem;
+      }
+
+      .po5 {
+        right: 15rem;
+      }
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -1822,6 +1857,25 @@ hr.short.center {
 
 
 @media(max-width:48em) {
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    letter-spacing: 7px;
+    text-indent: 7px;
+  }
+
+  .po4 {
+    top: -7rem;
+    min-width: 52rem;
+  }
+
+  .po5 {
+    right: 7rem;
+  }
 
 	.show-sm { display: block; }
 	.hide-sm { display: none;  }
@@ -1940,6 +1994,10 @@ hr.short.center {
         right: auto;
         top: 45%;
       }
+
+      .marquee-content {
+        animation: scrolling 32s linear infinite;
+      }
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -2012,11 +2070,12 @@ hr.short.center {
         text-indent: 8px;
       }
 
-      h3 {
-        font-size: 1.8rem;
-        letter-spacing: 8px;
-        text-indent: 8px;
-      }
+        h3 {
+          font-size: 1.6rem;
+          letter-spacing: 3px;
+          text-indent: 8px;
+        }
+      
       .link {
         font-size: 1.5rem;
       }
@@ -2149,4 +2208,52 @@ hr.short.center {
         top: 45%;
       }
 
+      .po4 {
+        left: -16rem;
+        min-width: 701%;
+      }
+
+      .po9 {
+        min-width: 700%;
+        right: 0;
+        top: -40%;
+      }
+
+      .po6 {
+        min-width: 72rem;
+        }
+
+        .po8 {
+          min-width: 72rem;
+          }
+        .po3 {
+          min-width: 72rem;
+        }
+
+        .po7 {
+          min-width: 72rem;
+        }
+
+        .po5 {
+          left: 1rem;
+          top: -4.3rem;
+        }
+
+        .xs-padded-b-3 {
+          padding-bottom: 3rem;
+        }
+        .marquee-content {
+          animation: scrolling 30s linear infinite;
+        }
+
+        .margin-t-c3 {
+          margin-top: 2rem;
+        }
+
+        .xs-margin-t-1 {
+          margin-top: 1rem;
+        }
+        .margin-l-c4 {
+          margin-left: 1rem;
+        }
 }
