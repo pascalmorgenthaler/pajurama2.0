@@ -2397,4 +2397,10 @@ hr.short.center {
           padding: 2.4rem;
           text-align: center;
         }
+
+        .margin-t-c4 {
+          margin-top: 0;
+        }
+        .xs-padded-t-0 { padding-top: 0;}
+        .xs-padded-b-0 { padding-bottom: 0;}
 }
