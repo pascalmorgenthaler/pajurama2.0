@@ -2415,4 +2415,8 @@ hr.short.center {
         }
         .xs-padded-t-0 { padding-top: 0;}
         .xs-padded-b-0 { padding-bottom: 0;}
+
+        .sub-link {
+          font-size: 1.3rem;
+        }
 }
