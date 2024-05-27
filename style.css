@@ -33,6 +33,13 @@ html {
 .capped-width-narrow    { max-width: 1000px; margin: auto; }
 .capped-width-v-narrow  { max-width: 800px;  margin: auto; }
 
+.flex-flip:nth-child(2n) {
+  flex-flow:row-reverse wrap;
+}
+
+.flex-flip-normal {
+  flex-flow:row-reverse wrap;
+}
 
 .tall-100 { min-height: 100vh; }
 .tall-90  { min-height: 90vh; }
@@ -337,12 +344,12 @@ html {
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: -6;
+  z-index: -3;
 }
 
 .po5  {
     position: absolute;
-    top: -3.3rem;
+    top: -5.3rem;
     right: 24rem;
 }
 
@@ -660,7 +667,7 @@ h2 {
 h3 { 
   font-size: 2.4rem;
   letter-spacing: 15px;
-  text-indent: 15px;
+  text-indent: 3px;
  }
 h4 { font-size: 1.6rem; }
 h5 { 
@@ -2047,6 +2054,12 @@ hr.short.center {
     .xs-margin-0 { margin: 0;}
     .xs-margin-t-3 { margin-top: 4rem;}
     .xs-padded-1 { padding: 1rem;}
+    .xs-padded-b { padding-bottom: 5%; }
+    .xs-padded-10 { padding: 10%;}
+
+    .xs-padding-0 {
+      padding: 0;
+    }
 
     .po11 {
       top: 8%;
@@ -2265,7 +2278,19 @@ hr.short.center {
 
         .testimonial h3 {
           font-size: 2.5rem;
-          letter-spacing: 10px;
-          margin-left: 4rem;
+          letter-spacing: 7px;
+          text-indent: 2px;
+        }
+
+        .swiper-testimonial .swiper-button-next, .swiper-rtl .swiper-button-prev {
+          right: var(--swiper-navigation-sides-offset, 5%);
+          left: auto;
+          top: 96%;
+        }
+
+        .swiper-testimonial .swiper-button-prev, .swiper-rtl .swiper-button-next {
+          left: var(--swiper-navigation-sides-offset, 5%);
+          right: auto;
+          top: 96%;
         }
 }
