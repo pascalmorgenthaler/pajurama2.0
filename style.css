@@ -1769,7 +1769,8 @@ hr.short.center {
 
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md,
+.show-xs-inline {
 	display: none; 
 }
 
@@ -1790,7 +1791,8 @@ hr.short.center {
     font-size: 1.4rem;
     }
     h5 {
-    font-size: 1.2rem;
+      font-size: 1.4rem;
+      letter-spacing: 5px;
     }
 
     h3 {
@@ -1820,7 +1822,15 @@ hr.short.center {
       padding: 1rem;
     }
 
-
+    .padded-t-c4 {
+      padding-top: 2rem;
+    }
+    .pb-exp-n1 {
+      position: absolute;
+      bottom: 2rem;
+      left: 1rem;
+      font-size: 2rem;
+    }
     .fourrem { font-size: 3rem;}
     .xs-margin-t-3 { margin-top: 2rem;}
 
@@ -2021,6 +2031,7 @@ hr.short.center {
 
 		.show-xs { display: block; }
 		.hide-xs { display: none;  }
+    .show-xs-inline { display: inline-block;}
 
     .subtle-heading-xs {
       font-weight: 300;
@@ -2093,7 +2104,7 @@ hr.short.center {
         h3 {
           font-size: 1.6rem;
           letter-spacing: 3px;
-          text-indent: 8px;
+          text-indent: 1px;
         }
       
       .link {
@@ -2304,5 +2315,18 @@ hr.short.center {
           letter-spacing: 3px;
           text-indent: 3px;
           font-size: 1.4rem;
+        }
+
+        .po13 {
+          position: absolute;
+          bottom: 2rem;
+          z-index: 3;
+          min-width: 10rem;
+          right: -4rem;
+          min-height: 11rem;
+        }
+
+        .xs-padded-t-2 {
+          padding-top: 2rem;
         }
 }
