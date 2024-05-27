@@ -2079,9 +2079,9 @@ hr.short.center {
       }
 
       h2 {
-        font-size: 1.6rem;
-        letter-spacing: 8px;
-        text-indent: 8px;
+        font-size: 2rem;
+        letter-spacing: 4px;
+        text-indent: 4px;
       }
       h1 {
         font-size: 3rem;
@@ -2292,5 +2292,16 @@ hr.short.center {
           left: var(--swiper-navigation-sides-offset, 5%);
           right: auto;
           top: 96%;
+        }
+
+        footer nav a {
+          text-align: right;
+          display: block;
+          text-decoration: none;
+          padding: 0.2rem 0 0.2rem 0.2rem;
+          font-weight: 100;
+          letter-spacing: 3px;
+          text-indent: 3px;
+          font-size: 1.4rem;
         }
 }
