@@ -2,8 +2,8 @@ const swiper6 = new Swiper('.swiper-portfolio', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 3.7,
-    spaceBetween: 60,
+    slidesPerView: 2.7,
+    spaceBetween: 10,
     // centeredSlides: true,
     allowTouchMove: true,
     // autoplay: {

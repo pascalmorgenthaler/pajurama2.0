@@ -2381,4 +2381,18 @@ hr.short.center {
           width: 10rem;
           right: -1rem;
         }
+
+        .button-light-spacing {
+          font-size: 1.9rem;
+          letter-spacing: 7px;
+          text-indent: 7px;
+        }
+
+        .po16 p {
+          font-size: 1.8rem;
+          letter-spacing: 4px;
+          text-indent: 0px;
+          padding: 2.4rem;
+          text-align: center;
+        }
 }
