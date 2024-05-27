@@ -300,10 +300,10 @@ html {
 .st-ind-link:hover .flash{
   opacity: 1;
 }
-.st-ind-link:hover p {
-  opacity: 1;
-}
 
+.st-ind-camera {
+  width: 9rem;
+}
 .flash {
   transition: 0.3s;
   opacity: 0;
@@ -315,9 +315,8 @@ html {
 
 .st-ind-link p {
   color: var(--dark);
-  opacity: 0;
-  transition: 0.3s;
-  font-size: 1.1rem;
+  font-size: 2rem;
+  letter-spacing: 7px;
 }
 
 .lines-2 {
@@ -2262,8 +2261,10 @@ hr.short.center {
       }
 
       .st-ind-link p {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
       }
+
+
 
       .swiper-bangers .swiper-button-next, .swiper-rtl .swiper-button-prev {
         right: var(--swiper-navigation-sides-offset, 10px);
@@ -2359,8 +2360,8 @@ hr.short.center {
           position: absolute;
           bottom: 2rem;
           z-index: 3;
-          min-width: 12rem;
-          right: -6rem;
+          min-width: 15rem;
+          right: -9rem;
           min-height: 11rem;
         }
 
