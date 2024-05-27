@@ -1797,12 +1797,17 @@ hr.short.center {
 	.show-md { display: block; }
 	.hide-md { display: none;  }
 
+  .md-padded-b-1 {
+    padding-bottom: 1rem;
+  }
+
   p {
     font-size: 1.4rem;
     }
     h5 {
       font-size: 1.4rem;
       letter-spacing: 5px;
+      line-height: 1.4;
     }
 
     h3 {
