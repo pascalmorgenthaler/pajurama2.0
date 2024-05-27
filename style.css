@@ -1493,7 +1493,13 @@ hr.short.center {
 .personal-text-storytelling h2 {
   letter-spacing: 0px !important;
 }
-
+.horizontal-scroll {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding-left: 1rem;
+  padding-bottom: 10%;
+  padding-right: 1rem;
+}
 
 #wrap {
   overflow: hidden;
@@ -2348,8 +2354,8 @@ hr.short.center {
           position: absolute;
           bottom: 2rem;
           z-index: 3;
-          min-width: 10rem;
-          right: -4rem;
+          min-width: 12rem;
+          right: -6rem;
           min-height: 11rem;
         }
 
