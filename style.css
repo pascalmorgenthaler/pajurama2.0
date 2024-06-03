@@ -176,7 +176,7 @@ html {
 .fixed {
   position: fixed;
 }
-.inline-block { position: inline-block;}
+.inline-block { display: inline-block;}
 
 /* ------------ Swiper  ----------------------- */
 .swiper {
@@ -497,6 +497,15 @@ html {
   text-align: center;
 }
 
+.po23 {
+  position: absolute;
+  right: -2rem;
+  padding: 1.6rem;
+  border-radius: 2rem;
+  background-color: white;
+  width: 90%;
+}
+
 
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
@@ -509,9 +518,44 @@ html {
 .bg-accent   { background-color: var(--accent);}
 
 
-
+.bg-border-yellow-1 {
+  background-color: var(--accent);
+  border: 1px solid var(--dark-text);
+}
+.bg-border-yellow-2 {
+  background-color: var(--accent);
+  border: 1px solid var(--dark-text);
+  border-top: 0;
+}
+.bg-border-yellow-3 {
+  background-color: var(--accent);
+  border: 1px solid var(--dark-text);
+  border-left: 0;
+  border-bottom: 0;
+}
+.bg-border-yellow-4 {
+  background-color: var(--accent);
+  border: 1px solid var(--dark-text);
+  border-left: 0;
+}
+.bg-border-yellow-5 {
+  background-color: var(--accent);
+  border: 1px solid var(--dark-text);
+  border-left: 0;
+  border-bottom: 0;
+}
+.bg-border-yellow-6 {
+  background-color: var(--accent);
+  border: 1px solid var(--dark-text);
+  border-left: 0;
+}
 
 .border {
+  border: 1px solid var(--dark-text);
+}
+
+.intention-border {
+  border-radius: 50rem 50rem 10rem 10rem;
   border: 1px solid var(--dark-text);
 }
 
@@ -698,7 +742,8 @@ h3 {
   letter-spacing: 15px;
   text-indent: 3px;
  }
-h4 { font-size: 1.6rem; }
+h4 { font-size: 1.6rem;
+letter-spacing: 10px; }
 h5 { 
   font-size: 1.6rem; 
   text-transform: uppercase;
@@ -1791,6 +1836,13 @@ hr.short.center {
   border: 1px solid var(--dark-text);
 }
 
+
+.is-exp-n1 span {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  font-size: 1.3rem;
+}
 
 /* ------------ Responsive Styles ----------------------- */
 
