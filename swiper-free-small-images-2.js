@@ -2,7 +2,7 @@ const swiper10 = new Swiper('.swiper-free-small-images-2', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
     allowTouchMove: false,
     autoplay: {
