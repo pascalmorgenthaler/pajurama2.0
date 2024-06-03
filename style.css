@@ -69,6 +69,8 @@ html {
   padding: 5% 0 5% 5%;
 }
 
+.padded-l-c1 { padding-left: 14%;}
+
 .padded-lg { padding: 10%;  }
 .padded-xl { padding: 0 15% 20% 15%;}
 
@@ -107,6 +109,8 @@ html {
 .padded-b-2 { padding-bottom: 2rem; }
 .padded-l-2 { padding-left: 2rem; }
 .padded-r-2 { padding-right: 2rem; }
+
+.padded-b-3 { padding-bottom: 3rem;}
 
 .padded-t-0 { padding-top: 0; }
 .padded-b-0 { padding-bottom: 0; }
@@ -526,6 +530,7 @@ html {
   background-color: var(--accent);
   border: 1px solid var(--dark-text);
   border-top: 0;
+  min-height: 17rem;
 }
 .bg-border-yellow-3 {
   background-color: var(--accent);
@@ -537,6 +542,7 @@ html {
   background-color: var(--accent);
   border: 1px solid var(--dark-text);
   border-left: 0;
+  min-height: 17rem;
 }
 .bg-border-yellow-5 {
   background-color: var(--accent);
@@ -548,6 +554,7 @@ html {
   background-color: var(--accent);
   border: 1px solid var(--dark-text);
   border-left: 0;
+  min-height: 17rem;
 }
 
 .border {
@@ -1769,7 +1776,7 @@ hr.short.center {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 0;
+  bottom: -12px;
   width: 100vw;
   height: 55%;
   background-color: var(--featured);
@@ -1784,6 +1791,29 @@ hr.short.center {
 
 
 .buche-jetzt-link:hover .buche-jetzt-rechteck-1 {
+  height: 100%;
+}
+
+
+
+
+
+.buche-jetzt-rechteck-2 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -12px;
+  height: 55%;
+  margin: 0.5rem;
+  background-color: var(--accent);
+  z-index: -1;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid var(--dark-text);
+  border-radius: 1rem;
+}
+
+.buche-jetzt-link:hover .buche-jetzt-rechteck-2 {
   height: 100%;
 }
 
