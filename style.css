@@ -144,6 +144,10 @@ html {
 .margin-l-1 { margin-left: 1rem; }
 .margin-r-1 { margin-right: 1rem; }
 
+.margin-t-c1 {
+  margin-top: -35rem;
+}
+
 .margin-t-c3 {
   margin-top: -3rem;
 }
@@ -157,6 +161,8 @@ html {
 .margin-b-2 { margin-bottom: 2rem; }
 .margin-l-2 { margin-left: 2rem; }
 .margin-r-2 { margin-right: 2rem; }
+
+.margin-l-14 { margin-left: 1.4rem;}
 
 .margin-b-c1 { margin-bottom: 250px; }
 .margin-b-c2 { margin-bottom: -7rem; }
@@ -282,7 +288,7 @@ html {
 .po1 p {
   font-size: 6rem;
   letter-spacing: 15px;
-  text-indent: 15px;
+  
 }
 
 .po2 {
@@ -470,7 +476,7 @@ html {
 .po16 p {
   font-size: 2rem;
   letter-spacing: 7px;
-  text-indent: 7px;
+  
 }
 
 .po19 {
@@ -511,7 +517,6 @@ html {
 }
 
 
-
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
 .bg-dark     { background-color: var(--dark);}
@@ -520,6 +525,11 @@ html {
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 .bg-accent   { background-color: var(--accent);}
+
+.border-img-c1 { 
+  padding: 0.5rem;
+  border: 1px solid var(--dark-text);
+}
 
 
 .bg-border-yellow-1 {
@@ -734,7 +744,7 @@ h1 {
   font-weight: 100;
   font-size: 5rem;
   letter-spacing: 15px;
-  text-indent: 15px;
+  
 }
 
 .fourrem { font-size: 4rem;}
@@ -742,12 +752,12 @@ h1 {
 h2 { 
   font-size: 2.2rem;
   letter-spacing: 10px;
-  text-indent: 1px;
+  
 }
 h3 { 
   font-size: 2.4rem;
   letter-spacing: 15px;
-  text-indent: 3px;
+  
  }
 h4 { font-size: 1.6rem;
 letter-spacing: 10px; }
@@ -755,7 +765,7 @@ h5 {
   font-size: 1.6rem; 
   text-transform: uppercase;
   letter-spacing: 5px;
-  text-indent: 5px;
+  
 }
 h6 { font-size: 1.2rem; }
 
@@ -838,7 +848,7 @@ h2 a {
   border: 1px solid;
   font-size: 2.3rem;
   letter-spacing: 10px;
-  text-indent: 10px;
+  
 }
 
 .button-light-spacing:hover {
@@ -892,7 +902,7 @@ h2 a {
 .webdesign-links a {
   font-size: 1.6rem;
   letter-spacing: 10px;
-  text-indent: 10px;
+  
   display: block;
 }
 
@@ -972,7 +982,7 @@ h2 a {
   margin-top: 1.5rem;
   padding: 0 1.5rem;
   letter-spacing: 10px;
-  text-indent: 10px;
+  
   font-weight: 100;
   font-family: ivypresto-display, serif;
 }
@@ -1120,7 +1130,7 @@ header div {
 .menu-button-style-1 {
   font-size: 5rem;
   letter-spacing: 25px;
-  text-indent: 25px;
+  
   z-index: 11;
   position: absolute;
   right: 0;
@@ -1135,7 +1145,7 @@ header div {
 .menu-text {
   font-size: 5rem;
   letter-spacing: 25px;
-  text-indent: 25px;
+  
   z-index: 11;
   position: absolute;
   right: 0;
@@ -1145,7 +1155,7 @@ header div {
 .schliessen {
   font-size: 3rem;
   letter-spacing: 10px;
-  text-indent: 10px;
+  
   z-index: 11;
   cursor: pointer;
 }
@@ -1184,7 +1194,7 @@ footer nav a {
   padding: 0.2rem 0 0.2rem 0.2rem;
   font-weight: 100;
   letter-spacing: 10px;
-  text-indent: 10px;
+  
   font-size: 1.6rem;
 }
 
@@ -1325,7 +1335,7 @@ span {
 .main-link {
   font-size: 3rem;
   letter-spacing: 4px;
-  text-indent: 8px;
+  
   z-index: 11;
   cursor: pointer;
   font-family: ivypresto-display, serif;
@@ -1337,7 +1347,7 @@ span {
 .sub-link {
   font-size: 1rem;
   letter-spacing: 5px;
-  text-indent: 5px;
+  
   z-index: 11;
   cursor: pointer;
   font-family: ivypresto-display, serif;
@@ -1394,7 +1404,7 @@ span {
   font-size: 1.2rem;
   font-style: italic;
   letter-spacing: 5px;
-  text-indent: 5px;
+  
   z-index: 11;
   cursor: pointer;
   font-family: ivypresto-display, serif;
@@ -1667,7 +1677,7 @@ hr.short.center {
   text-transform: uppercase;
   padding: 0.7rem;
   letter-spacing: 10px;
-  text-indent: 10px;
+  
 }
 .container-item.active .link + .image-left {
   opacity: 1;
@@ -1757,7 +1767,7 @@ hr.short.center {
   font-size: 5rem;
   text-transform: uppercase;
   letter-spacing: 17px;
-  text-indent: 17px;
+  
   font-weight: 100;
   transition: 0.3s;
 }
@@ -1767,7 +1777,7 @@ hr.short.center {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 17px;
-  text-indent: 17px;
+  
   font-weight: 100;
   transition: 0.3s;
 }
@@ -1927,7 +1937,7 @@ hr.short.center {
     h3 {
       font-size: 2rem;
       letter-spacing: 10px;
-      text-indent: 10px;
+      
     }
 
     .bg-blub-4 {
@@ -2026,7 +2036,7 @@ hr.short.center {
   h3 {
     font-size: 1.6rem;
     letter-spacing: 7px;
-    text-indent: 7px;
+    
   }
 
   .po4 {
@@ -2080,7 +2090,7 @@ hr.short.center {
     .schliessen {
       font-size: 2.2rem;
       letter-spacing: 6px;
-      text-indent: 6px;
+      
     }
 
     .menu-button-style-1 {
@@ -2102,7 +2112,7 @@ hr.short.center {
       .webdesign-links a {
         font-size: 1.3rem;
         letter-spacing: 6px;
-        text-indent: 6px;
+        
         display: block;
       }
 
@@ -2167,13 +2177,13 @@ hr.short.center {
       .buche-jetzt {
         font-size: 3.4rem;
         letter-spacing: 8px;
-        text-indent: 8px;
+        
       }
 
       .buche-jetzt-sub {
         font-size: 2.2rem;
         letter-spacing: 7px;
-        text-indent: 7px;
+        
       }
 }
 
@@ -2246,19 +2256,19 @@ hr.short.center {
       h2 {
         font-size: 2.2rem;
         letter-spacing: 4px;
-        text-indent: 4px;
+        
       }
       h1 {
         font-size: 3rem;
         letter-spacing: 8px;
-        text-indent: 1px;
+        
       }
 
    
           h3 {
             font-size: 2.5rem;
             letter-spacing: 7px;
-            text-indent: 1px;
+            
           }
         
       
@@ -2267,12 +2277,12 @@ hr.short.center {
       }
       .personal-text-storytelling h2 {
         letter-spacing: 5px;
-        text-indent: 5px;
+        
       }
 
       .main-link {
         letter-spacing: 3px;
-        text-indent: 3px;
+        
         }
 
         .sub-link-title {
@@ -2290,7 +2300,7 @@ hr.short.center {
         .schliessen {
           font-size: 1.9rem;
           letter-spacing: 3px;
-          text-indent: 3px;
+          
         }
 
         .menu-button-style-1 {
@@ -2299,7 +2309,7 @@ hr.short.center {
 
         .menu-button-style-1 {
           letter-spacing: 14px;
-          text-indent: 14px;
+          
           right: -6px;
           top: -14px;
           }
@@ -2344,7 +2354,7 @@ hr.short.center {
       .po1 p {
         font-size: 4rem;
         letter-spacing: 10px;
-        text-indent: 10px;
+        
       }
 
       .po1 {
@@ -2448,7 +2458,7 @@ hr.short.center {
         .testimonial h3 {
           font-size: 2.5rem;
           letter-spacing: 7px;
-          text-indent: 2px;
+          
         }
 
         .swiper-testimonial .swiper-button-next, .swiper-rtl .swiper-button-prev {
@@ -2470,7 +2480,7 @@ hr.short.center {
           padding: 0.2rem 0 0.2rem 0.2rem;
           font-weight: 100;
           letter-spacing: 3px;
-          text-indent: 3px;
+          
           font-size: 1.4rem;
         }
 
@@ -2491,13 +2501,13 @@ hr.short.center {
         .buche-jetzt {
           font-size: 2.7rem;
           letter-spacing: 8px;
-          text-indent: 8px;
+          
         }
 
         .buche-jetzt-sub {
           font-size: 1.8rem;
           letter-spacing: 7px;
-          text-indent: 7px;
+          
         }
 
         .buche-jetzt-rechteck-1 {
@@ -2515,13 +2525,13 @@ hr.short.center {
         .button-light-spacing {
           font-size: 1.9rem;
           letter-spacing: 7px;
-          text-indent: 7px;
+          
         }
 
         .po16 p {
           font-size: 1.8rem;
           letter-spacing: 4px;
-          text-indent: 0px;
+          
           padding: 2.4rem;
           text-align: center;
         }
@@ -2561,5 +2571,17 @@ hr.short.center {
         }
         .padded-t-c5 {
           padding-top: 5%;
+        }
+        .threerem {
+          font-size: 2.4rem;
+        }
+
+        .po23 {
+          position: absolute;
+          right: -7rem;
+          padding: 1rem;
+          border-radius: 2rem;
+          background-color: white;
+          min-width: 10.5rem;
         }
 }
