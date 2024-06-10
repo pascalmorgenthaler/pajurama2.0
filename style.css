@@ -2590,14 +2590,15 @@ hr.short.center {
 
         .po23 {
           position: absolute;
-          right: -7rem;
+          left: 32%;
           padding: 1rem;
           border-radius: 2rem;
           background-color: white;
-          min-width: 10.5rem;
+          width: 12rem;
+          top: 31rem;
         }
 
-
+        .xs-padded-t-6 { padding-top: 6rem}
 
   
         .bg-border-yellow-2 { border-bottom: none; }
