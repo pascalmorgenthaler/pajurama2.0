@@ -523,6 +523,12 @@ html {
   top: 3rem;
 }
 
+.po24 {
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+}
+
 .logo-header-3 { 
   position: absolute;
   top: 0;
@@ -1607,7 +1613,7 @@ hr.short.center {
 
 
 
-/* ------------ Storytelling PAge  ----------------------- */
+/* ------------ Storytelling   ----------------------- */
 
 .list-style-none {
   list-style: none;
@@ -1740,9 +1746,24 @@ hr.short.center {
   opacity: 1;
 } */
 
+/* ------------ Website page  ----------------------- */
 
+.website-step-by-step {
+  border: 1px solid var(--dark-text);
+  padding: 0.2rem;
+}
 
-/* ------------ Personal Branding PAge  ----------------------- */
+/* .swiper-website-portfolio {
+  padding: 5%;
+} */
+
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: none;
+}
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+/* ------------ Personal Branding page  ----------------------- */
 
 .pb-quote-banner {
   padding: 0.5rem;
@@ -1869,6 +1890,24 @@ hr.short.center {
 }
 
 .buche-jetzt-link:hover .buche-jetzt-rechteck-2 {
+  height: 100%;
+}
+
+.buche-jetzt-rechteck-3 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -12px;
+  height: 55%;
+  margin: 0.5rem;
+  background-color: var(--accent);
+  z-index: -1;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid var(--dark-text);
+}
+
+.buche-jetzt-link:hover .buche-jetzt-rechteck-3 {
   height: 100%;
 }
 
