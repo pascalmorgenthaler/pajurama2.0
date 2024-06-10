@@ -2649,4 +2649,11 @@ hr.short.center {
           border-top: 0;
         }
         .bg-border-yellow-6 { border-left: 1px solid var(--dark-text); }
+
+        .xs-tall-70 {
+          min-height: 70vh;
+        }
+        .logo-header-3 {
+          padding-left: 2rem;
+        }
 }
