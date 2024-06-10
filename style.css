@@ -1176,7 +1176,11 @@ header div {
 
 .menu-button-style-2 {
   cursor: pointer;
-  margin-right: 0.8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  padding-right: 4rem;
 }
 
 .menu-text {
@@ -1373,8 +1377,7 @@ span {
 
 .main-link {
   font-size: 3rem;
-  letter-spacing: 4px;
-  
+  letter-spacing: 11px;
   z-index: 11;
   cursor: pointer;
   font-family: ivypresto-display, serif;
