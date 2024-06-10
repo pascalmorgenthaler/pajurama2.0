@@ -520,6 +520,16 @@ html {
   top: 3rem;
 }
 
+.logo-header-3 { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  padding-left: 4rem;
+  width: 16rem;
+}
+
+.border-r-c1 { border-right: 1px solid var(--dark-text);}
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
@@ -660,6 +670,28 @@ html {
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
+}
+
+.bg-website {
+  background-color: var(--v-light); /* Set a fall-back color while images are loading */ 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.bg-website:hover {
+  background-image: url('/images/webdesign/website-hover.jpg');
+}
+
+.bg-onlineshop {
+  background-color: var(--v-light); /* Set a fall-back color while images are loading */ 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.bg-onlineshop:hover {
+  background-image: url('/images/webdesign/onlineshop-hover.jpg');
 }
 
 .bg-banger-1 { background-image: url('/images/index/bangers/banger-1.jpg'); }
@@ -1018,6 +1050,7 @@ header {
   top: 1rem;
   right: -1rem;
   z-index: 2;
+  min-width: 100vw;
 }
 
 .hover-underline {
@@ -1198,13 +1231,15 @@ footer nav a {
   padding: 0.2rem 0 0.2rem 0.2rem;
   font-weight: 100;
   letter-spacing: 10px;
-  
+  color: white;
   font-size: 1.6rem;
 }
 
 footer nav a:hover {
-  color: var(--dark);
+  color: var(--light);
 }
+
+
 
 .fa-brands {
   text-align: center;
@@ -1542,14 +1577,14 @@ hr.short.center {
 /* ------------ Newsletter Sign Up ----------------------- */
 
 #mlb2-15082387.ml-form-embedContainer .ml-form-embedWrapper {
-  background-color: var(--v-light) !important;
+  background-color: var(--dark) !important;
 }
 
 #mlb2-15082387.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4 {
   font-family: futura-pt, sans-serif !important;
   font-weight: 400 !important;
   font-size: 1.2rem !important;
-  color: var(--dark-text) !important;
+  color: white !important;
 }
 
 #mlb2-15082387.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
