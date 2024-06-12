@@ -19,6 +19,47 @@ testimonials:
   - name: Schwyz Homöopathie & Tändlishof
     image: /images/testimonials/testimonial-taendlishof.png
     description_html: Ich fand die Zusammenarbeit mega! Ich fand mich sehr gut aufgehoben, es wurde alles immer sehr gut erklärt und klar kommuniziert. Es war einfach schön mit ihnen zusammenzuarbeiten – von A bis Z! Wir sind happy mit den Ergebnissen die Webseiten wurden einfach MEGA! Und es hat sich gelohnt! Ich kann die beiden nur weiterempfehlen. 
+faq:
+  - title: Persönlicher Ansatz
+    id: personal_approach
+    for: personal_approach
+    answer: Wir bringen Persönlichkeit in unsere Arbeit und gehen auf jeden Menschen individuell ein.
+  - title: Ansprechendes Design
+    id: appealing_design
+    for: appealing_design
+    answer: Wir schaffen ein Design, das die Essenz deines Unternehmens in einem packenden Stil ausdrückt.
+  - title: Kreative Animationen
+    id: creative_animations
+    for: creative_animations
+    answer: Unsere kreativen Animationen und Hover-Effekte zaubern Besuchern ein Lächeln ins Gesicht.
+  - title: Massgeschneiderte Programmierung
+    id: tailored_programming
+    for: tailored_programming
+    answer: Unsere massgeschneiderte Programmierung in HTML, CSS und JS ist genau auf deine Bedürfnisse zugeschnitten.
+  - title: Schnelle Ladezeiten
+    id: fast_loading_times
+    for: fast_loading_times
+    answer: Unsere individuell programmierten Websites bieten schnelle Ladezeiten und hohe Performance.
+  - title: SEO-Optimierung
+    id: seo_optimization
+    for: seo_optimization
+    answer: Wir sorgen für eine SEO-optimierte, semantische HTML-Struktur und SEO-Metadatenfelder.
+  - title: Benutzerfreundlichkeit
+    id: user_friendly
+    for: user_friendly
+    answer: Unsere Websites sind für nicht-technische Anwender leicht zu bedienen, um Texte und Inhalte anzupassen.
+  - title: Sicherheit
+    id: security
+    for: security
+    answer: Mit einem hochmodernen statischen Site-Generator bieten wir extrem sichere Websites.
+  - title: Strategische Perspektive
+    id: strategic_perspective
+    for: strategic_perspective
+    answer: Unsere Websites sind nicht nur schön, sondern auch gezielt auf deine Zielgruppe ausgerichtet.
+  - title: Anpassungsfähiges Design
+    id: adaptable_design
+    for: adaptable_design
+    answer: Wir gestalten deine Website so, dass sie auf allen mobilen Endgeräten optimal dargestellt wird.
 ---
 
 <section class="capped-width padded padded-t-c2 center">
@@ -128,63 +169,53 @@ testimonials:
 </section>
 
 
-<section>
-    <div class="capped-width padded">
-        <h2> Key Features </h2>
+<section class="paddedgrid-middle-spaceAround bg-image bg-website-features bg-overlay">
+    <div class="col-12 padded capped-width">
+        <div class="card-wrapper  | content-cc">
+            <div class="faq-card">
+                <main class="faq-content">
+                    <h1>Features</h1>
+                    <div class="faq-articles">
+                        {% for faq in page.faq %}
+                        <article class="faq-accordion">
+                            <input type="checkbox" class="tgg-title" id="{{ faq.id }}" />
+                            <div class="faq-accordion-title">
+                                <label for="{{ faq.for }}">
+                                    <h2 class="margin-b-0">{{ faq.title }}</h2>
+                                    <span class="arrow-icon">
+                                        <i class="fa-solid fa-solid-faq arrow-faq fa-chevron-down"></i>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="faq-accordion-content">
+                                <p>{{ faq.answer }}</p>
+                            </div>
+                        </article> <!-- faq accordion -->
+                        {% endfor %}
+                    </div> <!-- faq articles -->
+                </main> <!-- faq -->
+            </div> <!-- faq card -->
+        </div> <!-- card wrapper -->
     </div>
-    <div class="grid-middle-spaceAround">
-        <div class="col-3 padded-2">
-            <h3> Persönlicher Ansatz </h3>
-            <p> Wir bringen Persönlichkeit in unsere Arbeit und gehen auf jeden Menschen individuell ein. </p>
-        </div>
-    
-        <div class="col-3 padded-2">
-            <h3> Ansprechendes Design </h3>
-            <p> Wir schaffen ein Design, das die Essenz deines Unternehmens in einem packenden Stil ausdrückt. </p>
-        </div>
-    
-        <div class="col-3 padded-2">
-            <h3> Kreative Animationen </h3>
-            <p> Unsere kreativen Animationen und Hover-Effekte zaubern Besuchern ein Lächeln ins Gesicht. </p>
-        </div>
-    
-        <div class="col-3 padded-2">
-            <h3> Maßgeschneiderte Programmierung </h3>
-            <p> Unsere maßgeschneiderte Programmierung in HTML, CSS und JS ist genau auf deine Bedürfnisse zugeschnitten. </p>
-        </div>
-    
-        <div class="col-3 padded-2">
-            <h3> Schnelle Ladezeiten </h3>
-            <p> Unsere individuell programmierten Websites bieten schnelle Ladezeiten und hohe Performance. </p>
-        </div>
-    
-        <div class="col-3 padded-2">
-            <h3> SEO-Optimierung </h3>
-            <p> Wir sorgen für eine SEO-optimierte, semantische HTML-Struktur und SEO-Metadatenfelder. </p>
-        </div>
-    
-        <div class="col-3 padded-2">
-            <h3> Benutzerfreundlichkeit </h3>
-            <p> Unsere Websites sind für nicht-technische Anwender leicht zu bedienen, um Texte und Inhalte anzupassen. </p>
-        </div>
-    
-        <div class="col-3 padded-2">
-            <h3> Sicherheit </h3>
-            <p> Mit einem hochmodernen statischen Site-Generator bieten wir extrem sichere Websites. </p>
-        </div>
-    
-        <div class="col-3 padded-2">
-            <h3> Strategische Perspektive </h3>
-            <p> Unsere Websites sind nicht nur schön, sondern auch gezielt auf deine Zielgruppe ausgerichtet. </p>
-        </div>
-    
-        <div class="col-3 padded-2">
-            <h3> Anpassungsfähiges Design </h3>
-            <p> Wir gestalten deine Website so, dass sie auf allen mobilen Endgeräten optimal dargestellt wird. </p>
-        </div>
-    </div>
-    
 </section>
+
+<!-- JavaScript for FAQ -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const checkboxes = document.querySelectorAll('.tgg-title');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('click', function () {
+                checkboxes.forEach(otherCheckbox => {
+                    if (otherCheckbox !== checkbox) {
+                        otherCheckbox.checked = false;
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+
 
 
 <section>
