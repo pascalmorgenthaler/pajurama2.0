@@ -1560,6 +1560,161 @@ span {
 
 /* ------------ Contact Forms  ----------------------- */
 
+ /* Customize the label (the container) */
+ .container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 34px;
+  left: 16px;
+  height: 25px;
+  width: 25px;
+  background-color: #bca58d;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #9d7f5d;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #b2c275;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+.container-checkbox {
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+}
+
+
+
+
+
+
+/* SUB Check boxes*/
+
+/* Customize the label (the container) */
+.container-checkbox-sub {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox-sub input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-sub {
+  position: absolute;
+  top: 2px;
+  left: 70px;
+  height: 25px;
+  width: 25px;
+  background-color: #bca58d;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox-sub:hover input ~ .checkmark-sub {
+  background-color: #9d7f5d;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox-sub input:checked ~ .checkmark-sub {
+  background-color: #b2c275;
+}
+
+/* Create the checkmark-sub/indicator (hidden when not checked) */
+.checkmark-sub:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark-sub when checked */
+.container-checkbox-sub input:checked ~ .checkmark-sub:after {
+  display: block;
+}
+
+/* Style the checkmark-sub/indicator */
+.container-checkbox-sub .checkmark-sub:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+.container-checkbox-sub {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--dark-text);
+}
+
 /* ------------ Form Styles  ----------------------- */
 select {
   line-height: 1.8rem;
@@ -1571,9 +1726,11 @@ select {
   padding: 0.5rem;
   font-family: inherit;
   font-size: 1rem;
-  border: 2px solid var(--medium);
+  border: 2px solid var(--dark);
   color: var(--dark-text);
   background-color: white;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
 
 option {
@@ -1586,12 +1743,14 @@ option {
   border: 2px solid var(--medium);
   color: var(--dark-text);
   background-color: white;
+  letter-spacing: 1px;
 }
 
 label {
   line-height: 1.8rem;
   color: var(--dark-text);
   font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 input, textarea {
@@ -1601,38 +1760,51 @@ input, textarea {
   padding: 0.5rem;
   font-family: inherit;
   font-size: 1rem;
-  border: 2px solid var(--medium);
+  border: 2px solid var(--dark);
   color: var(--dark-text);
   background-color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 
            
 input:focus,
 textarea:focus {
   outline: none;
-  border: 2px solid var(--light);
+  border: 2px solid var(--dark-text);
 }
 
 
 textarea {
-  height: 20vh;
+  height: 100px;
 }
 
 button {
     font-size: 1.2rem;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid var(--medium);
+    border: 1px solid var(--dark-text);
     text-align: center;
     background-color: transparent;
     cursor: pointer;
     font-weight: 400;
-    font-family: 'Jost', sans-serif;
     padding: 0.5rem 1rem;
+    font-family: ivypresto-display, serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+    color: var(--dark-text);
+    text-transform: uppercase;
 }
 
 button:hover {
   border: 1px solid var(--light);
+  background-color: var(--dark-text);
+  color: white;
+}
+
+.container-checkbox {
+  font-size: 1.7rem;
+  letter-spacing: 3px;
 }
 
 /* ------------ Blogging elements  ----------------------- */
@@ -2263,83 +2435,6 @@ input.tgg-title {
 
 /* ------------ Contact Forms  ----------------------- */
 
-/* ------------ Form Styles  ----------------------- */
-select {
-  line-height: 1.8rem;
-  color: var(--dark-text);
-  font-size: 1.2rem;
-  width: 100%;
-  display: block;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-family: inherit;
-  font-size: 1rem;
-  border: 2px solid var(--medium);
-  color: var(--dark-text);
-  background-color: white;
-}
-
-option {
-  width: 100%;
-  display: block;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-family: inherit;
-  font-size: 1rem;
-  border: 2px solid var(--medium);
-  color: var(--dark-text);
-  background-color: white;
-}
-
-label {
-  line-height: 1.8rem;
-  color: var(--dark-text);
-  font-size: 1.2rem;
-}
-
-input, textarea {
-  width: 100%;
-  display: block;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-family: inherit;
-  font-size: 1rem;
-  border: 2px solid var(--medium);
-  color: var(--dark-text);
-  background-color: white;
-}
-
-           
-input:focus,
-textarea:focus {
-  outline: none;
-  border: 2px solid var(--light);
-}
-
-
-textarea {
-  height: 20vh;
-}
-
-button {
-    font-size: 1.2rem;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid var(--dark-text);
-    text-align: center;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: 400;
-    font-family: "Kaisei HarunoUmi", serif;
-    color: var(--dark-text);
-    padding: 0.5rem 1rem;
-}
-
-button:hover {
-  border: 1px solid var(--dark);
-  color: white;
-  background-color: var(--dark);
-}
 
 /* ------------ Responsive Styles ----------------------- */
 
@@ -2366,7 +2461,7 @@ button:hover {
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
-@media(max-width:64em) {
+@media(max-width:64em) { 
 
   .margin-t-c1 {
     margin-top: 0;

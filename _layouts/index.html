@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='{{ site.lang | default: "de" }}'>
 
 <head>
 
@@ -12,6 +12,8 @@
     {% include inline-styles.html %}
     
     {% include site-header.html %}
+
+
 
     {{content}}
 
