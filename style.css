@@ -681,6 +681,41 @@ html {
     background-repeat: no-repeat;
 }
 
+.bg-website-banner {
+  background-image: url('/images/webdesign/website/website-banner.JPG');
+  background-position: bottom; 
+}
+
+.website-aeshtetic-po1 {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: white;
+}
+
+.website-aeshtetic-po2 {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: white;
+}
+
+
+.website-aeshtetic-po3 {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: white;
+}
+
+.website-aeshtetic-po4 {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+}
+
+
 .bg-website {
   background-color: var(--v-light); /* Set a fall-back color while images are loading */ 
   background-size: cover;
@@ -1759,6 +1794,17 @@ hr.short.center {
   box-sizing: content-box;
 } */
 
+.swiper-website-portfolio {
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+}
+
+
+.swiper-website-portfolio .swiper-slide-active {
+  width: 120%;
+}
+
 .swiper-3d .swiper-wrapper {
   transform-style: unset !important;
 }
@@ -1817,13 +1863,13 @@ hr.short.center {
   opacity: 1;
 } */
 
-.bg-dark-portfolio     { 
+/* .bg-dark-portfolio     { 
   background-color: var(--dark-text);
   border-radius: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .kerze-overlay {
   position: absolute;

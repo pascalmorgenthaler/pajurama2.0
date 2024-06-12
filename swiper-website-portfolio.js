@@ -2,7 +2,7 @@ const swiper9 = new Swiper('.swiper-website-portfolio', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    effect: 'coverflow',
+    // effect: 'coverflow',
     slidesPerView: 3,
     centeredSlides: true,
     spaceBetween: 20,
