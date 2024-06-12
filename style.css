@@ -551,11 +551,7 @@ html {
 }
 
 .logo-header-3 { 
-  position: absolute;
-  top: 0;
-  left: 0;
   padding: 1rem;
-  padding-left: 4rem;
   width: 16rem;
 }
 
@@ -1124,11 +1120,7 @@ header {
 }
 
 .header-2 {
-  position: fixed;
-  top: 1rem;
-  right: -1rem;
   z-index: 2;
-  min-width: 100vw;
 }
 
 .hover-underline {
@@ -1254,11 +1246,7 @@ header div {
 
 .menu-button-style-2 {
   cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
   padding: 1rem;
-  padding-right: 4rem;
 }
 
 .menu-text {
