@@ -41,23 +41,33 @@ seo:
             <label for="phone"> Telefonnummer </label>
             <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" /> 
 
+            <label for="_seminar"> Wie bist du auf die Pajurama Kreativagentur aufmerksam geworden? </label>
+            <select name="_seminar" id="_seminar">
+                <option value="" disabled selected hidden> Option auswählen </option>
+                <option> Weiterempfehlung </option>
+                <option> Google </option>
+                <option> Instagram </option>
+                <option> LinkedIn </option>
+                <option> Sonstiges </option>
+            </select>
+
         <div class="grid-middle-spaceAround">
             <div class="col-12 left border-bottom">
                 <p> Wo dürfen wir für dich kreativ werden? </p>
             </div>
-            <div class="col-4 center">
+            <div class="col-4_sm-12 center">
                 <label class="container-checkbox padded-2">Fotografie
                     <input type="checkbox" id="fotografie-checkbox" name="fotografie" value="fotografie">
                     <span class="checkmark"></span>
                 </label>
             </div>
-            <div class="col-4  center">
+            <div class="col-4_sm-12  center">
                 <label class="container-checkbox padded-2">Web Design
                     <input type="checkbox" id="webdesign-checkbox" name="fotografie" value="fotografie">
                     <span class="checkmark"></span>
                 </label>
             </div>
-            <div class="col-4 center">
+            <div class="col-4_sm-12 center">
                 <label class="container-checkbox padded-2"> Branding
                     <input type="checkbox" id="branding-checkbox" name="branding" value="branding">
                     <span class="checkmark"></span>
@@ -69,7 +79,7 @@ seo:
             <div class="col-12 margin-b-2 left border-bottom">
                 <p> Fotografie Bereich </p>
             </div>
-            <div class="col-6 center margin-b-2">
+            <div class="col-6_sm-12 center margin-b-2">
                 <label class="container-checkbox-sub">Personal Branding
                     <input type="checkbox" id="personalbranding-checkbox" name="personalbranding" value="personalbranding">
                     <span class="checkmark-sub"></span>
@@ -98,12 +108,12 @@ seo:
                     <input type="checkbox" id="cafe-checkbox" name="cafe" value="cafe">
                     <span class="checkmark-sub"></span>
                 </label>
-                <label class="container-checkbox-sub">Etwas Anderes
+                <label class="container-checkbox-sub"> Anderes
                     <input type="checkbox" id="etwas-anderes-checkbox" name="etwas-anderes" value="etwas-anderes">
                     <span class="checkmark-sub"></span>
                 </label>
             </div>
-            <div class="col-6-top center">
+            <div class="col-6_sm-12-top center">
                 <label class="container-checkbox-sub">Elopement
                     <input type="checkbox" id="elopement-checkbox" name="elopement" value="elopement">
                     <span class="checkmark-sub"></span>
@@ -116,8 +126,27 @@ seo:
                     <input type="checkbox" id="intention-checkbox" name="intention" value="intention">
                     <span class="checkmark-sub"></span>
                 </label>
-                <label class="container-checkbox-sub">Etwas Anderes
+                <label class="container-checkbox-sub">Anderes
                     <input type="checkbox" id="etwas-anderes-2-checkbox" name="etwas-anderes" value="etwas-anderes">
+                    <span class="checkmark-sub"></span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="grid-middle-spaceAround hidden" id="webdesign-auswahl">
+            <div class="col-12 margin-b-2 left border-bottom">
+                <p> Website oder Onlineshop? </p>
+            </div>
+            <div class="col-6_sm-12 center margin-b-2">
+                <label class="container-checkbox-sub">Website
+                    <input type="checkbox" id="website-checkbox" name="website" value="website">
+                    <span class="checkmark-sub"></span>
+                </label>
+            </div>
+            <div class="col-6_sm-12-top center">
+                <label class="container-checkbox-sub">Onlineshop
+                    <input type="checkbox" id="onlineshop-checkbox" name="onlineshop" value="onlineshop">
                     <span class="checkmark-sub"></span>
                 </label>
             </div>
@@ -304,6 +333,110 @@ seo:
 
             <label for="message"> Erzähle uns von deiner Vision. </label>
             <textarea name="message" id="message"></textarea>
+
+        </div>
+
+
+        <!-- Elopement Formular -->
+
+        <div id="elopement-auswahl" class="hidden">
+            <div class="border-bottom margin-b-1">
+                <p> Elopement Fotografie Fragen </p>
+            </div>
+
+            <label for="_seminar"> Paket </label>
+            <select name="_seminar" id="_seminar">
+                <option value="" disabled selected hidden> Option auswählen </option>
+                <option> Sonnenuntergang / CHF 2'200.- </option>
+                <option> Sonnenaufgang bis Sonnenuntergang / CHF 4'400.- </option>
+            </select>
+
+            <label for="_vorname"> Vorname Verlobte/r </label>
+            <input type="text" name="_vorname" id="_vorname" />
+    
+            <label for="_nachname"> Nachname Verlobte/r </label>
+            <input type="text" name="_nachname" id="_nachname" />
+
+            <label for="_replyto"> Email Verlobte/r </label>
+            <input type="email" name="_replyto" id="_replyto" />
+
+            <label for="datum"> Habt ihr ein fixes Datum oder seid ihr flexibel? </label>
+            <input type="datum" id="datum" name="datum" /> 
+
+            <label for="message"> Erzählt uns ein bisschen über euch beide, was macht ihr, wer seid ihr? </label>
+            <textarea name="message" id="message"></textarea>
+
+            <label for="message"> Erzählt uns, warum ihr elopen wollt und was eure Vision ist für diesen magischen Tag? </label>
+            <textarea name="message" id="message"></textarea>
+
+            <label for="message"> Habt ihr bereits Fragen an uns? </label>
+            <textarea name="message" id="message"></textarea>
+
+        </div>
+
+
+        <!-- Couple Formular -->
+
+        <div id="couple-auswahl" class="hidden">
+            <div class="border-bottom margin-b-1">
+                <p> Couple Fotografie Fragen </p>
+            </div>
+
+            <label for="_seminar"> Paket </label>
+            <select name="_seminar" id="_seminar">
+                <option value="" disabled selected hidden> Option auswählen </option>
+                <option> Storytelling Couple Fotoshoot 1h / CHF 600.- </option>
+                <option> Storytelling Couple Fotoshoot 2h / CHF 1'200.- </option>
+            </select>
+
+            <label for="_vorname"> Vorname Partner/in </label>
+            <input type="text" name="_vorname" id="_vorname" />
+    
+            <label for="_nachname"> Nachname Partner/in </label>
+            <input type="text" name="_nachname" id="_nachname" />
+
+            <label for="_replyto"> Email Partner/in</label>
+            <input type="email" name="_replyto" id="_replyto" />
+
+            <label for="message"> Erzählt uns ein bisschen über euch beide, was macht ihr, wer seid ihr? </label>
+            <textarea name="message" id="message"></textarea>
+
+            <label for="message"> Erzählt uns, warum ihr einen Couple Fotoshoot buchen wollt und ob ihr bereits eine Vision habt? </label>
+            <textarea name="message" id="message"></textarea>
+
+            <label for="message"> Habt ihr Fragen an uns? </label>
+            <textarea name="message" id="message"></textarea>
+
+        </div>
+
+        <!-- Intention Formular -->
+
+        <div id="intention-auswahl" class="hidden">
+            <div class="border-bottom margin-b-1">
+                <p> Intention Session Fragen </p>
+            </div>
+
+            <label for="_seminar"> Paket </label>
+            <select name="_seminar" id="_seminar">
+                <option value="" disabled selected hidden> Option auswählen </option>
+                <option> Storytelling Intention Fotoshoot 1h / CHF 600.- </option>
+                <option> Storytelling Intention Fotoshoot 2h / CHF 1'200.- </option>
+            </select>
+
+            <label for="message"> Erzähle uns von dir. :) </label>
+            <textarea name="message" id="message"></textarea>
+
+            <label for="message"> Was inspiriert dich? </label>
+            <textarea name="message" id="message"></textarea>
+
+            <label for="message"> Erzähl uns ein bisschen über dich, über deine Träume, über dein Leben. </label>
+            <textarea name="message" id="message"></textarea>
+        
+            <label for="lieblingssong"> Was ist dein aktueller Lieblingssong? </label>
+            <input type="lieblingssong" id="lieblingssong" name="lieblingssong" /> 
+       
+            <label for="jahreszeit"> Was ist deine Lieblingsjahreszeit? </label>
+            <input type="jahreszeit" id="jahreszeit" name="jahreszeit" /> 
 
         </div>
 

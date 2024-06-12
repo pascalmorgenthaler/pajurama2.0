@@ -550,6 +550,13 @@ html {
   left: -2rem;
 }
 
+.logo-header-4 {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  width: 10rem;
+}
+
 .logo-header-3 { 
   padding: 1rem;
   width: 16rem;
@@ -938,7 +945,7 @@ a {
 
 p a {
     text-decoration: none;
-    border-bottom: 1px solid inherit;
+    border-bottom: 1px solid;
 }
 
 h2 a {
@@ -1121,6 +1128,12 @@ header {
 
 .header-2 {
   z-index: 2;
+}
+
+.header-3 {
+  position: absolute;
+  z-index: 2;
+  min-width: 100vw;
 }
 
 .hover-underline {

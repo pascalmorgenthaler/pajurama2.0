@@ -17,7 +17,9 @@
     document.getElementById("fashion-auswahl").classList.add('hidden');
     document.getElementById("cafe-auswahl").classList.add('hidden');
     document.getElementById("etwas-anderes-auswahl").classList.add('hidden');
-
+    document.getElementById("elopement-auswahl").classList.add('hidden');
+    document.getElementById("couple-auswahl").classList.add('hidden');
+    document.getElementById("intention-auswahl").classList.add('hidden');
     document.getElementById("etwas-anderes-2-auswahl").classList.add('hidden');
   };
 
@@ -50,6 +52,15 @@ document.getElementById('fotografie-checkbox').addEventListener('click', functio
     // CLOSE personalbranding when form is open and uncheck unternehmen-checkbox
     document.getElementById("etwas-anderes-2-auswahl").classList.add('hidden');
     document.getElementById('etwas-anderes-2-checkbox').checked = false;
+    // CLOSE personalbranding when form is open and uncheck unternehmen-checkbox
+    document.getElementById("elopement-auswahl").classList.add('hidden');
+    document.getElementById('elopement-checkbox').checked = false;
+    // CLOSE personalbranding when form is open and uncheck unternehmen-checkbox
+    document.getElementById("couple-auswahl").classList.add('hidden');
+    document.getElementById('couple-checkbox').checked = false;
+    // CLOSE personalbranding when form is open and uncheck unternehmen-checkbox
+    document.getElementById("intention-auswahl").classList.add('hidden');
+    document.getElementById('intention-checkbox').checked = false;
 });
 
 document.getElementById('personalbranding-checkbox').addEventListener('click', function() {
@@ -85,8 +96,26 @@ document.getElementById('etwas-anderes-checkbox').addEventListener('click', func
     document.getElementById("etwas-anderes-auswahl").classList.toggle('hidden');
 });
 
+document.getElementById('elopement-checkbox').addEventListener('click', function() {
+    document.getElementById("elopement-auswahl").classList.toggle('hidden');
+});
 
+document.getElementById('couple-checkbox').addEventListener('click', function() {
+    document.getElementById("couple-auswahl").classList.toggle('hidden');
+});
+
+document.getElementById('intention-checkbox').addEventListener('click', function() {
+    document.getElementById("intention-auswahl").classList.toggle('hidden');
+});
 
 document.getElementById('etwas-anderes-2-checkbox').addEventListener('click', function() {
     document.getElementById("etwas-anderes-auswahl").classList.toggle('hidden');
+});
+
+
+
+
+
+document.getElementById('webdesign-checkbox').addEventListener('click', function() {
+    document.getElementById("webdesign-auswahl").classList.toggle('hidden');
 });
