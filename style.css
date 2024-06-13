@@ -80,6 +80,10 @@ html {
 .padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem; }
 .padded-2  { padding: 2rem; }
+.padded-2-custom {
+  padding: 1.4rem;
+  padding-left: 3rem !important;
+}
 .padded-2-important  { padding: 2rem !important; }
 
 
@@ -1587,8 +1591,8 @@ span {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 34px;
-  left: 16px;
+  top: 26px;
+  left: 4px;
   height: 25px;
   width: 25px;
   background-color: #bca58d;
@@ -1634,6 +1638,83 @@ span {
 }
 
 
+
+
+
+
+/* WEBSITE FORM Check boxes*/
+
+/* Customize the label (the container) */
+.container-checkbox-web {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox-web input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-web {
+  position: absolute;
+  top: 3px;
+  left: -42px;
+  height: 25px;
+  width: 25px;
+  background-color: #bca58d;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox-web:hover input ~ .checkmark-web {
+  background-color: #9d7f5d;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox-web input:checked ~ .checkmark-web {
+  background-color: #b2c275;
+}
+
+/* Create the checkmark-web/indicator (hidden when not checked) */
+.checkmark-web:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark-web when checked */
+.container-checkbox-web input:checked ~ .checkmark-web:after {
+  display: block;
+}
+
+/* Style the checkmark-web/indicator */
+.container-checkbox-web .checkmark-web:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+.container-checkbox-web {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
 
 
 
@@ -1798,7 +1879,7 @@ button {
 }
 
 button:hover {
-  border: 1px solid var(--light);
+  border: 1px solid var(--dark-text);
   background-color: var(--dark-text);
   color: white;
 }

@@ -17,451 +17,610 @@ seo:
 </section>
 
 <section class="padded capped-width-narrow">
-    <form action="https://formspree.io/f/xeqwykqo" method="POST">
+    <form action="#" method="POST">
 
         <div class="border-bottom margin-b-1">
             <p> Kontaktdaten </p>
         </div>
 
-            <label for="_vorname"> Vorname </label>
-            <input type="text" name="_vorname" id="_vorname" />
-    
-            <label for="_nachname"> Nachname </label>
-            <input type="text" name="_nachname" id="_nachname" />
-    
-            <label for="_adresse"> Strasse, Nr. </label>
-            <input type="text" name="_adresse" id="_adresse" />
-    
-            <label for="_wohnort"> PLZ, Wohnort </label>
-            <input type="text" name="_wohnort" id="_wohnort" />
-       
-            <label for="_replyto"> Email </label>
-            <input type="email" name="_replyto" id="_replyto" />
-    
-            <label for="phone"> Telefonnummer </label>
-            <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" /> 
+        <label for="_vorname"> Vorname </label>
+        <input type="text" name="_vorname" id="_vorname" />
 
-            <label for="_seminar"> Wie bist du auf die Pajurama Kreativagentur aufmerksam geworden? </label>
-            <select name="_seminar" id="_seminar">
-                <option value="" disabled selected hidden> Option auswählen </option>
-                <option> Weiterempfehlung </option>
-                <option> Google </option>
-                <option> Instagram </option>
-                <option> LinkedIn </option>
-                <option> Sonstiges </option>
-            </select>
+        <label for="_nachname"> Nachname </label>
+        <input type="text" name="_nachname" id="_nachname" />
 
-        <div class="grid-middle-spaceAround">
-            <div class="col-12 left border-bottom">
-                <p> Wo dürfen wir für dich kreativ werden? </p>
-            </div>
-            <div class="col-4_sm-12 center">
-                <label class="container-checkbox padded-2">Fotografie
-                    <input type="checkbox" id="fotografie-checkbox" name="fotografie" value="fotografie">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-            <div class="col-4_sm-12  center">
-                <label class="container-checkbox padded-2">Web Design
-                    <input type="checkbox" id="webdesign-checkbox" name="fotografie" value="fotografie">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-            <div class="col-4_sm-12 center">
-                <label class="container-checkbox padded-2"> Branding
-                    <input type="checkbox" id="branding-checkbox" name="branding" value="branding">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
+        <label for="_adresse"> Strasse, Nr. </label>
+        <input type="text" name="_adresse" id="_adresse" />
+
+        <label for="_wohnort"> PLZ, Wohnort </label>
+        <input type="text" name="_wohnort" id="_wohnort" />
+    
+        <label for="_replyto"> Email </label>
+        <input type="email" name="_replyto" id="_replyto" />
+
+        <label for="phone"> Telefonnummer </label>
+        <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" /> 
+
+        <label for="_seminar"> Wie bist du auf die Pajurama Kreativagentur aufmerksam geworden? </label>
+        <select name="_seminar" id="_seminar">
+            <option value="" disabled selected hidden> Option auswählen </option>
+            <option> Weiterempfehlung </option>
+            <option> Google </option>
+            <option> Instagram </option>
+            <option> LinkedIn </option>
+            <option> Sonstiges </option>
+        </select>
+
+        <div class="border-bottom">
+            <p> Wo dürfen wir für dich kreativ werden? </p>
         </div>
 
-        <div class="grid-middle-spaceAround hidden" id="fotografie-auswahl">
-            <div class="col-12 margin-b-2 left border-bottom">
-                <p> Fotografie Bereich </p>
+        <!--  Start Web Design Bereich div -->
+        <div>
+            <label class="container-checkbox padded-2-custom">Web Design
+                <input type="checkbox" id="webdesign-checkbox" name="fotografie" value="fotografie">
+                <span class="checkmark"></span>
+            </label>
+
+
+            <div class="grid-middle-spaceAround hidden" id="webdesign-auswahl">
+                <div class="col-12 margin-b-2 left border-bottom">
+                    <p> Website oder Onlineshop? </p>
+                </div>
+                <div class="col-6_sm-12 center margin-b-2">
+                    <label class="container-checkbox-sub">Website
+                        <input type="checkbox" id="website-checkbox" name="website" value="website">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                </div>
+                <div class="col-6_sm-12-top center">
+                    <label class="container-checkbox-sub">Onlineshop
+                        <input type="checkbox" id="onlineshop-checkbox" name="onlineshop" value="onlineshop">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                </div>
             </div>
-            <div class="col-6_sm-12 center margin-b-2">
-                <label class="container-checkbox-sub">Personal Branding
-                    <input type="checkbox" id="personalbranding-checkbox" name="personalbranding" value="personalbranding">
-                    <span class="checkmark-sub"></span>
-                </label>
-                <label class="container-checkbox-sub">Unternehmen
-                    <input type="checkbox" id="unternehmen-checkbox" name="unternehmen" value="unternehmen">
-                    <span class="checkmark-sub"></span>
-                </label>
-                <label class="container-checkbox-sub">Tourismus
-                    <input type="checkbox" id="tourismus-checkbox" name="tourismus" value="tourismus">
-                    <span class="checkmark-sub"></span>
-                </label>
-                <label class="container-checkbox-sub">Brand
-                    <input type="checkbox" id="brand-checkbox" name="brand" value="brand">
-                    <span class="checkmark-sub"></span>
-                </label>
-                <label class="container-checkbox-sub">Hotel
-                    <input type="checkbox" id="hotel-checkbox" name="hotel" value="hotel">
-                    <span class="checkmark-sub"></span>
-                </label>
-                <label class="container-checkbox-sub">Fashion
-                    <input type="checkbox" id="fashion-checkbox" name="fashion" value="fashion">
-                    <span class="checkmark-sub"></span>
-                </label>
-                <label class="container-checkbox-sub">Cafe
-                    <input type="checkbox" id="cafe-checkbox" name="cafe" value="cafe">
-                    <span class="checkmark-sub"></span>
-                </label>
-                <label class="container-checkbox-sub"> Anderes
-                    <input type="checkbox" id="etwas-anderes-checkbox" name="etwas-anderes" value="etwas-anderes">
-                    <span class="checkmark-sub"></span>
-                </label>
+
+            <!-- Website Formular -->
+            <div id="website-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Website Fragebogen </p>
+                </div>
+
+                <label for="message"> Erzähle uns von deinem Business. :) </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Was sind die wichtigsten Dinge, die du auf der Website hervorheben möchtest? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Was ist dein Verkaufsargument? Warum entscheiden sich Kunden für dich? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Wer ist deine Zielgruppe? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Gibt es bestimmte Funktionen/Features, die du auf der Website wünschst? </label>
+                <div class="padded">
+                    <label class="container-checkbox-web"> Buchungstool
+                        <input type="checkbox" id="personalbranding-checkbox" name="personalbranding" value="personalbranding">
+                        <span class="checkmark-web"></span>
+                    </label>
+                    <label class="container-checkbox-web"> Event/Seminar/Kurs Kalender
+                        <input type="checkbox" id="unternehmen-checkbox" name="unternehmen" value="unternehmen">
+                        <span class="checkmark-web"></span>
+                    </label>
+                    <label class="container-checkbox-web"> Onlineshop Plugin (monatliche Kosten, Onlinezahlungen möglich und automatierste Rechungsstellung)
+                        <input type="checkbox" id="tourismus-checkbox" name="tourismus" value="tourismus">
+                        <span class="checkmark-web"></span>
+                    </label>
+                    <label class="container-checkbox-web"> Onlineshop mit Bestellformular (kostenlos im Gebrauch, aber keine Onlinezahlung möglich und manuelle Rechnungsstellung)
+                        <input type="checkbox" id="brand-checkbox" name="brand" value="brand">
+                        <span class="checkmark-web"></span>
+                    </label>
+                    <label class="container-checkbox-web"> Mehrsprachig
+                        <input type="checkbox" id="hotel-checkbox" name="hotel" value="hotel">
+                        <span class="checkmark-web"></span>
+                    </label>
+                    <label for="sprachen"> Wie viele und welche Sprachen? </label>
+                    <input type="sprachen" id="sprachen" name="sprachen" /> 
+                    <label class="container-checkbox-web"> Instagram Feed
+                        <input type="checkbox" id="fashion-checkbox" name="fashion" value="fashion">
+                        <span class="checkmark-web"></span>
+                    </label>
+                    <label class="container-checkbox-web"> Blog
+                        <input type="checkbox" id="cafe-checkbox" name="cafe" value="cafe">
+                        <span class="checkmark-web"></span>
+                    </label>
+                </div>
+                <textarea name="message" id="message" placeholder="... oder sonstiges?"></textarea>
+
+                <label for="message"> Hast du bereits eine Vorstellung davon, wie die Struktur und der Inhalt der Website aussehen soll (was für Seiten gebraucht werden (Home, Über uns, etc.) und was jede Seite enthält? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Bestehende Markenrichtlinien, Schriften, Farben, Bilder? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="domain"> Hast du bereits eine Domain (www.websitename.com) ? Wenn ja, bei welchem Anbieter registriert? </label>
+                <input type="domain" id="domain" name="domain" /> 
+
+                <label for="email"> Hast du bereits eine professionelle E-Mail (______@websitename.com) ? Wenn ja, über welchen Anbieter? </label>
+                <input type="email" id="email" name="email" /> 
+
             </div>
-            <div class="col-6_sm-12-top center">
-                <label class="container-checkbox-sub">Elopement
-                    <input type="checkbox" id="elopement-checkbox" name="elopement" value="elopement">
-                    <span class="checkmark-sub"></span>
-                </label>
-                <label class="container-checkbox-sub">Couple
-                    <input type="checkbox" id="couple-checkbox" name="couple" value="couple">
-                    <span class="checkmark-sub"></span>
-                </label>
-                <label class="container-checkbox-sub">Intention
-                    <input type="checkbox" id="intention-checkbox" name="intention" value="intention">
-                    <span class="checkmark-sub"></span>
-                </label>
-                <label class="container-checkbox-sub">Anderes
-                    <input type="checkbox" id="etwas-anderes-2-checkbox" name="etwas-anderes" value="etwas-anderes">
-                    <span class="checkmark-sub"></span>
-                </label>
+
+            <!-- Onlineshop Formular -->
+            <div id="onlineshop-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Onlineshop Fragebogen </p>
+                </div>
+
+
+                <label for="_seminar"> Paket </label>
+                <select name="_seminar" id="_seminar">
+                    <option value="" disabled selected hidden> Option auswählen </option>
+                    <option> Personal Branding Standard Paket / CHF 1'400.- </option>
+                    <option> massgeschneidertes Paket </option>
+                </select>
+
+                <label for="message"> Erzähle uns von deinem Wirken. :) </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Was inspiriert dich selbstständig zu sein oder zu werden? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähl uns ein bisschen über dich, über deine Träume, über dein Leben. </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="lieblingssong"> Was ist dein aktueller Lieblingssong? </label>
+                <input type="lieblingssong" id="lieblingssong" name="lieblingssong" /> 
+
+                <label for="jahreszeit"> Was ist deine Lieblingsjahreszeit? </label>
+                <input type="jahreszeit" id="jahreszeit" name="jahreszeit" /> 
+
+
             </div>
+                
         </div>
+        <!--  End Web Design Bereich div -->
 
 
-        <div class="grid-middle-spaceAround hidden" id="webdesign-auswahl">
-            <div class="col-12 margin-b-2 left border-bottom">
-                <p> Website oder Onlineshop? </p>
+        <!--  Start Fotografie Bereich div-->
+        <div>
+            <label class="container-checkbox padded-2-custom">Fotografie
+                <input type="checkbox" id="fotografie-checkbox" name="fotografie" value="fotografie">
+                <span class="checkmark"></span>
+            </label>
+
+            <div class="grid-middle-spaceAround hidden" id="fotografie-auswahl">
+                <div class="col-12 margin-b-2 left border-bottom">
+                    <p> Fotografie Bereich </p>
+                </div>
+                <div class="col-6_sm-12 center margin-b-2">
+                    <label class="container-checkbox-sub">Personal Branding
+                        <input type="checkbox" id="personalbranding-checkbox" name="personalbranding" value="personalbranding">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                    <label class="container-checkbox-sub">Unternehmen
+                        <input type="checkbox" id="unternehmen-checkbox" name="unternehmen" value="unternehmen">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                    <label class="container-checkbox-sub">Tourismus
+                        <input type="checkbox" id="tourismus-checkbox" name="tourismus" value="tourismus">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                    <label class="container-checkbox-sub">Brand
+                        <input type="checkbox" id="brand-checkbox" name="brand" value="brand">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                    <label class="container-checkbox-sub">Hotel
+                        <input type="checkbox" id="hotel-checkbox" name="hotel" value="hotel">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                    <label class="container-checkbox-sub">Fashion
+                        <input type="checkbox" id="fashion-checkbox" name="fashion" value="fashion">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                    <label class="container-checkbox-sub">Cafe
+                        <input type="checkbox" id="cafe-checkbox" name="cafe" value="cafe">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                    <label class="container-checkbox-sub"> Anderes
+                        <input type="checkbox" id="etwas-anderes-checkbox" name="etwas-anderes" value="etwas-anderes">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                </div>
+                <div class="col-6_sm-12-top center">
+                    <label class="container-checkbox-sub">Elopement
+                        <input type="checkbox" id="elopement-checkbox" name="elopement" value="elopement">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                    <label class="container-checkbox-sub">Couple
+                        <input type="checkbox" id="couple-checkbox" name="couple" value="couple">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                    <label class="container-checkbox-sub">Intention
+                        <input type="checkbox" id="intention-checkbox" name="intention" value="intention">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                    <label class="container-checkbox-sub">Anderes
+                        <input type="checkbox" id="etwas-anderes-2-checkbox" name="etwas-anderes" value="etwas-anderes">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                </div>
             </div>
-            <div class="col-6_sm-12 center margin-b-2">
-                <label class="container-checkbox-sub">Website
-                    <input type="checkbox" id="website-checkbox" name="website" value="website">
-                    <span class="checkmark-sub"></span>
-                </label>
-            </div>
-            <div class="col-6_sm-12-top center">
-                <label class="container-checkbox-sub">Onlineshop
-                    <input type="checkbox" id="onlineshop-checkbox" name="onlineshop" value="onlineshop">
-                    <span class="checkmark-sub"></span>
-                </label>
-            </div>
-        </div>
 
+            <!-- Personal Branding Formular -->
+            <div id="personalbranding-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Personal Branding Fragen </p>
+                </div>
 
-    <!-- Personal Branding Formular -->
-
-        <div id="personalbranding-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Personal Branding Fragen </p>
-            </div>
-
-    
-            <label for="_seminar"> Paket </label>
-            <select name="_seminar" id="_seminar">
-                <option value="" disabled selected hidden> Option auswählen </option>
-                <option> Personal Branding Standard Paket / CHF 1'400.- </option>
-                <option> massgeschneidertes Paket </option>
-            </select>
-
-            <label for="message"> Erzähle uns von deinem Wirken. :) </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Was inspiriert dich selbstständig zu sein oder zu werden? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Erzähl uns ein bisschen über dich, über deine Träume, über dein Leben. </label>
-            <textarea name="message" id="message"></textarea>
         
-            <label for="lieblingssong"> Was ist dein aktueller Lieblingssong? </label>
-            <input type="lieblingssong" id="lieblingssong" name="lieblingssong" /> 
-       
-            <label for="jahreszeit"> Was ist deine Lieblingsjahreszeit? </label>
-            <input type="jahreszeit" id="jahreszeit" name="jahreszeit" /> 
-       
-
-        </div>
-
-
-        <!-- Unternehmen Formular -->
-
-        <div id="unternehmen-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Unternehmensfotografie Fragen </p>
-            </div>
-
-            <label for="message"> Für was brauchst du Fotos? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Hast du schon eine Idee, wie der Umfang des Projekts aussehen soll? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Erzähle uns von deinem Unternehmen. :) </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="datum"> Gibt es ein bestimmtes Datum, an dem die Fotografie Produktion statt finden muss (z.B. ein Event) ? </label>
-            <input type="datum" id="datum" name="datum" /> 
-    
-        </div>
-
-        <!-- Tourismus Formular -->
-
-        <div id="tourismus-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Tourismus Fotografie Fragen </p>
-            </div>
-
-            <label for="message"> Für was brauchst du Fotos? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Wie heisst deine Tourismus Region und von welchem Tourismus-Büro meldest du dich? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Habt ihr bereits ein Vision für eine Fotografie Produktion und eine Vorstellung davon, wie der Umfang aussehen soll? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="datum"> Gibt es ein bestimmtes Datum, an dem die Fotografie Produktion statt finden muss (z.B. ein Event) ? </label>
-            <input type="datum" id="datum" name="datum" /> 
-    
-        </div>
-
-        <!-- Brand Formular -->
-
-        <div id="brand-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Brand Fotografie Fragen </p>
-            </div>
-
-            <label for="message"> Für was brauchst du Fotos? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Erzähle uns von deiner Brand. </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Hast du bereits ein Vision für eine Fotografie Produktion und eine Vorstellung davon, wie der Umfang aussehen soll? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="datum"> Gibt es ein bestimmtes Datum, an dem die Fotografie Produktion statt finden muss (z.B. ein Event) ? </label>
-            <input type="datum" id="datum" name="datum" /> 
-    
-        </div>
-
-        <!-- Hotel Formular -->
-
-        <div id="hotel-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Hotel Fotografie Fragen </p>
-            </div>
-
-            <label for="message"> Für was braucht ihr Fotos? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Erzähle uns von eurem Hotel. </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Habt ihr bereits ein Vision für eine Fotografie Produktion und eine Vorstellung davon, wie der Umfang aussehen soll? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="datum"> Gibt es ein bestimmtes Datum, an dem die Fotografie Produktion statt finden muss (z.B. ein Event) ? </label>
-            <input type="datum" id="datum" name="datum" /> 
-    
-        </div>
-
-        <!-- Fashion Formular -->
-
-        <div id="fashion-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Fashion Fotografie Fragen </p>
-            </div>
-
-            <label for="message"> Für was braucht ihr Fotos? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Erzähle uns von eurer Fashion Brand. </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Habt ihr bereits ein Vision für eine Fotografie Produktion und eine Vorstellung davon, wie der Umfang aussehen soll? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="datum"> Gibt es ein bestimmtes Datum, an dem die Fotografie Produktion statt finden muss (z.B. ein Event) ? </label>
-            <input type="datum" id="datum" name="datum" /> 
-    
-        </div>
-
-        <!-- Cafe Formular -->
-
-        <div id="cafe-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Cafe Fotografie Fragen </p>
-            </div>
-
-            <label for="_seminar"> Paket </label>
-            <select name="_seminar" id="_seminar">
-                <option value="" disabled selected hidden> Option auswählen </option>
-                <option> Storytelling Café Fotoshoot 1h / CHF 800.- </option>
-                <option> Storytelling Café Fotoshoot 2h / CHF 1'400.- </option>
-            </select>
-
-            <label for="message"> Für was brauchst du Fotos? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Erzähle uns von deinem Cafe. </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Was hat dich inspiriert ein eigenes Cafe zu eröffnen oder in einem Cafe zu arbeiten? </label>
-            <textarea name="message" id="message"></textarea>
-
-    
-        </div>
-
-        <!-- etwas anderes Formular -->
-
-        <div id="etwas-anderes-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Ein anderer Fotografie Bereich? Kein Problem! </p>
-            </div>
-
-            <label for="message"> Um was geht es? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Für was brauchst du Fotos? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Erzähle uns von deiner Vision. </label>
-            <textarea name="message" id="message"></textarea>
-
-        </div>
-
-
-        <!-- Elopement Formular -->
-
-        <div id="elopement-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Elopement Fotografie Fragen </p>
-            </div>
-
-            <label for="_seminar"> Paket </label>
-            <select name="_seminar" id="_seminar">
-                <option value="" disabled selected hidden> Option auswählen </option>
-                <option> Sonnenuntergang / CHF 2'200.- </option>
-                <option> Sonnenaufgang bis Sonnenuntergang / CHF 4'400.- </option>
-            </select>
-
-            <label for="_vorname"> Vorname Verlobte/r </label>
-            <input type="text" name="_vorname" id="_vorname" />
-    
-            <label for="_nachname"> Nachname Verlobte/r </label>
-            <input type="text" name="_nachname" id="_nachname" />
-
-            <label for="_replyto"> Email Verlobte/r </label>
-            <input type="email" name="_replyto" id="_replyto" />
-
-            <label for="datum"> Habt ihr ein fixes Datum oder seid ihr flexibel? </label>
-            <input type="datum" id="datum" name="datum" /> 
-
-            <label for="message"> Erzählt uns ein bisschen über euch beide, was macht ihr, wer seid ihr? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Erzählt uns, warum ihr elopen wollt und was eure Vision ist für diesen magischen Tag? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Habt ihr bereits Fragen an uns? </label>
-            <textarea name="message" id="message"></textarea>
-
-        </div>
-
-
-        <!-- Couple Formular -->
-
-        <div id="couple-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Couple Fotografie Fragen </p>
-            </div>
-
-            <label for="_seminar"> Paket </label>
-            <select name="_seminar" id="_seminar">
-                <option value="" disabled selected hidden> Option auswählen </option>
-                <option> Storytelling Couple Fotoshoot 1h / CHF 600.- </option>
-                <option> Storytelling Couple Fotoshoot 2h / CHF 1'200.- </option>
-            </select>
-
-            <label for="_vorname"> Vorname Partner/in </label>
-            <input type="text" name="_vorname" id="_vorname" />
-    
-            <label for="_nachname"> Nachname Partner/in </label>
-            <input type="text" name="_nachname" id="_nachname" />
-
-            <label for="_replyto"> Email Partner/in</label>
-            <input type="email" name="_replyto" id="_replyto" />
-
-            <label for="message"> Erzählt uns ein bisschen über euch beide, was macht ihr, wer seid ihr? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Erzählt uns, warum ihr einen Couple Fotoshoot buchen wollt und ob ihr bereits eine Vision habt? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Habt ihr Fragen an uns? </label>
-            <textarea name="message" id="message"></textarea>
-
-        </div>
-
-        <!-- Intention Formular -->
-
-        <div id="intention-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Intention Session Fragen </p>
-            </div>
-
-            <label for="_seminar"> Paket </label>
-            <select name="_seminar" id="_seminar">
-                <option value="" disabled selected hidden> Option auswählen </option>
-                <option> Storytelling Intention Fotoshoot 1h / CHF 600.- </option>
-                <option> Storytelling Intention Fotoshoot 2h / CHF 1'200.- </option>
-            </select>
-
-            <label for="message"> Erzähle uns von dir. :) </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Was inspiriert dich? </label>
-            <textarea name="message" id="message"></textarea>
-
-            <label for="message"> Erzähl uns ein bisschen über dich, über deine Träume, über dein Leben. </label>
-            <textarea name="message" id="message"></textarea>
+                <label for="_seminar"> Paket </label>
+                <select name="_seminar" id="_seminar">
+                    <option value="" disabled selected hidden> Option auswählen </option>
+                    <option> Personal Branding Standard Paket / CHF 1'400.- </option>
+                    <option> massgeschneidertes Paket </option>
+                </select>
+
+                <label for="message"> Erzähle uns von deinem Wirken. :) </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Was inspiriert dich selbstständig zu sein oder zu werden? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähl uns ein bisschen über dich, über deine Träume, über dein Leben. </label>
+                <textarea name="message" id="message"></textarea>
+            
+                <label for="lieblingssong"> Was ist dein aktueller Lieblingssong? </label>
+                <input type="lieblingssong" id="lieblingssong" name="lieblingssong" /> 
         
-            <label for="lieblingssong"> Was ist dein aktueller Lieblingssong? </label>
-            <input type="lieblingssong" id="lieblingssong" name="lieblingssong" /> 
-       
-            <label for="jahreszeit"> Was ist deine Lieblingsjahreszeit? </label>
-            <input type="jahreszeit" id="jahreszeit" name="jahreszeit" /> 
-
-        </div>
-
-
-
-        <!-- etwas anderes Formular -->
-
-        <div id="etwas-anderes-2-auswahl" class="hidden">
-            <div class="border-bottom margin-b-1">
-                <p> Ein anderer Fotografie Bereich? Kein Problem! </p>
+                <label for="jahreszeit"> Was ist deine Lieblingsjahreszeit? </label>
+                <input type="jahreszeit" id="jahreszeit" name="jahreszeit" /> 
             </div>
 
-            <label for="message"> Um was geht es? </label>
-            <textarea name="message" id="message"></textarea>
+            <!-- Unternehmen Formular -->
+            <div id="unternehmen-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Unternehmensfotografie Fragen </p>
+                </div>
 
-            <label for="message"> Für was brauchst du Fotos? </label>
-            <textarea name="message" id="message"></textarea>
+                <label for="message"> Für was brauchst du Fotos? </label>
+                <textarea name="message" id="message"></textarea>
 
-            <label for="message"> Erzähle uns von deiner Vision. </label>
-            <textarea name="message" id="message"></textarea>
+                <label for="message"> Hast du schon eine Idee, wie der Umfang des Projekts aussehen soll? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähle uns von deinem Unternehmen. :) </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="datum"> Gibt es ein bestimmtes Datum, an dem die Fotografie Produktion statt finden muss (z.B. ein Event) ? </label>
+                <input type="datum" id="datum" name="datum" /> 
+            </div>
+
+            <!-- Tourismus Formular -->
+            <div id="tourismus-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Tourismus Fotografie Fragen </p>
+                </div>
+
+                <label for="message"> Für was brauchst du Fotos? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Wie heisst deine Tourismus Region und von welchem Tourismus-Büro meldest du dich? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Habt ihr bereits ein Vision für eine Fotografie Produktion und eine Vorstellung davon, wie der Umfang aussehen soll? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="datum"> Gibt es ein bestimmtes Datum, an dem die Fotografie Produktion statt finden muss (z.B. ein Event) ? </label>
+                <input type="datum" id="datum" name="datum" /> 
+            </div>
+
+            <!-- Brand Formular -->
+            <div id="brand-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Brand Fotografie Fragen </p>
+                </div>
+
+                <label for="message"> Für was brauchst du Fotos? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähle uns von deiner Brand. </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Hast du bereits ein Vision für eine Fotografie Produktion und eine Vorstellung davon, wie der Umfang aussehen soll? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="datum"> Gibt es ein bestimmtes Datum, an dem die Fotografie Produktion statt finden muss (z.B. ein Event) ? </label>
+                <input type="datum" id="datum" name="datum" /> 
+            </div>
+
+            <!-- Hotel Formular -->
+            <div id="hotel-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Hotel Fotografie Fragen </p>
+                </div>
+
+                <label for="message"> Für was braucht ihr Fotos? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähle uns von eurem Hotel. </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Habt ihr bereits ein Vision für eine Fotografie Produktion und eine Vorstellung davon, wie der Umfang aussehen soll? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="datum"> Gibt es ein bestimmtes Datum, an dem die Fotografie Produktion statt finden muss (z.B. ein Event) ? </label>
+                <input type="datum" id="datum" name="datum" /> 
+            </div>
+
+            <!-- Fashion Formular -->
+            <div id="fashion-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Fashion Fotografie Fragen </p>
+                </div>
+
+                <label for="message"> Für was braucht ihr Fotos? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähle uns von eurer Fashion Brand. </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Habt ihr bereits ein Vision für eine Fotografie Produktion und eine Vorstellung davon, wie der Umfang aussehen soll? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="datum"> Gibt es ein bestimmtes Datum, an dem die Fotografie Produktion statt finden muss (z.B. ein Event) ? </label>
+                <input type="datum" id="datum" name="datum" /> 
+        
+            </div>
+
+            <!-- Cafe Formular -->
+            <div id="cafe-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Cafe Fotografie Fragen </p>
+                </div>
+
+                <label for="_seminar"> Paket </label>
+                <select name="_seminar" id="_seminar">
+                    <option value="" disabled selected hidden> Option auswählen </option>
+                    <option> Storytelling Café Fotoshoot 1h / CHF 800.- </option>
+                    <option> Storytelling Café Fotoshoot 2h / CHF 1'400.- </option>
+                </select>
+
+                <label for="message"> Für was brauchst du Fotos? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähle uns von deinem Cafe. </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Was hat dich inspiriert ein eigenes Cafe zu eröffnen oder in einem Cafe zu arbeiten? </label>
+                <textarea name="message" id="message"></textarea> 
+            </div>
+
+            <!-- etwas anderes Formular -->
+            <div id="etwas-anderes-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Ein anderer Fotografie Bereich? Kein Problem! </p>
+                </div>
+
+                <label for="message"> Um was geht es? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Für was brauchst du Fotos? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähle uns von deiner Vision. </label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+
+            <!-- Elopement Formular -->
+            <div id="elopement-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Elopement Fotografie Fragen </p>
+                </div>
+
+                <label for="_seminar"> Paket </label>
+                <select name="_seminar" id="_seminar">
+                    <option value="" disabled selected hidden> Option auswählen </option>
+                    <option> Sonnenuntergang / CHF 2'200.- </option>
+                    <option> Sonnenaufgang bis Sonnenuntergang / CHF 4'400.- </option>
+                </select>
+
+                <label for="_vorname"> Vorname Verlobte/r </label>
+                <input type="text" name="_vorname" id="_vorname" />
+        
+                <label for="_nachname"> Nachname Verlobte/r </label>
+                <input type="text" name="_nachname" id="_nachname" />
+
+                <label for="_replyto"> Email Verlobte/r </label>
+                <input type="email" name="_replyto" id="_replyto" />
+
+                <label for="datum"> Habt ihr ein fixes Datum oder seid ihr flexibel? </label>
+                <input type="datum" id="datum" name="datum" /> 
+
+                <label for="message"> Erzählt uns ein bisschen über euch beide, was macht ihr, wer seid ihr? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzählt uns, warum ihr elopen wollt und was eure Vision ist für diesen magischen Tag? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Habt ihr bereits Fragen an uns? </label>
+                <textarea name="message" id="message"></textarea>
+
+            </div>
+
+            <!-- Couple Formular -->
+            <div id="couple-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Couple Fotografie Fragen </p>
+                </div>
+
+                <label for="_seminar"> Paket </label>
+                <select name="_seminar" id="_seminar">
+                    <option value="" disabled selected hidden> Option auswählen </option>
+                    <option> Storytelling Couple Fotoshoot 1h / CHF 600.- </option>
+                    <option> Storytelling Couple Fotoshoot 2h / CHF 1'200.- </option>
+                </select>
+
+                <label for="_vorname"> Vorname Partner/in </label>
+                <input type="text" name="_vorname" id="_vorname" />
+        
+                <label for="_nachname"> Nachname Partner/in </label>
+                <input type="text" name="_nachname" id="_nachname" />
+
+                <label for="_replyto"> Email Partner/in</label>
+                <input type="email" name="_replyto" id="_replyto" />
+
+                <label for="message"> Erzählt uns ein bisschen über euch beide, was macht ihr, wer seid ihr? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzählt uns, warum ihr einen Couple Fotoshoot buchen wollt und ob ihr bereits eine Vision habt? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Habt ihr Fragen an uns? </label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+
+            <!-- Intention Formular -->
+            <div id="intention-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Intention Session Fragen </p>
+                </div>
+
+                <label for="_seminar"> Paket </label>
+                <select name="_seminar" id="_seminar">
+                    <option value="" disabled selected hidden> Option auswählen </option>
+                    <option> Storytelling Intention Fotoshoot 1h / CHF 600.- </option>
+                    <option> Storytelling Intention Fotoshoot 2h / CHF 1'200.- </option>
+                </select>
+
+                <label for="message"> Erzähle uns von dir. :) </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Was inspiriert dich? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Was sind deine Hobbys? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähl uns ein bisschen über dich, über deine Träume, über dein Leben. </label>
+                <textarea name="message" id="message"></textarea>
+            
+                <label for="lieblingssong"> Was ist dein aktueller Lieblingssong? </label>
+                <input type="lieblingssong" id="lieblingssong" name="lieblingssong" /> 
+        
+                <label for="jahreszeit"> Was ist deine Lieblingsjahreszeit? </label>
+                <input type="jahreszeit" id="jahreszeit" name="jahreszeit" /> 
+            </div>
+
+            <!-- etwas anderes Formular -->
+            <div id="etwas-anderes-2-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Ein anderer Fotografie Bereich? Kein Problem! </p>
+                </div>
+
+                <label for="message"> Um was geht es? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Für was brauchst du Fotos? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähle uns von deiner Vision. </label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+        </div>
+        <!--  End Fotografie Bereich div -->
+
+
+        <!--  Start Branding Bereich div -->
+        <div>
+            <label class="container-checkbox padded-2-custom"> Branding
+                <input type="checkbox" id="branding-checkbox" name="branding" value="branding">
+                <span class="checkmark"></span>
+            </label>
+
+            <div class="grid-middle-spaceAround hidden" id="branding-auswahl">
+                <div class="col-12 margin-b-2 left border-bottom">
+                    <p> Logo Design oder Illustration? (Geht auch beides, klick einfach beide Haken an und fülle die Fragen, die sich unten öffnen, aus.) </p>
+                </div>
+                <div class="col-6_sm-12 center margin-b-2">
+                    <label class="container-checkbox-sub">Logo
+                        <input type="checkbox" id="logo-checkbox" name="website" value="website">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                </div>
+                <div class="col-6_sm-12-top center">
+                    <label class="container-checkbox-sub">Illustration
+                        <input type="checkbox" id="illustration-checkbox" name="onlineshop" value="onlineshop">
+                        <span class="checkmark-sub"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Logo Formular -->
+            <div id="logo-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Website Fragebogen </p>
+                </div>
+
+
+                <label for="_seminar"> Paket </label>
+                <select name="_seminar" id="_seminar">
+                    <option value="" disabled selected hidden> Option auswählen </option>
+                    <option> Personal Branding Standard Paket / CHF 1'400.- </option>
+                    <option> massgeschneidertes Paket </option>
+                </select>
+
+                <label for="message"> Erzähle uns von deinem Wirken. :) </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Was inspiriert dich selbstständig zu sein oder zu werden? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähl uns ein bisschen über dich, über deine Träume, über dein Leben. </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="lieblingssong"> Was ist dein aktueller Lieblingssong? </label>
+                <input type="lieblingssong" id="lieblingssong" name="lieblingssong" /> 
+
+                <label for="jahreszeit"> Was ist deine Lieblingsjahreszeit? </label>
+                <input type="jahreszeit" id="jahreszeit" name="jahreszeit" /> 
+            </div>
+
+            <!-- Illustration Formular -->
+            <div id="illustration-auswahl" class="hidden">
+                <div class="border-bottom margin-b-1">
+                    <p> Illustration Fragebogen </p>
+                </div>
+
+
+                <label for="_seminar"> Paket </label>
+                <select name="_seminar" id="_seminar">
+                    <option value="" disabled selected hidden> Option auswählen </option>
+                    <option> Personal Branding Standard Paket / CHF 1'400.- </option>
+                    <option> massgeschneidertes Paket </option>
+                </select>
+
+                <label for="message"> Erzähle uns von deinem Wirken. :) </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Was inspiriert dich selbstständig zu sein oder zu werden? </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="message"> Erzähl uns ein bisschen über dich, über deine Träume, über dein Leben. </label>
+                <textarea name="message" id="message"></textarea>
+
+                <label for="lieblingssong"> Was ist dein aktueller Lieblingssong? </label>
+                <input type="lieblingssong" id="lieblingssong" name="lieblingssong" /> 
+
+                <label for="jahreszeit"> Was ist deine Lieblingsjahreszeit? </label>
+                <input type="jahreszeit" id="jahreszeit" name="jahreszeit" /> 
+            </div>
 
         </div>
-
+        <!--  End Branding Bereich div -->
 
         <button type="submit" class="button margin-t-2"> Abschicken </button>
-
     </form>
 </section>

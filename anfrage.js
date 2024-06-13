@@ -21,6 +21,10 @@
     document.getElementById("couple-auswahl").classList.add('hidden');
     document.getElementById("intention-auswahl").classList.add('hidden');
     document.getElementById("etwas-anderes-2-auswahl").classList.add('hidden');
+    document.getElementById("website-auswahl").classList.add('hidden');
+    document.getElementById("onlineshop-auswahl").classList.add('hidden');
+    document.getElementById("logo-auswahl").classList.add('hidden');
+    document.getElementById("illustration-auswahl").classList.add('hidden');
   };
 
 document.getElementById('fotografie-checkbox').addEventListener('click', function() {
@@ -118,4 +122,48 @@ document.getElementById('etwas-anderes-2-checkbox').addEventListener('click', fu
 
 document.getElementById('webdesign-checkbox').addEventListener('click', function() {
     document.getElementById("webdesign-auswahl").classList.toggle('hidden');
+    // CLOSE personalbranding when form is open and uncheck personalbranding-checkbox
+    document.getElementById("website-auswahl").classList.add('hidden');
+    document.getElementById('website-checkbox').checked = false;
+    // CLOSE personalbranding when form is open and uncheck personalbranding-checkbox
+    document.getElementById("onlineshop-auswahl").classList.add('hidden');
+    document.getElementById('onlineshop-checkbox').checked = false;
+});
+
+
+document.getElementById('website-checkbox').addEventListener('click', function() {
+    document.getElementById("website-auswahl").classList.toggle('hidden');
+
+    document.getElementById("onlineshop-auswahl").classList.add('hidden');
+    document.getElementById('onlineshop-checkbox').checked = false;
+});
+
+document.getElementById('onlineshop-checkbox').addEventListener('click', function() {
+    document.getElementById("onlineshop-auswahl").classList.toggle('hidden');
+
+    document.getElementById("website-auswahl").classList.add('hidden');
+    document.getElementById('website-checkbox').checked = false;
+});
+
+
+
+
+
+document.getElementById('branding-checkbox').addEventListener('click', function() {
+    document.getElementById("branding-auswahl").classList.toggle('hidden');
+    // CLOSE personalbranding when form is open and uncheck personalbranding-checkbox
+    document.getElementById("logo-auswahl").classList.add('hidden');
+    document.getElementById('logo-checkbox').checked = false;
+    // CLOSE personalbranding when form is open and uncheck personalbranding-checkbox
+    document.getElementById("illustration-auswahl").classList.add('hidden');
+    document.getElementById('illustration-checkbox').checked = false;
+});
+
+
+document.getElementById('logo-checkbox').addEventListener('click', function() {
+    document.getElementById("logo-auswahl").classList.toggle('hidden');
+});
+
+document.getElementById('illustration-checkbox').addEventListener('click', function() {
+    document.getElementById("illustration-auswahl").classList.toggle('hidden');
 });
