@@ -95,7 +95,6 @@ document.getElementById('cafe-checkbox').addEventListener('click', function() {
     document.getElementById("cafe-auswahl").classList.toggle('hidden');
 });
 
-
 document.getElementById('etwas-anderes-checkbox').addEventListener('click', function() {
     document.getElementById("etwas-anderes-auswahl").classList.toggle('hidden');
 });
