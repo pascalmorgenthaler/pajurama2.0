@@ -3344,6 +3344,10 @@ input.tgg-title {
     margin-bottom: 2rem;
   }
 
+  .index-landscape {
+    margin-top: 1rem;
+  }
+
 }
 
 @media(max-width:30em) {
