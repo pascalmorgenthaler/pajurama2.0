@@ -145,7 +145,7 @@ html {
 .margin-l-c1 { margin-left: -4rem;}
 .margin-l-c2 { margin-right: 9rem;}
 .margin-l-c4 { margin-left: 9rem;}
-
+.margin-l-c5 { margin-left: -2rem;}
 .margin-l-c3 { margin-right: 5rem;}
 
 .margin-r-c1 { margin-left: 10rem;}
@@ -294,7 +294,15 @@ html {
   right: 10%;
 }
 
-  
+.small-image-container { 
+  margin: 5px;
+  display: inline-block;
+}
+
+.small-image-container img {
+  width: 9vw;
+  height: auto;
+}
 
 
 /* ------------ Position Absolute  ----------------------- */
@@ -566,6 +574,13 @@ html {
   position: absolute;
   top: -2rem;
   left: -2rem;
+}
+
+.po27 {
+  width: 7rem;
+  position: absolute;
+  bottom: 1.7rem;
+  left: 7rem;
 }
 
 .logo-header-4 {
@@ -2904,6 +2919,10 @@ input.tgg-title {
 
 @media(max-width:36em) {
 
+  .xs-right {
+    text-align: right;
+  }
+
 		.show-xs { display: block; }
 		.hide-xs { display: none;  }
     .show-xs-inline { display: inline-block;}
@@ -3328,6 +3347,8 @@ input.tgg-title {
     min-width: 200vw;
   }
 
+
+
   .xs-white { color: white;}
 
   .padded-t-c3 {
@@ -3347,6 +3368,13 @@ input.tgg-title {
 
   .index-landscape {
     margin-top: 1rem;
+  }
+
+  .po27 {
+    width: 6.5rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
   }
 
 }
