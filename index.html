@@ -275,9 +275,9 @@ testimonials:
 
 
   <section class="relative">
-    <div class="lines-2">
+    <!-- <div class="lines-2">
       <img src="/icons/forms/Lines-2.svg" style="width: 100vw;">
-    </div>
+    </div> -->
     <!-- Slider main container -->
     <div class="swiper-storytelling-index relative">
       <!-- Additional required wrapper -->
@@ -285,13 +285,13 @@ testimonials:
         <!-- Slides -->
         {% for shooting in page.shootings %}
         <div class="swiper-slide padded">
-          <div class="grid capped-width">
+          <div class="grid capped-width-narrow">
             <div class="col-7_xs-6 grid-spaceAround">
               <div class="col-12 padded-1 center">
                 <h2 class="uppercase" style="line-height: 1.5;"> {{ shooting.title }} </h2>
               </div>
               <div class="col-6_sm-8_xs-12 padded-1 relative">
-                <div class="blub-3">
+                <div class="blub-3 hide-md">
                   <img src="/icons/forms/blub-3.svg">
                 </div>
                 <video autoplay loop muted playsinline poster="/images/index/{{ shooting.cover }}" class="storytelling-video">
@@ -340,7 +340,7 @@ testimonials:
 
 
 
-    <section class="padded capped-width">
+    <section class="padded">
       <!-- Slider main container -->
       <div class="swiper-bangers">
         <!-- Additional required wrapper -->
@@ -412,8 +412,8 @@ testimonials:
         <!-- <div class="swiper-pagination"></div> -->
       
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev hide-md"> </div>
-        <div class="swiper-button-next hide-md"> </div>
+        <!-- <div class="swiper-button-prev hide-md"> </div>
+        <div class="swiper-button-next hide-md"> </div> -->
       
         <!-- If we need scrollbar -->
         <!-- <div class="swiper-scrollbar"></div> -->

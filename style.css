@@ -81,7 +81,7 @@ html {
 .padded-l-c1 { padding-left: 14%;}
 
 .padded-lg { padding: 10%;  }
-.padded-xl { padding: 0 15% 10% 15%;}
+.padded-xl { padding: 0 15% 17% 15%;}
 
 .padded-03 { padding: 0.3rem}
 .padded-05 { padding: 0.5rem; }
@@ -217,7 +217,7 @@ html {
 .swiper-free-small-images {
   width: 100%;
   height: auto;
-  margin-left: -5rem;
+  margin-left: -20%;
   overflow-x: hidden;
 }
 
@@ -227,8 +227,6 @@ html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  max-width: 850px;
-  margin: auto;
 }
 
 /*
@@ -325,10 +323,10 @@ html {
 
 .blub-3 {
   position: absolute;
-  top: -5rem;
-  right: -7rem;
+  top: -4rem;
+  right: -8rem;
   z-index: -5;
-  width: 20rem;
+  width: 17rem;
 }
 
 .website-jetzt-buchen p {
@@ -707,7 +705,7 @@ html {
 
 
 .storytelling-index-image {
-  border: 14px solid var(--light) !important;
+  border: 6px solid var(--light) !important;
 }
  
 .storytelling-video {
@@ -996,29 +994,32 @@ h2 a {
 }
 
 .button-light span { font-size: 1.6rem !important;}
+
 .button-light { 
     display: inline-block;
     text-decoration: none;
+    color: var(--dark-text);
+    border: 1px solid var(--light);
     line-height: 1;
-    padding: 0.2rem 0.2rem;
+    padding: 0.4rem 0.7rem;
     border: 1px solid;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
 }
 
 .button-light:hover {
-    color: white;
-    background-color: var(--dark-text);
-    border: 1px solid var(--dark-text);
+  background-color: var(--light);
 }
 
 .button-white { 
   display: inline-block;
   text-decoration: none;
   line-height: 1;
-  padding: 0.2rem 0.2rem;
+  padding: 0.4rem 0.7rem;
   border: 1px solid;
   font-size: 1.8rem;
   letter-spacing: 7px;
+  border-radius: 0.8rem;
 }
 
 .button-white:hover {
@@ -2584,6 +2585,8 @@ input.tgg-title {
 
 @media(max-width:64em) { 
 
+  .padded-xl { padding: 0 15% 20% 15%;}
+
   .margin-t-c1 {
     margin-top: 0;
   }
@@ -2662,10 +2665,10 @@ input.tgg-title {
       }
 
       .webdesign-text p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         }
         .webdesign-blub {
-        bottom: -244px;
+        bottom: -280px;
         }
 
         h1 {
@@ -2716,6 +2719,13 @@ input.tgg-title {
 
 
 @media(max-width:48em) {
+
+
+
+  .webdesign-blub {
+    min-width: 313px;
+    bottom: -239px;
+  }
 
   .padded-l-c1 {
     padding-left: 5%;
@@ -2820,9 +2830,7 @@ input.tgg-title {
         bottom: -50px;
       }
 
-      .webdesign-blub {
-        bottom: -213px;
-      }
+
 
       .swiper-free-small-images {
         width: 100%;
