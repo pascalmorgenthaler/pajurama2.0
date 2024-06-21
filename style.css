@@ -81,7 +81,7 @@ html {
 .padded-l-c1 { padding-left: 14%;}
 
 .padded-lg { padding: 10%;  }
-.padded-xl { padding: 0 15% 20% 15%;}
+.padded-xl { padding: 0 15% 10% 15%;}
 
 .padded-03 { padding: 0.3rem}
 .padded-05 { padding: 0.5rem; }
@@ -2860,6 +2860,7 @@ input.tgg-title {
         letter-spacing: 7px;
         
       }
+      .button-light { font-size: 1.6rem ;}
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -3015,7 +3016,7 @@ input.tgg-title {
             padding-bottom: 17%;
             }
             .padded-t-c1 {
-            padding-top: 191px;
+            padding-top: 224px;
             }
 
 
@@ -3060,7 +3061,7 @@ input.tgg-title {
       }
 
       .webdesign-text p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
 
       .st-ind-link p {
@@ -3281,4 +3282,6 @@ input.tgg-title {
         .logo-header-3 {
           padding-left: 2rem;
         }
+
+  .button-light { font-size: 1.5rem ;}
 }
