@@ -114,6 +114,8 @@ html {
 .padded-t-c1 { padding-top: 290px}
 .padded-t-c2 { padding-top: 7rem;}
 .padded-b-c1 { padding-bottom: 10rem;}
+
+.padded-t-c6 { padding-top: 10rem; }
 .padded-t-c3 { padding-top: 7rem;}
 .padded-t-c4 { padding-top: 10rem;}
 .padded-t-c5 { padding-top: 18%;}
@@ -221,9 +223,12 @@ html {
 
 
 
- .swiper-bangers {
+.swiper-bangers {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
 }
 
 /*
@@ -252,12 +257,12 @@ html {
 
 
  .swiper-bangers .swiper-button-prev {
-  content: url('/icons/forms/arrow-left.svg');
+  content: url('/icons/forms/arrow-left-brown.svg');
   width: 3rem;
  }
 
  .swiper-bangers .swiper-button-next {
-  content: url('/icons/forms/arrow-right.svg');
+  content: url('/icons/forms/arrow-right-brown.svg');
   width: 3rem;
  }
 
@@ -401,7 +406,7 @@ html {
 
 .po5  {
     position: absolute;
-    top: -5.3rem;
+    top: 2.7rem;
     right: 24rem;
 }
 

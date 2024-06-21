@@ -3,12 +3,12 @@ const swiper4 = new Swiper('.swiper-bangers', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1.5,
-    centeredSlides: true,
+    centeredSlides: false,
     spaceBetween: 20,
     allowTouchMove: true,
     autoplay: {
       delay: 4500,
-      reverseDirection: true,
+      reverseDirection: false,
       pauseOnMouseEnter: true,
     },
     breakpoints: {
