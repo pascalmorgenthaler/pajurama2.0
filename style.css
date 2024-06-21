@@ -394,8 +394,8 @@ html {
 
 .po3 {
   position: absolute;
-  top: -39px;
-  min-width: 47rem;
+  top: -8px;
+  min-width: 39rem;
   bottom: 0;
   right: 0;
   left: 0;
@@ -410,9 +410,9 @@ html {
 
 .po6  {
   position: absolute;
-  left: -1rem;
-  top: -39px;
-  min-width: 47rem;
+  left: -2.6rem;
+  top: -28px;
+  min-width: 44rem;
   bottom: 0;
   right: 0;
   z-index: -5;
@@ -2606,7 +2606,7 @@ input.tgg-title {
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     }
     h5 {
       font-size: 1.4rem;
@@ -2740,7 +2740,7 @@ input.tgg-title {
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   h3 {
@@ -3333,6 +3333,17 @@ input.tgg-title {
   .padded-t-c3 {
     padding-top: 3rem;
   }
+
+  .xs-bg-dark {
+    background-color: var(--dark);
+    padding: 5%;
+  }
+
+  .po5 { 
+    position: static;
+    margin-bottom: 2rem;
+  }
+
 }
 
 @media(max-width:30em) {
@@ -3358,6 +3369,8 @@ input.tgg-title {
     z-index: -4;
     min-width: 250vw;
   }
+
+
   
   
   }
