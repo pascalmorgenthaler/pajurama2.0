@@ -438,19 +438,19 @@ html {
 .po7 {
   position: absolute;
   top: -39px;
-  min-width: 47rem;
+  min-width: 39rem;
   bottom: 0;
-  right: 0;
-  z-index: -6;
+  right: -20px;
+  z-index: -3;
 }
 
 
 .po8 {
   position: absolute;
-  top: -39px;
-  min-width: 47rem;
+  top: -58px;
+  min-width: 44rem;
   bottom: 0;
-  right: -1rem;
+  right: -2.6rem;
   z-index: -5;
 }
 
@@ -581,6 +581,13 @@ html {
   position: absolute;
   bottom: 1.7rem;
   left: 7rem;
+}
+
+.po28 {
+  position: absolute;
+  top: 4rem;
+  left: 5rem;
+  font-size: 3.5rem;
 }
 
 .logo-header-4 {
@@ -2709,10 +2716,10 @@ input.tgg-title {
         right: 15rem;
       }
       .po7 {
-        top: 34px;
+        top: -47px;
       }
       .po8 {
-        top: 34px;
+        top: -58px;
       }
 
       .swiper-testimonial .swiper-button-next, .swiper-rtl .swiper-button-prev {
@@ -2725,6 +2732,13 @@ input.tgg-title {
         left: var(--swiper-navigation-sides-offset, 5%);
         right: auto;
         top: 96%;
+      }
+
+      .po28 {
+        position: absolute;
+        top: 3rem;
+        left: 5rem;
+        font-size: 3rem;
       }
   
 }
@@ -3387,6 +3401,12 @@ input.tgg-title {
     height: auto;
   }
 
+  .po28 {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-size: 2.5rem;
+  }
 
 
 }
