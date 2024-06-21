@@ -282,11 +282,11 @@ html {
 
 
  .swiper-button-next, .swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset, 10%);
+  right: var(--swiper-navigation-sides-offset, 3%);
   left: auto;
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
-  left: var(--swiper-navigation-sides-offset, 10%);
+  left: var(--swiper-navigation-sides-offset, 3%);
   right: auto;
 }
 
@@ -995,13 +995,14 @@ h2 a {
   border: 1px solid var(--dark-text);
 }
 
+.button-light span { font-size: 1.6rem !important;}
 .button-light { 
     display: inline-block;
     text-decoration: none;
     line-height: 1;
     padding: 0.2rem 0.2rem;
     border: 1px solid;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .button-light:hover {
@@ -2689,6 +2690,25 @@ input.tgg-title {
       .po5 {
         right: 15rem;
       }
+      .po7 {
+        top: 34px;
+      }
+      .po8 {
+        top: 34px;
+      }
+
+      .swiper-testimonial .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset, 5%);
+        left: auto;
+        top: 96%;
+      }
+
+      .swiper-testimonial .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, 5%);
+        right: auto;
+        top: 96%;
+      }
+  
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -2866,6 +2886,9 @@ input.tgg-title {
         
       }
       .button-light { font-size: 1.6rem ;}
+
+
+
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -3115,7 +3138,8 @@ input.tgg-title {
 
         .po5 {
           left: 3rem;
-          top: -4.3rem;
+          top: 4.7rem;
+        
         }
 
         .xs-padded-b-3 {
@@ -3142,17 +3166,7 @@ input.tgg-title {
           
         }
 
-        .swiper-testimonial .swiper-button-next, .swiper-rtl .swiper-button-prev {
-          right: var(--swiper-navigation-sides-offset, 5%);
-          left: auto;
-          top: 96%;
-        }
 
-        .swiper-testimonial .swiper-button-prev, .swiper-rtl .swiper-button-next {
-          left: var(--swiper-navigation-sides-offset, 5%);
-          right: auto;
-          top: 96%;
-        }
 
         footer nav a {
           text-align: right;
@@ -3289,4 +3303,53 @@ input.tgg-title {
         }
 
   .button-light { font-size: 1.5rem ;}
+
+  .po25 {
+    position: absolute;
+    top: -45px;
+    left: -24vw;
+    z-index: -4;
+    min-width: 283vw;
+  }
+
+  .po26 {
+    position: absolute;
+    top: -20px;
+    left: -24vw;
+    z-index: -4;
+    min-width: 200vw;
+  }
+
+  .xs-white { color: white;}
+
+  .padded-t-c3 {
+    padding-top: 3rem;
+  }
 }
+
+@media(max-width:30em) {
+
+.po26 {
+  position: absolute;
+  top: -20px;
+  left: -24vw;
+  z-index: -4;
+  min-width: 220vw;
+}
+
+
+}
+
+
+@media(max-width:25em) {
+
+  .po26 {
+    position: absolute;
+    top: -20px;
+    left: -24vw;
+    z-index: -4;
+    min-width: 250vw;
+  }
+  
+  
+  }
