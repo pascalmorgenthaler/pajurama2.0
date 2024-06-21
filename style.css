@@ -658,7 +658,8 @@ html {
   width: 100%;
   margin-left: 0.4rem;
   margin-right: 0.4rem;
-  margin-top: 2rem;
+  margin-top: -3rem;
+  z-index: 3;
 }
 
 .index-logo {
