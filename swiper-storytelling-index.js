@@ -9,11 +9,11 @@ const swiper3 = new Swiper('.swiper-storytelling-index', {
       enabled: true,
       onlyInViewport: false,
     },
-    autoplay: {
-      delay: 6500,
-      reverseDirection: false,
-      pauseOnMouseEnter: true,
-    },
+    // autoplay: {
+    //   delay: 6500,
+    //   reverseDirection: false,
+    //   pauseOnMouseEnter: true,
+    // },
     breakpoints: {
       // when window width is >= 320px
       400: {
