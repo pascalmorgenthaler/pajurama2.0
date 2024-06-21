@@ -2,7 +2,7 @@ const swiper4 = new Swiper('.swiper-bangers', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 1.5,
+    slidesPerView: 1,
     centeredSlides: false,
     spaceBetween: 20,
     allowTouchMove: true,
