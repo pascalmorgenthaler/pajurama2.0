@@ -3377,7 +3377,28 @@ input.tgg-title {
     left: 2rem;
   }
 
+  .small-image-container { 
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .small-image-container img {
+    width: 24vw;
+    height: auto;
+  }
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 @media(max-width:30em) {
 
