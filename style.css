@@ -840,6 +840,33 @@ html {
   top: 2rem;
 }
 
+.po44 {
+  position: absolute;
+  bottom: 7rem;
+  right: -10rem;
+  transform: rotate(-90deg);
+}
+
+.po44 h2 {
+  font-size: 3rem;
+}
+
+.po45 {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  width: 15rem;
+  z-index: 3;
+}
+
+.po46 {
+  position: absolute;
+  bottom: 2rem;
+  color: white;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
 
 .logo-header-4 {
   position: absolute;
@@ -1041,6 +1068,19 @@ html {
 .bg-tourismus-banner-8 { background-image: url('/images/tourismus-fotografie/tourismus-banner-8.jpg'); }
 .bg-tourismus-banner-9 { background-image: url('/images/tourismus-fotografie/tourismus-banner-9.jpg'); }
 .bg-tourismus-banner-10 { background-image: url('/images/tourismus-fotografie/tourismus-banner-10.jpg'); }
+
+
+.bg-couple-1 { background-image: url('/images/couple/mountain-road.jpg'); }
+.bg-couple-2 { background-image: url('/images/couple/alpine-lake.jpg'); }
+.bg-couple-3 { background-image: url('/images/couple/car.jpg'); }
+.bg-couple-4 { background-image: url('/images/couple/wildcamping.jpg'); }
+.bg-couple-5 { background-image: url('/images/couple/hike.jpg'); }
+.bg-couple-6 { background-image: url('/images/couple/meadow.jpg'); }
+.bg-couple-7 { background-image: url('/images/couple/pasture.jpg'); }
+.bg-couple-8 { background-image: url('/images/couple/lake.jpg') }
+.bg-couple-9 { background-image: url('/images/couple/flowers.jpg'); }
+.bg-couple-10 { background-image: url('/images/couple/blue-hour.jpg'); }
+.bg-couple-11 { background-image: url('/images/couple/golden-hour.jpg'); }
 
 
 .bg-sm-banner-1 { background-image: url('/images/tourismus-fotografie/sm-banner-1.jpg'); }
