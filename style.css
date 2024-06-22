@@ -861,7 +861,7 @@ html {
 
 .po46 {
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   color: white;
   right: 0;
   left: 0;
@@ -899,6 +899,7 @@ html {
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 .bg-accent   { background-color: var(--accent);}
+.bg-light-text { background-color: var(--light-text);}
 
 .bg-dark-c1 {
   background-color: var(--dark);
@@ -949,6 +950,43 @@ html {
 }
 .bg-border-yellow-6 {
   background-color: var(--accent);
+  border: 1px solid var(--dark-text);
+  border-left: 0;
+  min-height: 17rem;
+}
+
+
+
+.bg-border-orange-1 {
+  background-color: var(--light-text);
+  border: 1px solid var(--dark-text);
+}
+.bg-border-orange-2 {
+  background-color: var(--light-text);
+  border: 1px solid var(--dark-text);
+  border-top: 0;
+  min-height: 17rem;
+}
+.bg-border-orange-3 {
+  background-color: var(--light-text);
+  border: 1px solid var(--dark-text);
+  border-left: 0;
+  border-bottom: 0;
+}
+.bg-border-orange-4 {
+  background-color: var(--light-text);
+  border: 1px solid var(--dark-text);
+  border-left: 0;
+  min-height: 17rem;
+}
+.bg-border-orange-5 {
+  background-color: var(--light-text);
+  border: 1px solid var(--dark-text);
+  border-left: 0;
+  border-bottom: 0;
+}
+.bg-border-orange-6 {
+  background-color: var(--light-text);
   border: 1px solid var(--dark-text);
   border-left: 0;
   min-height: 17rem;
