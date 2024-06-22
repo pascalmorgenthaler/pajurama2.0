@@ -173,6 +173,11 @@ html {
 .margin-t-c4 {
   margin-top: -9rem;
 }
+.margin-t-c5 { 
+  margin-top: -9rem;
+  position: relative;
+  z-index: -2;
+}
 
 
 .margin-t-2 { margin-top: 2rem; }
@@ -609,6 +614,18 @@ html {
 
 .po29 h2 {   font-size: 4rem; }
 
+.po30 {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+}
+
+.po31 {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+}
+
 .logo-header-4 {
   position: absolute;
   top: 2rem;
@@ -624,6 +641,8 @@ html {
 .border-r-c1 { border-right: 1px solid var(--dark-text);}
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
+
+
 
 .bg-dark     { background-color: var(--dark);}
 .bg-featured { background-color: var(--featured);}
@@ -2357,6 +2376,18 @@ input.tgg-title {
   opacity: 1;
 } */
 
+/* ------------ Tourismus page  ----------------------- */
+
+.tm-exp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dark-text);
+  text-align: center;
+  padding: 2rem;
+  min-height: 395px;
+}
+
 /* ------------ Website page  ----------------------- */
 
 /* .swiper-website-portfolio .swiper-wrapper {
@@ -2963,7 +2994,19 @@ input.tgg-title {
       }
       .button-light { font-size: 1.6rem ;}
 
+      .po30 {
+        position: absolute;
+        bottom: 4rem;
+        left: 4rem;
+        color: white;
+      }
 
+      .po31 {
+        position: absolute;
+        bottom: 4rem;
+        left: 4rem;
+        color: white;
+      }
 
 }
 
