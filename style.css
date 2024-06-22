@@ -79,7 +79,17 @@ html {
   left: -2rem;
 }
 
+.po35 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
 
+.po36 {
+  position: absolute;
+  left: -4rem;
+  top: 49%;
+}
 
 .fashion-top-container-1 { 
   margin: 30px;
@@ -250,12 +260,14 @@ html {
 .margin-l-c5 { margin-left: -2rem;}
 .margin-l-c3 { margin-right: 5rem;}
 .margin-l-c6 { margin-left: -18%;}
+.margin-l-c7 { margin-left: -9rem;}
 
 
 .margin-r-c1 { margin-left: 10rem;}
 .margin-r-c2 { margin-right: -9rem;}
 .margin-r-c3 { margin-right: -10rem;}
 .margin-r-c4 { margin-left: 16%;}
+.margin-r-c5 { margin-right: -10rem;}
 
 .margin-t-05 { margin-top: 0.5rem; }
 .margin-b-05 { margin-bottom: 0.5rem; }
@@ -736,7 +748,13 @@ html {
   right: 4rem;
 }
 
-
+.po37 {
+  position: absolute;
+  bottom: 2rem;
+  z-index: 3;
+  width: 6rem;
+  right: 9rem;
+}
 
 
 
@@ -897,13 +915,14 @@ html {
   padding: 0.4rem
 }
 
-.bg-image {
-    background-color: var(--light); /* Set a fall-back color while images are loading */ 
-    background-image: url('/images/personal-branding-fotografie/experience/pb-exp-img-4.jpg');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
+.polaroid-1 {
+  padding: 0.4rem 0.4rem 4rem 0.4rem;
+  background: var(--v-light);
 }
+
+
+
+
 
 .bg-tourismus-banner-1 { background-image: url('/images/tourismus-fotografie/tourismus-banner-1.jpg'); }
 .bg-tourismus-banner-2 { background-image: url('/images/tourismus-fotografie/tourismus-banner-2.jpg'); }
@@ -989,6 +1008,7 @@ html {
 .bg-banger-2 { background-image: url('/images/index/bangers/banger-2.jpg'); }
 
 .bg-editing-pb { background-image: url('/images/personal-branding-fotografie/experience/pb-exp-img-4.jpg');}
+.bg-editing-fa { background-image: url('/images/fashion/editing.jpg');}
 
 .bg-blub-4 { 
   background-image: url('/icons/forms/Blub-4.svg');
@@ -1107,6 +1127,7 @@ p, li {
   font-weight: 100;
   font-size: 1.3rem;
   letter-spacing: -1px;
+  word-spacing: -2px;
 }
 
 
@@ -2855,7 +2876,7 @@ input.tgg-title {
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     }
     h5 {
       font-size: 1.4rem;
