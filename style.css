@@ -254,6 +254,9 @@ html {
 .margin-l { margin-left: 5%; }
 .margin-r { margin-right: 5%; }
 
+.margin-r-05 { margin-right: 0.5rem;}
+.margin-l-05 { margin-left: 0.5rem}
+
 .margin-l-c1 { margin-left: -4rem;}
 .margin-l-c2 { margin-right: 9rem;}
 .margin-l-c4 { margin-left: 9rem;}
@@ -261,6 +264,7 @@ html {
 .margin-l-c3 { margin-right: 5rem;}
 .margin-l-c6 { margin-left: -18%;}
 .margin-l-c7 { margin-left: -9rem;}
+.margin-l-c8 { margin-left: -5rem;}
 
 
 .margin-r-c1 { margin-left: 10rem;}
@@ -268,6 +272,7 @@ html {
 .margin-r-c3 { margin-right: -10rem;}
 .margin-r-c4 { margin-left: 16%;}
 .margin-r-c5 { margin-right: -10rem;}
+.margin-r-c6 { margin-right: -5rem;}
 
 .margin-t-05 { margin-top: 0.5rem; }
 .margin-b-05 { margin-bottom: 0.5rem; }
@@ -301,7 +306,7 @@ html {
   margin-top: 3rem;
 
 }
-
+.margin-t-c7 { margin-top: -10rem;}
 
 .margin-t-2 { margin-top: 2rem; }
 .margin-b-2 { margin-bottom: 2rem; }
@@ -433,6 +438,45 @@ html {
   height: auto;
 }
 
+
+.cafe-container-1,
+.cafe-container-2,
+.cafe-container-3,
+.cafe-container-4
+ { 
+  margin: 0;
+  display: inline-block;
+}
+
+.cafe-container-1 img {
+  width: 21vw;
+  height: auto;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.cafe-container-2 img {
+  width: 24vw;
+  height: auto;
+  display: inline-block;
+  padding: 1rem;
+}
+
+
+.cafe-container-3 img {
+  width: 22vw;
+  height: auto;
+  display: inline-block;
+  padding: 1rem;
+}
+
+
+.cafe-container-4 img {
+  width: 20vw;
+  height: auto;
+  display: inline-block;
+  padding: 1rem;
+}
 
 
 
@@ -762,8 +806,39 @@ html {
   width: 15rem;
 }
 
+.po39 {
+  position: absolute;
+  color: white;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.po39 h2 { color: white }
 
 
+.po40 {
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+}
+
+.po41 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.po42 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.po43 {
+  position: absolute;
+  left: 20%;
+  top: 2rem;
+}
 
 
 .logo-header-4 {
@@ -780,6 +855,11 @@ html {
 
 .border-r-c1 { border-right: 1px solid var(--dark-text);}
 
+.border-padded {
+  border: 1px solid var(--dark-text);
+  padding: 0.8rem;
+}
+
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
 .round-edges {
@@ -793,6 +873,19 @@ html {
 .bg-v-light  { background-color: var(--v-light); }
 .bg-accent   { background-color: var(--accent);}
 
+.bg-dark-c1 {
+  background-color: var(--dark);
+  border-radius: 3rem 3rem 0 0;
+}
+
+.bg-dark-c2 {
+  background-color: var(--dark);
+  border-radius: 0 3rem 0 0;
+}
+.bg-dark-c3 {
+  background-color: var(--dark);
+  border-radius: 3rem 0 0 0;
+}
 .border-img-c1 { 
   padding: 0.5rem;
   border: 1px solid var(--dark-text);
@@ -935,6 +1028,7 @@ html {
   background-repeat: no-repeat;
 }
 
+.bg-cafe-banner { background-image: url('/images/cafe/banner.jpg');}
 
 
 .bg-tourismus-banner-1 { background-image: url('/images/tourismus-fotografie/tourismus-banner-1.jpg'); }
@@ -2757,6 +2851,28 @@ input.tgg-title {
   height: 100%;
 }
 
+.buche-jetzt-rechteck-4 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -12px;
+  height: 63%;
+  margin: 0.5rem;
+  background-color: var(--dark);
+  z-index: -1;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.buche-jetzt-link:hover .buche-jetzt-rechteck-4 {
+  height: 100%;
+}
+
+.buche-jetzt-link:hover .hover-white {
+  color: white;
+}
+
 .buche-jetzt-rechteck-tm {
   position: absolute;
   right: 0;
@@ -2850,6 +2966,9 @@ input.tgg-title {
 
 .illu-1 {
   width: 10rem;
+}
+.illu-2 {
+  width: 5rem;
 }
 
 /* General CSS Responsive Styles (Apply everywhere unless overriden) */ 
@@ -3700,6 +3819,9 @@ input.tgg-title {
     width: 24vw;
     height: auto;
   }
+
+
+
 
   .po28 {
     position: absolute;
