@@ -3719,6 +3719,17 @@ input.tgg-title {
     top: unset;
     left: unset;
   }
+
+  .menu-button-style-2 {
+    cursor: pointer;
+    padding: 0;
+  }
+  .logo-header-4 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 10rem;
+  }
 }
 
 
