@@ -275,6 +275,7 @@ html {
 .margin-r-c5 { margin-right: -10rem;}
 .margin-r-c6 { margin-right: -5rem;}
 .margin-r-c7 { margin-left: 5rem;}
+.margin-r-c8 { margin-left: 8rem;}
 
 .margin-t-05 { margin-top: 0.5rem; }
 .margin-b-05 { margin-bottom: 0.5rem; }
@@ -874,6 +875,12 @@ html {
   position: absolute;
   left: -3rem;
   bottom: 3rem;
+}
+
+.po48 {
+  position: absolute;
+  bottom: 2rem;
+  right: -4rem;
 }
 
 .logo-header-4 {
@@ -2979,6 +2986,29 @@ input.tgg-title {
 }
 
 .buche-jetzt-link:hover .buche-jetzt-rechteck-tm {
+  height: 100%;
+}
+
+.buche-jetzt-rechteck-couple {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -12px;
+  height: 63%;
+  margin: 0.5rem;
+  background-color: var(--light); /* Set a fall-back color while images are loading */ 
+  background-image: url('/images/couple/buche-jetzt-banner.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid var(--dark-text);
+  border-radius: 1rem;
+}
+
+.buche-jetzt-link:hover .buche-jetzt-rechteck-couple {
   height: 100%;
 }
 

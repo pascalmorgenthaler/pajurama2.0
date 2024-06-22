@@ -11,7 +11,7 @@ const swiper11 = new Swiper('.swiper-couple-banner', {
     spaceBetween: 0,
     allowTouchMove: true,
     autoplay: {
-      delay: 3500,
+      delay: 2500,
       reverseDirection: false,
       pauseOnMouseEnter: true,
     },
