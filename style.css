@@ -140,6 +140,8 @@ html {
 
 @media(max-width: 400px) {
   .tall-c1 { min-height: 20rem; }
+  .fashion-top-container-1 { padding: 0.2rem 0.2rem 2rem 0.2rem; }
+  .fashion-top-container-2 { padding: 0.2rem 0.2rem 2rem 0.2rem; }
 }
 
 @media(max-width: 36em) {
@@ -1337,7 +1339,7 @@ h2 a {
   text-decoration: none;
   font-family: ivypresto-display, serif;
   letter-spacing: 9px;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 
 .marquee__content li svg,
@@ -3231,8 +3233,8 @@ input.tgg-title {
       }
 
       h2 {
-        font-size: 2.2rem;
-        letter-spacing: 4px;
+        font-size: 1.7rem;
+        letter-spacing: 6.6px;
         
       }
       h1 {
@@ -3258,7 +3260,7 @@ input.tgg-title {
       }
 
       .main-link {
-        letter-spacing: 3px;
+        letter-spacing: 7px;
         
         }
 
@@ -3515,7 +3517,7 @@ input.tgg-title {
           padding-top: 2rem;
         }
         .sub-link {
-          font-size: 1.3rem;
+          font-size: 0.9rem;
         }
 
         .po21 {
@@ -3572,7 +3574,7 @@ input.tgg-title {
           min-height: 50vh;
         }
         .logo-header-3 {
-          padding-left: 2rem;
+          padding-left: 1rem;
         }
 
         .landscape-sm { padding-bottom: 26%;}
