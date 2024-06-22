@@ -265,6 +265,7 @@ html {
 .margin-l-c6 { margin-left: -18%;}
 .margin-l-c7 { margin-left: -9rem;}
 .margin-l-c8 { margin-left: -5rem;}
+.margin-l-c9 { margin-left: -5rem;}
 
 
 .margin-r-c1 { margin-left: 10rem;}
@@ -273,6 +274,7 @@ html {
 .margin-r-c4 { margin-left: 16%;}
 .margin-r-c5 { margin-right: -10rem;}
 .margin-r-c6 { margin-right: -5rem;}
+.margin-r-c7 { margin-left: 5rem;}
 
 .margin-t-05 { margin-top: 0.5rem; }
 .margin-b-05 { margin-bottom: 0.5rem; }
@@ -866,6 +868,12 @@ html {
   right: 0;
   left: 0;
   text-align: center;
+}
+
+.po47 {
+  position: absolute;
+  left: -3rem;
+  bottom: 3rem;
 }
 
 .logo-header-4 {
