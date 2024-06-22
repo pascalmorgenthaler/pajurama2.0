@@ -11,6 +11,10 @@ const swiper4 = new Swiper('.swiper-bangers', {
       reverseDirection: false,
       pauseOnMouseEnter: true,
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
     breakpoints: {
       // when window width is >= 480px
       550: {

@@ -213,6 +213,10 @@ html {
   margin-left: -9rem;
 }
 
+.swiper-tourismus-banner {
+  min-height: 100vh;
+  width: 100%;
+}
 
 .swiper-free-small-images {
   width: 100%;
@@ -237,9 +241,9 @@ html {
 
 
 
-.swiper-slide{
+/* .swiper-slide{
   width: fit-content;
- }
+ } */
 
 
  .swiper-button-prev {
@@ -290,7 +294,7 @@ html {
 
 .st-ind-arrow {
   position: absolute;
-  top: 95%;
+  top: 90%;
   right: 10%;
 }
 
@@ -304,6 +308,12 @@ html {
   height: auto;
 }
 
+
+.tm-p {
+  font-family: ivypresto-display, serif;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
 
 /* ------------ Position Absolute  ----------------------- */
 
@@ -378,7 +388,6 @@ html {
 }
 
 .st-ind-link p {
-  color: var(--dark);
   font-size: 2rem;
   letter-spacing: 7px;
 }
@@ -590,6 +599,16 @@ html {
   font-size: 3.5rem;
 }
 
+.po29 {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: white;
+  z-index: 5;
+}
+
+.po29 h2 {   font-size: 4rem; }
+
 .logo-header-4 {
   position: absolute;
   top: 2rem;
@@ -746,6 +765,25 @@ html {
     background-repeat: no-repeat;
 }
 
+.bg-tourismus-banner-1 { background-image: url('/images/tourismus-fotografie/tourismus-banner-1.jpg'); }
+.bg-tourismus-banner-2 { background-image: url('/images/tourismus-fotografie/tourismus-banner-2.jpg'); }
+.bg-tourismus-banner-3 { background-image: url('/images/tourismus-fotografie/tourismus-banner-3.jpg'); }
+.bg-tourismus-banner-4 { background-image: url('/images/tourismus-fotografie/tourismus-banner-4.jpg'); }
+.bg-tourismus-banner-5 { background-image: url('/images/tourismus-fotografie/tourismus-banner-5.jpg'); }
+.bg-tourismus-banner-6 { background-image: url('/images/tourismus-fotografie/tourismus-banner-6.jpg'); }
+.bg-tourismus-banner-7 { background-image: url('/images/tourismus-fotografie/tourismus-banner-7.jpg'); }
+.bg-tourismus-banner-8 { background-image: url('/images/tourismus-fotografie/tourismus-banner-8.jpg'); }
+.bg-tourismus-banner-9 { background-image: url('/images/tourismus-fotografie/tourismus-banner-9.jpg'); }
+.bg-tourismus-banner-10 { background-image: url('/images/tourismus-fotografie/tourismus-banner-10.jpg'); }
+
+
+.bg-sm-banner-1 { background-image: url('/images/tourismus-fotografie/sm-banner-1.jpg'); }
+.bg-sm-banner-2 { background-image: url('/images/tourismus-fotografie/sm-banner-2.jpg'); }
+.bg-sm-banner-3 { background-image: url('/images/tourismus-fotografie/sm-banner-3.jpg'); }
+.bg-sm-banner-4 { background-image: url('/images/tourismus-fotografie/sm-banner-4.jpg'); }
+.bg-sm-banner-5 { background-image: url('/images/tourismus-fotografie/sm-banner-5.jpg'); }
+.bg-sm-banner-6 { background-image: url('/images/tourismus-fotografie/sm-banner-6.jpg'); }
+
 .bg-website-features {
   background-image: url('/images/webdesign/website/features-bg.JPG');
 }
@@ -852,6 +890,7 @@ html {
 
 a.bg-image { display: block;}
 
+.landscape-sm { padding-bottom: 16%}
 .landscape     { padding-bottom: 66% ; }
 .landscape-menu     { padding-bottom: 9% !important; }
 .portrait-tall { padding-bottom: 175%; }
