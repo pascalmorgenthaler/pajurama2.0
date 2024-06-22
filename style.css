@@ -759,6 +759,7 @@ html {
 .po38 {
   position: absolute;
   bottom: 0;
+  width: 15rem;
 }
 
 
@@ -781,7 +782,9 @@ html {
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
-
+.round-edges {
+  border-radius: 2rem;
+}
 
 .bg-dark     { background-color: var(--dark);}
 .bg-featured { background-color: var(--featured);}
@@ -1295,6 +1298,13 @@ h2 a {
   z-index: -3;
 }
 
+.cafe-lines {
+  min-width: 100vw;
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  z-index: -3;
+}
 
 
 .webdesign-links a {
