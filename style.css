@@ -934,6 +934,13 @@ html {
   border: 1px solid var(--dark-text);
 }
 
+.bg-couple-package {
+  background-image: url('/images/couple/package-top.jpg');
+}
+
+.bg-couple-package-bottom {
+  background-image: url('/images/couple/package-bottom.jpg');
+}
 
 .bg-border-yellow-1 {
   background-color: var(--accent);
