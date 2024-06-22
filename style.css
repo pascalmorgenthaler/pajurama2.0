@@ -756,6 +756,11 @@ html {
   right: 9rem;
 }
 
+.po38 {
+  position: absolute;
+  bottom: 0;
+}
+
 
 
 
@@ -920,7 +925,12 @@ html {
   background: var(--v-light);
 }
 
-
+.bg-image {
+  background-color: var(--dark);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 
@@ -3616,7 +3626,11 @@ input.tgg-title {
         .landscape-sm { padding-bottom: 26%;}
 
         .po29 h2 {
-          font-size: 3rem;
+          font-size: 1.4rem;
+        }
+        .po29 {
+          right: 1rem;
+          bottom: 1rem;
         }
 
   .button-light { font-size: 1.5rem ;}
