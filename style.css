@@ -147,10 +147,13 @@ html {
 .margin-l-c4 { margin-left: 9rem;}
 .margin-l-c5 { margin-left: -2rem;}
 .margin-l-c3 { margin-right: 5rem;}
+.margin-l-c6 { margin-left: -18%;}
+
 
 .margin-r-c1 { margin-left: 10rem;}
 .margin-r-c2 { margin-right: -9rem;}
 .margin-r-c3 { margin-right: -10rem;}
+.margin-r-c4 { margin-left: 16%;}
 
 .margin-t-05 { margin-top: 0.5rem; }
 .margin-b-05 { margin-bottom: 0.5rem; }
@@ -218,10 +221,7 @@ html {
   margin-left: -9rem;
 }
 
-.swiper-tourismus-banner {
-  min-height: 100vh;
-  width: 100%;
-}
+
 
 .swiper-free-small-images {
   width: 100%;
@@ -2700,6 +2700,10 @@ input.tgg-title {
 
 @media(max-width:64em) { 
 
+  .tm-exp-container {
+    min-height: 468px;
+  }
+
   .padded-xl { padding: 0 15% 20% 15%;}
 
   .margin-t-c1 {
@@ -2842,7 +2846,11 @@ input.tgg-title {
 
 @media(max-width:48em) {
 
+  .margin-t-c5 { margin-top: 0;}
 
+  .tm-exp-container {
+    min-height: 0;
+  }
 
   .webdesign-blub {
     min-width: 313px;
@@ -3084,6 +3092,12 @@ input.tgg-title {
 
     .xs-padding-0 {
       padding: 0;
+    }
+
+    .tm-p {
+      font-family: ivypresto-display, serif;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
     }
 
     .po11 {
@@ -3441,11 +3455,17 @@ input.tgg-title {
         }
         .bg-border-yellow-6 { border-left: 1px solid var(--dark-text); }
 
-        .xs-tall-70 {
-          min-height: 70vh;
+        .xs-tall-50 {
+          min-height: 50vh;
         }
         .logo-header-3 {
           padding-left: 2rem;
+        }
+
+        .landscape-sm { padding-bottom: 26%;}
+
+        .po29 h2 {
+          font-size: 3rem;
         }
 
   .button-light { font-size: 1.5rem ;}
@@ -3517,6 +3537,7 @@ input.tgg-title {
     min-height: 70vh;
   }
 
+  .xs-center { text-align: center;}
 
 }
 
