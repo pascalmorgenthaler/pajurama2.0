@@ -60,6 +60,98 @@ html {
 .tall-30  { min-height: 30vh; }
 .tall-20  { min-height: 20vh; }
 
+.tall-c1 { min-height: 47rem; }
+.po32 {
+  position: absolute;
+  min-width: 49rem;
+  z-index: -2;
+  left: -4%;
+  top: -4rem;
+}
+.po33 {
+  position: absolute;
+  right: -6rem;
+}
+
+.fashion-top-container-1 { 
+  margin: 30px;
+  display: inline-block;
+  border: 1px solid var(--dark-text);
+  padding: 0.5rem 0.5rem 4rem 0.5rem;
+  background-color: var(--v-light);
+}
+
+.fashion-top-container-1 img {
+  width: 22vw;
+  height: auto;
+}
+
+.fashion-top-container-2 { 
+  margin: 30px;
+  display: inline-block;
+  border: 1px solid var(--dark-text);
+  padding: 0.5rem 0.5rem 4rem 0.5rem;
+  background-color: var(--v-light);
+}
+
+.fashion-top-container-2 img {
+  width: 17vw;
+  height: auto;
+}
+
+
+@media(max-width: 1350px) {
+  .tall-c1 { min-height: 44rem; }
+}
+
+@media(max-width: 1164px) {
+  .tall-c1 { min-height: 40rem; }
+}
+
+@media(max-width: 982px) {
+  .tall-c1 { min-height: 35rem; }
+  .po32 { min-width: 35rem; }
+  .fashion-top-container-1 { margin: 15px;}
+  .fashion-top-container-2 { margin: 15px;}
+  .po33 { right: -3rem; }
+}
+
+@media(max-width: 900px) {
+  .tall-c1 { min-height: 30rem; }
+  .po32 { min-width: 30rem; }
+}
+
+@media(max-width: 750px) {
+  .tall-c1 { min-height: 26rem; }
+  .po32 { min-width: 25rem; }
+  .fashion-top-container-1 {
+    padding: 0.5rem 0.5rem 3rem 0.5rem; margin: 10px;}
+  .fashion-top-container-2 { 
+    padding: 0.5rem 0.5rem 3rem 0.5rem;margin: 10px;}
+}
+
+@media(max-width: 650px) {
+  .tall-c1 { min-height: 24rem; }
+}
+
+@media(max-width: 600px) {
+  .tall-c1 { min-height: 28rem; }
+}
+
+@media(max-width: 400px) {
+  .tall-c1 { min-height: 25rem; }
+}
+
+@media(max-width: 36em) {
+.fashion-top-container-1 img {
+  width: 28vw;
+  }
+.fashion-top-container-2 img {
+  width: 23vw;
+  }
+  .po33 { right: -2rem;}
+}
+
 /* Padding Utility Classes */ 
 .padded-sm { padding: 2.5%; }
 .padded    { padding: 5%;   }
@@ -312,6 +404,8 @@ html {
   width: 9vw;
   height: auto;
 }
+
+
 
 
 .tm-p {
@@ -625,6 +719,12 @@ html {
   bottom: 4rem;
   right: 4rem;
 }
+
+
+
+
+
+
 
 .logo-header-4 {
   position: absolute;
@@ -1134,6 +1234,16 @@ h2 a {
   left: 0;
   z-index: -3;
 }
+
+.fashion-lines {
+  min-width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -3;
+}
+
+
 
 .webdesign-links a {
   font-size: 1.6rem;
