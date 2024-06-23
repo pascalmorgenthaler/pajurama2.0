@@ -37,6 +37,11 @@ html {
 
 /* ---------- Negative Space Utility Classes  ------------------ */ 
 
+.z-index-top {
+  position: relative;
+  z-index: 4;
+}
+
 .capped-width-wide      { max-width: 1600px; margin: auto; }
 .capped-width           { max-width: 1400px; margin: auto; }
 .capped-width-narrow    { max-width: 1200px; margin: auto; }
@@ -226,11 +231,13 @@ html {
 .padded-t-c1 { padding-top: 290px}
 .padded-t-c2 { padding-top: 7rem;}
 .padded-b-c1 { padding-bottom: 10rem;}
+.padded-b-c2 { padding-bottom: 20rem;}
 
 .padded-t-c6 { padding-top: 10rem; }
 .padded-t-c3 { padding-top: 7rem;}
 .padded-t-c4 { padding-top: 10rem;}
 .padded-t-c5 { padding-top: 18%;}
+.padded-t-c7 { padding-top:15rem;}
 
 .padded-02 { padding: 0.2rem;}
 
@@ -276,6 +283,12 @@ html {
 .margin-r-c6 { margin-right: -5rem;}
 .margin-r-c7 { margin-left: 5rem;}
 .margin-r-c8 { margin-left: 8rem;}
+.margin-r-c9 { margin-left: 10rem;
+margin-right: -10rem;}
+.margin-r-c10 { margin-right: -10rem;margin-left: 10rem;}
+.margin-r-c11 { margin-right: -2rem;margin-left: 2rem;}
+
+.margin-1 { margin: 1rem ;}
 
 .margin-t-05 { margin-top: 0.5rem; }
 .margin-b-05 { margin-bottom: 0.5rem; }
@@ -310,6 +323,13 @@ html {
 
 }
 .margin-t-c7 { margin-top: -10rem;}
+.margin-t-c8 { margin-top: -10rem;
+margin-left: -8rem;
+position: relative;
+z-index: -3;}
+
+.margin-t-c9 { margin-top: 8rem;}
+.margin-t-c10 { margin-top: -2rem;}
 
 .margin-t-2 { margin-top: 2rem; }
 .margin-b-2 { margin-bottom: 2rem; }
@@ -440,6 +460,32 @@ html {
   width: 9vw;
   height: auto;
 }
+
+.hotel-grid-container { 
+  margin: 5px;
+  display: inline-block;
+}
+
+.hotel-grid-container img {
+  width: 18vw;
+  height: auto;
+}
+
+.hotel-fenster-container { 
+  margin: 5px;
+  display: inline-block;
+  padding: 0.4rem 0.4rem 4rem 0.4rem;
+  background: var(--v-light);
+  border-radius: 10rem;
+  border: 1px solid var(--dark-text);
+}
+
+.hotel-fenster-container img {
+  width: 14vw;
+  height: auto;
+  border-radius: 10rem;
+}
+
 
 
 .cafe-container-1,
@@ -883,6 +929,35 @@ html {
   right: -4rem;
 }
 
+.po50 {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  right: 0;
+}
+
+.po51 {
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+}
+
+.po52 {
+  position: absolute;
+  right: -20%;
+  top: 30%;
+}
+
+.po53 {
+  position: absolute;
+  left: -20%;
+  top: 20%;
+}
+
+.po54 {
+  position: absolute;
+}
+
 .logo-header-4 {
   position: absolute;
   top: 2rem;
@@ -906,6 +981,11 @@ html {
 
 .round-edges {
   border-radius: 2rem;
+}
+
+.round-edges-2 {
+  border-radius: 2rem 0 0 0;
+  border: 1px solid var(--dark-text);
 }
 
 .bg-dark     { background-color: var(--dark);}
@@ -1018,6 +1098,10 @@ html {
   border: 1px solid var(--dark-text);
 }
 
+.border-round {
+  border: 1px solid var(--dark-text);
+  border-radius: 0.5rem;
+}
 .intention-border {
   border-radius: 50rem 50rem 10rem 10rem;
   border: 1px solid var(--dark-text);
@@ -1103,10 +1187,21 @@ html {
   padding: 0.4rem
 }
 
+.window-div-2 {
+  border: 1px solid var(--dark-text);
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+}
+.window-div-2 img {
+  border-radius: 0.5rem;
+}
+
 .polaroid-1 {
   padding: 0.4rem 0.4rem 4rem 0.4rem;
   background: var(--v-light);
 }
+
+
 
 .bg-image {
   background-color: var(--dark);
@@ -1117,6 +1212,14 @@ html {
 
 .bg-cafe-banner { background-image: url('/images/cafe/banner.jpg');}
 
+.bg-hotel-banner-1 { background-image: url('/images/hotel/banner-1.jpg');}
+.bg-hotel-banner-2 { background-image: url('/images/hotel/banner-2.jpg');}
+.bg-hotel-banner-3 { background-image: url('/images/hotel/banner-3.jpg');}
+.bg-hotel-banner-4 { background-image: url('/images/hotel/banner-4.jpg');}
+.bg-hotel-banner-5 { background-image: url('/images/hotel/banner-5.jpg');}
+
+.bg-editing-banner-1 { background-image: url('/images/hotel/editing-1.jpg');}
+.bg-editing-banner-2 { background-image: url('/images/hotel/editing-2.jpg');}
 
 .bg-tourismus-banner-1 { background-image: url('/images/tourismus-fotografie/tourismus-banner-1.jpg'); }
 .bg-tourismus-banner-2 { background-image: url('/images/tourismus-fotografie/tourismus-banner-2.jpg'); }
@@ -1499,6 +1602,15 @@ h2 a {
   left: 0;
   z-index: -3;
 }
+
+.hotel-lines {
+  min-width: 100vw;
+  position: absolute;
+  bottom: 16%;
+  left: 0;
+  z-index: -3;
+}
+
 
 
 .webdesign-links a {
@@ -2966,6 +3078,24 @@ input.tgg-title {
 }
 
 .buche-jetzt-link:hover .buche-jetzt-rechteck-4 {
+  height: 100%;
+}
+
+.buche-jetzt-rechteck-5 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -12px;
+  height: 63%;
+  margin: 0.5rem;
+  background-color: var(--light);
+  z-index: -1;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.buche-jetzt-link:hover .buche-jetzt-rechteck-5 {
   height: 100%;
 }
 
