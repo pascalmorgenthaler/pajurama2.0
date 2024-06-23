@@ -3747,6 +3747,30 @@ input.tgg-title {
         bottom: unset;
         left: unset;
       }
+
+      .margin-t-c7 {
+        margin-top: 0;
+      }
+
+      .po42 {
+        position: absolute;
+        bottom: 2.5rem;
+        right: 2rem;
+      }
+
+      .bg-dark-c2 {
+        border-radius: 0.5rem;
+      }
+
+      .bg-dark-c3 {
+        border-radius: 0.5rem;
+      }
+
+      .sm-margin-lr-0 {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -4284,6 +4308,26 @@ input.tgg-title {
   }
   .margin-r-c5 {
     margin-right: -6rem;
+  }
+
+
+  .cafe-container-1 img {
+    padding: 0.2rem;
+  }
+  
+  .cafe-container-2 img {
+    padding: 0.2rem;
+  }
+  
+  
+  .cafe-container-3 img {
+    padding: 0.2rem;
+  }
+  
+  
+  .cafe-container-4 img {
+
+    padding: 0.2rem;
   }
 
 
