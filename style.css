@@ -329,7 +329,7 @@ margin-right: -10rem;}
   margin-top: 3rem;
 
 }
-.margin-t-c7 { margin-top: -10rem;}
+.margin-t-c7 { margin-top: -8rem;}
 .margin-t-c8 { margin-top: -10rem;
 margin-left: -8rem;
 position: relative;
@@ -899,6 +899,13 @@ z-index: -3;}
 
 
 .po40 {
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+}
+
+
+.po57 {
   position: absolute;
   bottom: -2rem;
   left: -2rem;
@@ -3724,6 +3731,22 @@ input.tgg-title {
         width: 9rem;
         left: -14px;
       }
+
+      .po40 {
+        position: absolute;
+        top: -3rem;
+        right: 1rem;
+        bottom: unset;
+        left: unset;
+      }
+
+      .po57 {
+        position: absolute;
+        bottom: -3rem;
+        left: 1rem;
+        bottom: unset;
+        left: unset;
+      }
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -4259,6 +4282,11 @@ input.tgg-title {
     left: 1rem;
     width: 10rem;
   }
+  .margin-r-c5 {
+    margin-right: -6rem;
+  }
+
+
 }
 
 
