@@ -335,9 +335,22 @@ z-index: -3;}
   margin-left: -14rem;
   margin-top: 4rem;
 }
+.margin-t-c13 { margin-top: -5rem;}
+.margin-t-c14 {
+  margin-top: -53%;
+  z-index: 5;
+  position: relative;
+}
+
+.margin-b-c4 {
+  margin-bottom: -53%;
+  z-index: 5;
+  position: relative;
+}
 
 
 .margin-t-2 { margin-top: 2rem; }
+.margin-t-4 { margin-top: 4rem; }
 .margin-b-2 { margin-bottom: 2rem; }
 .margin-l-2 { margin-left: 2rem; }
 .margin-r-2 { margin-right: 2rem; }
@@ -1000,6 +1013,10 @@ z-index: -3;}
   border: 1px solid var(--dark-text);
 }
 
+.round-edges-3 {
+  border-radius: 0.5rem;
+}
+
 .bg-dark     { background-color: var(--dark);}
 .bg-featured { background-color: var(--featured);}
 .bg-medium   { background-color: var(--medium); }
@@ -1230,6 +1247,9 @@ z-index: -3;}
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.bg-elopement-paket-1 { background-image: url('/images/elopement/paket-1.jpg');}
+.bg-elopement-paket-2 { background-image: url('/images/elopement/paket-2.jpg');}
 
 .bg-ablauf-elopement { background-image: url('/images/elopement/ablauf.jpg');}
 
@@ -1634,6 +1654,13 @@ h2 a {
   z-index: -3;
 }
 
+.elopement-lines {
+  min-width: 100vw;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  z-index: -3;
+}
 
 
 .webdesign-links a {
@@ -3121,6 +3148,25 @@ input.tgg-title {
 .buche-jetzt-link:hover .buche-jetzt-rechteck-5 {
   height: 100%;
 }
+
+
+.buche-jetzt-rechteck-6 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -12px;
+  height: 63%;
+  margin: 0.5rem;
+  background-color: var(--elopement);
+  z-index: -1;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.buche-jetzt-link:hover .buche-jetzt-rechteck-6 {
+  height: 100%;
+}
+
 
 .buche-jetzt-link:hover .hover-white {
   color: white;
