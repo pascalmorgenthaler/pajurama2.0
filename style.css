@@ -330,6 +330,12 @@ z-index: -3;}
 
 .margin-t-c9 { margin-top: 8rem;}
 .margin-t-c10 { margin-top: -2rem;}
+.margin-t-c11 {   margin-top: -20rem;}
+.margin-t-c12 {
+  margin-left: -14rem;
+  margin-top: 4rem;
+}
+
 
 .margin-t-2 { margin-top: 2rem; }
 .margin-b-2 { margin-bottom: 2rem; }
@@ -958,6 +964,12 @@ z-index: -3;}
   position: absolute;
 }
 
+.po55 {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
 .logo-header-4 {
   position: absolute;
   top: 2rem;
@@ -1201,7 +1213,16 @@ z-index: -3;}
   background: var(--v-light);
 }
 
+.polaroid-2 {
+  padding: 0.4rem 0.4rem 4rem 0.4rem;
+  background: var(--v-light);
+  border-radius: 0.5rem;
+  border: 1px solid var(--dark-text);
+}
 
+.polaroid-2 img {
+  border-radius: 0.5rem;
+}
 
 .bg-image {
   background-color: var(--dark);
@@ -1209,6 +1230,8 @@ z-index: -3;}
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.bg-ablauf-elopement { background-image: url('/images/elopement/ablauf.jpg');}
 
 .bg-cafe-banner { background-image: url('/images/cafe/banner.jpg');}
 
