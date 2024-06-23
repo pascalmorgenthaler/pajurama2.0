@@ -273,6 +273,11 @@ html {
 .margin-l-c7 { margin-left: -9rem;}
 .margin-l-c8 { margin-left: -5rem;}
 .margin-l-c9 { margin-left: -5rem;}
+.margin-l-c10 { 
+  margin-left: -11rem;
+  margin-top: -5rem;
+
+}
 
 
 .margin-r-c1 { margin-left: 10rem;}
@@ -287,6 +292,8 @@ html {
 margin-right: -10rem;}
 .margin-r-c10 { margin-right: -10rem;margin-left: 10rem;}
 .margin-r-c11 { margin-right: -2rem;margin-left: 2rem;}
+.margin-r-c12 { margin-right: -8rem;margin-left: 8rem;}
+.margin-r-c13 { margin-right: -8rem;margin-left: 8rem;}
 
 .margin-1 { margin: 1rem ;}
 
@@ -348,12 +355,18 @@ z-index: -3;}
   position: relative;
 }
 
+.margin-b-c5 {
+  margin-bottom: -8rem;
+}
+
 
 .margin-t-2 { margin-top: 2rem; }
 .margin-t-4 { margin-top: 4rem; }
 .margin-b-2 { margin-bottom: 2rem; }
 .margin-l-2 { margin-left: 2rem; }
 .margin-r-2 { margin-right: 2rem; }
+
+.margin-t-12 { margin-top: 12%;}
 
 .margin-l-14 { margin-left: 1.4rem;}
 
@@ -983,6 +996,13 @@ z-index: -3;}
   left: 2rem;
 }
 
+.po56 {
+  position: absolute;
+  bottom: -2rem;
+  left: -7rem;
+  width: 16rem;
+}
+
 .logo-header-4 {
   position: absolute;
   top: 2rem;
@@ -1248,6 +1268,9 @@ z-index: -3;}
   background-repeat: no-repeat;
 }
 
+.bg-brand-banner-1 { background-image: url('/images/brand/brand-3-banner.jpg');}
+.bg-brand-banner-2 { background-image: url('/images/brand/brand-banner-2.jpg');}
+
 .bg-elopement-paket-1 { background-image: url('/images/elopement/paket-1.jpg');}
 .bg-elopement-paket-2 { background-image: url('/images/elopement/paket-2.jpg');}
 
@@ -1365,6 +1388,27 @@ z-index: -3;}
 
 .bg-blub-4 { 
   background-image: url('/icons/forms/Blub-4.svg');
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.bg-blub-brand-1 { 
+  background-image: url('/images/brand/kontakt.png');
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.bg-blub-brand-2 { 
+  background-image: url('/images/brand/connecten.png');
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.bg-blub-brand-3 { 
+  background-image: url('/images/brand/buchen.png');
   background-size: contain;
   background-position: center; 
   background-repeat: no-repeat; 
@@ -1650,6 +1694,14 @@ h2 a {
   min-width: 100vw;
   position: absolute;
   bottom: 16%;
+  left: 0;
+  z-index: -3;
+}
+
+.brand-lines {
+  min-width: 100vw;
+  position: absolute;
+  bottom: -5rem;
   left: 0;
   z-index: -3;
 }
@@ -3306,6 +3358,8 @@ input.tgg-title {
   display: inline-block;
   vertical-align: top;
 }
+
+.absolute { position: absolute;}
 
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
