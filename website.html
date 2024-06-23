@@ -71,7 +71,7 @@ faq:
         <img src="/images/webdesign/website/website-landing-collage.png">
     </div>
     <div class="margin-t-2 padded padded-b-0">
-        <a href="/anfrage.html" class="button-light-spacing"> Buche jetzt</a>
+        <a href="/anfrage.html" class="button-light"> Buche jetzt</a>
     </div>
 </section>
 
@@ -168,13 +168,13 @@ faq:
         <h2>Wir freuen uns mega, für dich und deine Unternehmen kreativ zu werden. </h2>
     </div>
     <div class="col-12 padded padded-b-0 center">
-        <a href="/anfrage.html" class="button-light-spacing"> Buche jetzt</a>
+        <a href="/anfrage.html" class="button-light"> Buche jetzt</a>
     </div>
 </section>
 
 
 <section class="padded grid-middle-spaceAround">
-    <div class="col-12 padded capped-width bg-accent">
+    <div class="col-12 padded capped-width bg-dark">
         <div class="card-wrapper  | content-cc">
             <div class="faq-card">
                 <main class="faq-content">
@@ -421,48 +421,4 @@ faq:
     </section>
 
 
-    <section class="relative">
-        <div class="capped-width padded">
-          <H2 class="margin-l-c4"> TESTIMONIALS </H2>
-        </div>
-        <!-- Slider main container -->
-        <div class="swiper-testimonial">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            {% for testimonial in page.testimonials %}
-            <div class="swiper-slide">
-              <div class="padded padded-t-0 xs-padded-10 capped-width grid-middle-spaceAround">
-                <div class="col-2 hide-xs"></div>
-                <div class="col-12 padded-2 grid-middle-spaceAround">
-                  <div class="col-1 hide-xs"></div>
-                  <div class="col-5_xs-11">
-                    <img src="{{ testimonial.image }}">
-                  </div>
-                  <div class="col-6_xs-11 xs-margin-t-1 testimonial">
-                    <h3 class="uppercase"> {{ testimonial.name }} </h3>
-                  </div>
-                  <div class="col-4 hide-xs"></div>
-                  <div class="col-8_xs-11 margin-t-c3 padded-b-2">
-                      <p> {{testimonial.description_html}} </p>
-                  </div>
-                  <div class="col-10 padded padded-b-0 right">
-                    <a href="{{ testimonial.link }}" class="button-light"> Zum Projekt </a>
-                  </div>
-                  <div class="col-2"></div>
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-          <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-        
-          <!-- If we need navigation buttons-->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>  
-        
-          <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
-        </div>
-        </section>
+{% include testimonial.html %}

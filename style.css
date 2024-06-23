@@ -1385,6 +1385,7 @@ z-index: -3;}
 
 .bg-editing-pb { background-image: url('/images/personal-branding-fotografie/experience/pb-exp-img-4.jpg');}
 .bg-editing-fa { background-image: url('/images/fashion/editing.jpg');}
+.bg-editing-u { background-image: url('/images/unternehmen/bg-editing.jpg');}
 
 .bg-blub-4 { 
   background-image: url('/icons/forms/Blub-4.svg');
@@ -3319,6 +3320,10 @@ input.tgg-title {
   border: 1px solid var(--dark-text);
 }
 
+.u-top-img {
+  border-radius: 1rem;
+  border: 1px solid var(--dark-text);
+}
 
 .is-exp-n1 span {
   position: absolute;
