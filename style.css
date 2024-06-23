@@ -3523,6 +3523,8 @@ input.tgg-title {
         left: 5rem;
         font-size: 3rem;
       }
+
+
   
 }
 
@@ -3549,6 +3551,18 @@ input.tgg-title {
 
   .po19 {
     font-size: 1.8rem;
+  }
+
+  .margin-t-c14 {
+    margin-top: -89%;
+    z-index: 5;
+    position: relative;
+  }
+
+  .margin-b-c4 {
+    margin-bottom: -89%;
+    z-index: 5;
+    position: relative;
   }
 
   .padded-03 {
@@ -3821,6 +3835,8 @@ input.tgg-title {
     .xs-padded-1 { padding: 1rem;}
     .xs-padded-b { padding-bottom: 5%; }
     .xs-padded-10 { padding: 10%; padding-top: 0;}
+
+    .xs-margin-b-1 { margin-bottom: 1rem; }
 
     .xs-padding-0 {
       padding: 0;
@@ -4330,6 +4346,38 @@ input.tgg-title {
     padding: 0.2rem;
   }
 
+  .margin-t-c11 {
+    margin-top: -7rem;
+  }
+  .margin-t-c12 {
+    margin-left: -3rem;
+    margin-top: 4rem;
+  }
+  .po55 {
+    position: absolute;
+    top: -1rem;
+    left: 0rem;
+  }
+
+  .margin-t-4 {
+    margin-top: 0;
+  }
+  .margin-t-c13 {
+    margin-top: 0;
+  }
+
+
+  .margin-t-c14 {
+    margin-top: -38rem;
+    z-index: 5;
+    position: relative;
+  }
+
+  .margin-b-c4 {
+    margin-bottom: -38rem;
+    z-index: 5;
+    position: relative;
+  }
 
 }
 
