@@ -1011,7 +1011,18 @@ z-index: -3;}
   width: 16rem;
 }
 
+.po57 {
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: 5px;
+}
 
+.ls-5 {
+  letter-spacing: 5px;
+}
 
 .logo-header-4 {
   position: absolute;
@@ -1302,6 +1313,17 @@ z-index: -3;}
 .polaroid-5 {
   padding: 0.4rem  0.4rem 0.4rem 5rem;
   background: var(--v-light);
+}
+
+.polaroid-6 {
+  padding: 0.4rem  0.4rem 0.4rem 5rem;
+  background: var(--v-light);
+  border-radius: 0 50rem 50rem 0;
+}
+.polaroid-7 {
+  padding: 0.4rem  0.4rem 0.4rem 0.4rem;
+  background: var(--v-light);
+  border-radius:  50rem 50rem 0 0;
 }
 
 .bg-image {
