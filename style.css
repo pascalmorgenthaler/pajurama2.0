@@ -1453,6 +1453,45 @@ z-index: -3;}
   background-image: url('/images/webdesign/onlineshop-hover.jpg');
 }
 
+.bg-logo {
+  background-color: var(--v-light); /* Set a fall-back color while images are loading */ 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.bg-logo:hover {
+  background-image: url('/images/branding/bg-logo.jpg');
+}
+/* 
+.bg-logo:hover h2 {
+  color: white;
+} */
+
+.hover-show {
+  display: none;
+}
+
+/* .bg-logo:hover .hover-show {
+  display: block;
+}
+
+.bg-logo:hover .hover-hide {
+  display: none;
+} */
+
+.bg-illu {
+  background-color: var(--v-light); /* Set a fall-back color while images are loading */ 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.bg-illu:hover {
+  background-image: url('/images/branding/bg-illu.JPG');
+}
+
+
 .bg-banger-1 { background-image: url('/images/index/bangers/banger-1.jpg'); }
 .bg-banger-2 { background-image: url('/images/index/bangers/banger-2.jpg'); }
 
@@ -2027,6 +2066,17 @@ header {
   color: var(--dark);
 }
 
+.branding-logo {
+  width: 26rem;
+  padding: 5%;
+  margin-bottom: 2rem;
+}
+
+.branding-illu {
+  width: 26rem;
+  padding: 5%;
+  margin-bottom: 2rem;
+}
 
 .header-logo {
   width: 15rem;
