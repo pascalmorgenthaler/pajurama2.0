@@ -1011,6 +1011,8 @@ z-index: -3;}
   width: 16rem;
 }
 
+
+
 .logo-header-4 {
   position: absolute;
   top: 2rem;
@@ -1155,6 +1157,20 @@ z-index: -3;}
   border: 1px solid var(--dark-text);
 }
 
+.border-padded {
+  border: 1px solid var(--dark-text);
+  padding: 0.5rem;
+}
+
+.border-padded-edge-rounded {
+  border: 1px solid var(--dark-text);
+  padding: 0.5rem;
+  border-radius: 0 5rem 0 0 ;
+}
+
+.border-top { border-top: 1px solid var(--dark-text);}
+.border-bottom { border-bottom: 1px solid var(--dark-text);}
+
 .border-round {
   border: 1px solid var(--dark-text);
   border-radius: 0.5rem;
@@ -1278,11 +1294,26 @@ z-index: -3;}
   border-radius: 0.5rem;
 }
 
+.polaroid-4 {
+  padding: 0.4rem 4rem 0.4rem 0.4rem;
+  background: var(--v-light);
+}
+
+.polaroid-5 {
+  padding: 0.4rem  0.4rem 0.4rem 5rem;
+  background: var(--v-light);
+}
+
 .bg-image {
   background-color: var(--dark);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.bg-onlineshop-1 { 
+  background-image: url('/images/onlineshop/bg-onlineshop-1.jpg');
+  height: 100%;
 }
 
 .bg-brand-banner-1 { background-image: url('/images/brand/brand-3-banner.jpg');}
@@ -1335,6 +1366,9 @@ z-index: -3;}
 .bg-sm-banner-4 { background-image: url('/images/tourismus-fotografie/sm-banner-4.jpg'); }
 .bg-sm-banner-5 { background-image: url('/images/tourismus-fotografie/sm-banner-5.jpg'); }
 .bg-sm-banner-6 { background-image: url('/images/tourismus-fotografie/sm-banner-6.jpg'); }
+
+
+.bg-white { background-color: white }
 
 .bg-website-features {
   background-image: url('/images/webdesign/website/features-bg.JPG');
@@ -1627,6 +1661,11 @@ h2 a {
   width: 100%;
   text-align: center;
   border-radius: 3px;
+}
+
+.shopify-button:hover {
+  background-color: var(--dark-text);
+  color: white;
 }
 
 .button-light-spacing {
