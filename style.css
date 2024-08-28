@@ -1020,6 +1020,7 @@ z-index: -3;}
   letter-spacing: 5px;
 }
 
+
 .ls-5 {
   letter-spacing: 5px;
 }
@@ -1663,12 +1664,18 @@ p:last-child {
 .small {
   font-size: 0.9rem;
 }
-
+.one5rem         { font-size: 1.5rem;}
 .tworem         { font-size: 2rem;}
 .two5rem       { font-size: 2.5rem;}
 .threerem       { font-size: 3rem;}
 .fourrem        { font-size: 4rem; }
 .fiverem       { font-size: 5rem;}
+
+.ivypresto {
+  font-family: ivypresto-display, serif;
+  letter-spacing: 20px;
+  font-weight: 100;
+}
 
 .text-white     { color: white; }
 
@@ -1855,6 +1862,8 @@ h2 a {
   font-family: ivypresto-display, serif;
   display: block;
 }
+
+
 
 .webdesign-links a:hover {
   color: var(--dark);
@@ -3492,6 +3501,10 @@ input.tgg-title {
 }
 .illu-2 {
   width: 5rem;
+}
+
+.illu-3 {
+  width: 8rem;
 }
 
 /* General CSS Responsive Styles (Apply everywhere unless overriden) */ 
